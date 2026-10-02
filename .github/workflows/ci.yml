@@ -1,0 +1,37 @@
+name: Java and end-to-end verification
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['software/**', 'pom.xml', 'tools/e2e.py', '.github/workflows/ci.yml']
+  pull_request:
+    paths: ['software/**', 'pom.xml', 'tools/e2e.py', '.github/workflows/ci.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Maven compile and tests
+        run: mvn -B -ntp verify
+      - name: Geometric simulator
+        run: java -jar software/simulator/target/simulator-0.1.0.jar generated/demo
+      - name: HTTP, offline sync and persistent storage end-to-end
+        run: python3 tools/e2e.py
+      - name: Preserve runnable applications and test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qulay-java-and-verification
+          retention-days: 90
+          path: |
+            software/*/target/*.jar
+            software/*/target/surefire-reports/*
+            generated/demo
+            generated/verification
