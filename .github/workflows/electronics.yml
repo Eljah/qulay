@@ -2,7 +2,7 @@ name: KiCad electronics build and publish
 on:
   push:
     branches: ['feature/qulay-prototype-20261002']
-    paths: ['electronics/build.py', 'electronics/verify.py', '.github/workflows/electronics.yml']
+    paths: ['electronics/*.py', '.github/workflows/electronics.yml']
 permissions:
   contents: write
 concurrency:
@@ -20,14 +20,16 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: KiCad and reproducible offline autorouter
+      - name: KiCad 9 and reproducible offline autorouter
         run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-9.0-releases
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends kicad xvfb
           curl -fL --retry 3 https://github.com/freerouting/freerouting/releases/download/v1.9.0/freerouting-1.9.0.jar -o /tmp/freerouting.jar
           kicad-cli version
-      - name: Connected schematic and PCB from one pin model
-        run: /usr/bin/python3 electronics/build.py
+          /usr/bin/python3 -c 'import pcbnew; print(pcbnew.ImportSpecctraSES.__doc__)'
+      - name: Connected schematic, PCB and serialized pad assertions
+        run: /usr/bin/python3 electronics/build_checked.py
       - name: Route both actual boards
         run: |
           for board in encoder carrier; do
@@ -47,6 +49,7 @@ jobs:
           test "$GITHUB_REF_NAME" = "feature/qulay-prototype-20261002"
           git config user.name 'qulay-build'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          find electronics/generated -name '*.kicad_prl' -delete
           git add electronics/generated
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'build(electronics): publish KiCad, routed boards, schematics and checks [skip ci]'
