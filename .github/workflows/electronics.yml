@@ -20,38 +20,36 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: KiCad 9 and reproducible offline autorouter
+      - name: KiCad 9 and offline autorouter
         run: |
           sudo add-apt-repository --yes ppa:kicad/kicad-9.0-releases
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends kicad xvfb
           curl -fL --retry 3 https://github.com/freerouting/freerouting/releases/download/v1.9.0/freerouting-1.9.0.jar -o /tmp/freerouting.jar
-          kicad-cli version
-          /usr/bin/python3 -c 'import pcbnew; print(pcbnew.ImportSpecctraSES.__doc__)'
+          mkdir -p electronics/generated
+          kicad-cli version > electronics/generated/kicad-version.txt
+          sha256sum /tmp/freerouting.jar > electronics/generated/router-sha256.txt
       - name: Connected schematic, PCB and serialized pad assertions
-        run: /usr/bin/python3 electronics/build_checked.py
+        run: |
+          set -o pipefail
+          /usr/bin/python3 electronics/build_checked.py 2>&1 | tee electronics/generated/build.log
       - name: Route both actual boards
         run: |
           for board in encoder carrier; do
             base="electronics/generated/$board/$board"
-            timeout 180 xvfb-run -a java -jar /tmp/freerouting.jar -de "$base.dsn" -do "$base.ses" -mp 10 -mt 1 -oit 1 -dct 1 -da > "$base-router.log" 2>&1 || echo "Router stopped; preserve board and inspect DRC"
+            rm -f "$base.ses"
+            timeout 180 xvfb-run -a java -jar /tmp/freerouting.jar -de "$base.dsn" -do "$base.ses" -mp 10 -mt 1 -oit 1 -dct 1 -da > "$base-router.log" 2>&1 || echo 'Router stopped; subsequent electrical checks decide success'
           done
-      - name: Import routes, run DRC/ERC, export actual schematic PDFs
-        run: /usr/bin/python3 electronics/verify.py
+      - name: Actual ERC, DRC, schematic-PCB netlist parity and exports
+        run: |
+          set -o pipefail
+          /usr/bin/python3 electronics/verify.py 2>&1 | tee electronics/generated/verification.log
+          find electronics/generated -name '*.kicad_prl' -delete
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: qulay-kicad-electronics
           retention-days: 90
           path: electronics/generated
-      - name: Publish editable boards and unsuppressed reports to feature branch
-        run: |
-          test "$GITHUB_REF_NAME" = "feature/qulay-prototype-20261002"
-          git config user.name 'qulay-build'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          find electronics/generated -name '*.kicad_prl' -delete
-          git add electronics/generated
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'build(electronics): publish KiCad, routed boards, schematics and checks [skip ci]'
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+      - name: Publish only checked generated files to the existing branch
+        run: bash tools/publish_generated.sh electronics/generated electronics/build.py electronics/build_checked.py electronics/verify.py electronics/polish.py .github/workflows/electronics.yml
