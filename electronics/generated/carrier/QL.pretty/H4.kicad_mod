@@ -1,0 +1,87 @@
+(footprint "H4"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "J7"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "ffdd3f1a-7533-4ff6-acd4-76bbaf3755cb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "ODOMETER_3V3_ONLY"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3e967f39-f1c3-4b11-808b-0c24804674bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "59e6b0af-432c-4c9b-ad36-d85d2556af78")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5407315-734a-454f-9d66-4288b4218c18")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "f26fb395-026f-40de-9913-80c83fa1c51e")
+	)
+	(pad "2" thru_hole circle
+		(at 2 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c379f491-a841-450f-b56d-02e9977fecb3")
+	)
+	(pad "3" thru_hole circle
+		(at 4 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "345207d7-0e3f-4be4-8ce3-61a4a62fdbe9")
+	)
+	(pad "4" thru_hole circle
+		(at 6 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a24dd049-4002-4091-a9b4-82594c4ba0f1")
+	)
+	(embedded_fonts no)
+)

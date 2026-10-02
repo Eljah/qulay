@@ -1,0 +1,5 @@
+reference,value,footprint,quantity_per_board
+U1,AS5048A,TSSOP14,1
+J1,CHAIN_3V3_ONLY,H6,1
+C1,100n X7R,C0603,1
+C2,10u 6.3V X7R,C0603,1

@@ -1,0 +1,53 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-02T19:30:15+0000",
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "encoder.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C2",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 15.0
+                    },
+                    "uuid": "36351b76-4725-4492-9f0a-29d6c713e0df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Rectangle on Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "903c0d07-988a-40b1-a10d-be5f8320824d"
+                },
+                {
+                    "description": "Reference field of J1",
+                    "pos": {
+                        "x": 4.0,
+                        "y": 0.0
+                    },
+                    "uuid": "29297762-48bd-49d8-b9ba-3622fdd56f70"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        }
+    ]
+}

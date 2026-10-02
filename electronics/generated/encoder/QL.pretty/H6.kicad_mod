@@ -1,0 +1,103 @@
+(footprint "H6"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "J1"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "29297762-48bd-49d8-b9ba-3622fdd56f70")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CHAIN_3V3_ONLY"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0dc000ce-89e2-4976-a6d8-07d1b07d4532")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "92e9d591-5444-441d-abb0-c366fd740e34")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "71ace42b-d3c1-4b23-8610-d91b79111e73")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "274ea699-e41f-4cf6-9be4-97a9e0e077d3")
+	)
+	(pad "2" thru_hole circle
+		(at 2 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "de9fce5f-9660-412e-8fd1-72ea043ccbce")
+	)
+	(pad "3" thru_hole circle
+		(at 4 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "68cbeb1d-ade6-40e9-a7e8-2e1dffb13a4b")
+	)
+	(pad "4" thru_hole circle
+		(at 6 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "196c3e45-abc9-44a2-8a80-8527b988585a")
+	)
+	(pad "5" thru_hole circle
+		(at 8 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "88426097-2549-4013-88b4-d5cc5190710c")
+	)
+	(pad "6" thru_hole circle
+		(at 10 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f6b0762f-040d-4f37-8ada-1c3007b92b48")
+	)
+	(embedded_fonts no)
+)

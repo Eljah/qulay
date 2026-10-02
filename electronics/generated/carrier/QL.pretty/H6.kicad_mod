@@ -1,0 +1,103 @@
+(footprint "H6"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "J2"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "08c7c7b7-35ea-4ab7-89fb-33634fe64988")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "SPI_BANK_0"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "867f183e-a070-4414-a5ab-eeed7ad3e5bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0c36fb6-1d58-45c1-82ac-30cddfdd4330")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a3d83eb-d49a-4674-b302-8621959ed618")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "c5396d0e-1342-4ff0-807a-72e00cd2c7e2")
+	)
+	(pad "2" thru_hole circle
+		(at 2 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c7efc621-fcc8-48c4-9811-8c986261289e")
+	)
+	(pad "3" thru_hole circle
+		(at 4 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1a1ef060-bdb7-4b34-915a-d51c49f4d3cb")
+	)
+	(pad "4" thru_hole circle
+		(at 6 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "062f9a35-cfae-4786-87e9-b4f4f67833d1")
+	)
+	(pad "5" thru_hole circle
+		(at 8 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "521972ee-a96b-4cc5-9a8f-d7ec83159beb")
+	)
+	(pad "6" thru_hole circle
+		(at 10 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "754ef922-ebaa-4a51-bafe-fb0ad2c1d260")
+	)
+	(embedded_fonts no)
+)

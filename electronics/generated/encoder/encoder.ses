@@ -1,0 +1,205 @@
+(session encoder
+  (base_design encoder)
+  (placement
+    (resolution um 10)
+    (component QL:C0603
+      (place C2 140000 -180000 front 0)
+      (place C1 140000 -150000 front 0)
+    )
+    (component QL:MountingHole_2.2mm
+      (place MH2 155000 -210000 front 0)
+      (place MH1 25000 -210000 front 0)
+    )
+    (component QL:H6
+      (place J1 40000 -30000 front 0)
+    )
+    (component QL:TSSOP14
+      (place U1 90000 -120000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "9.0.9-9.0.9~ubuntu24.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net CS
+        (wire
+          (path F.Cu 2000
+            61500 -100500
+            61500 -48500
+            80000 -30000
+          )
+        )
+      )
+      (net DIN
+        (wire
+          (path F.Cu 2000
+            71517 -120000
+            120000 -71517
+            120000 -30000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            61500 -120000
+            71517 -120000
+          )
+        )
+      )
+      (net DOUT
+        (wire
+          (path F.Cu 2000
+            61500 -113500
+            71517 -113500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            140000 -30000
+            130559 -20559
+            115939 -20559
+            110000 -26498
+            110000 -75017
+            71517 -113500
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 2000
+            148000 -150000
+            148000 -180000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            128517 -107000
+            148000 -126483
+            148000 -150000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            118500 -107000
+            128517 -107000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            61500 -126500
+            79119 -126500
+            98619 -107000
+            118500 -107000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            61500 -126500
+            51483 -126500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            51483 -126500
+            51483 -38517
+            60000 -30000
+          )
+        )
+      )
+      (net SCK
+        (wire
+          (path F.Cu 2000
+            71517 -107000
+            71517 -58483
+            100000 -30000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            61500 -107000
+            71517 -107000
+          )
+        )
+      )
+      (net SENS_3V3
+        (wire
+          (path F.Cu 2000
+            132000 -150000
+            132000 -180000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            128502 -120000
+            132000 -123498
+            132000 -150000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            40000 -30000
+            40000 -131325
+            52942 -144267
+            74903 -144267
+            99170 -120000
+            118500 -120000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            127634 -120000
+            128502 -120000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            128502 -120000
+            128517 -120000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            118500 -120000
+            127634 -120000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            118500 -113500
+            128517 -113500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            128517 -113500
+            128517 -120000
+          )
+        )
+      )
+    )
+  )
+)

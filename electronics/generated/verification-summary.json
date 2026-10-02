@@ -1,0 +1,36 @@
+[
+  {
+    "board": "encoder",
+    "router_session_imported": true,
+    "tracks_and_vias": 37,
+    "drc_unconnected_items": 0,
+    "drc_violations": 2,
+    "commands": {
+      "drc": 0,
+      "erc": 0,
+      "schematic_pdf": 0,
+      "pcb_svg": 2
+    },
+    "manufacturing_release": false,
+    "reason": "Prototype requires independent circuit, power, connector, EMC and magnetic calibration review. DRC/ERC reports are preserved without exclusions.",
+    "gerber_export": 0,
+    "drill_export": 0
+  },
+  {
+    "board": "carrier",
+    "router_session_imported": true,
+    "tracks_and_vias": 141,
+    "drc_unconnected_items": 0,
+    "drc_violations": 0,
+    "commands": {
+      "drc": 0,
+      "erc": 0,
+      "schematic_pdf": 0,
+      "pcb_svg": 2
+    },
+    "manufacturing_release": false,
+    "reason": "Prototype requires independent circuit, power, connector, EMC and magnetic calibration review. DRC/ERC reports are preserved without exclusions.",
+    "gerber_export": 0,
+    "drill_export": 0
+  }
+]
