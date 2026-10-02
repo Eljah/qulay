@@ -2,34 +2,56 @@
   {
     "board": "encoder",
     "router_session_imported": true,
-    "tracks_and_vias": 39,
+    "tracks_and_vias": 36,
     "drc_unconnected_items": 0,
-    "drc_violations": 2,
+    "drc_errors": 0,
+    "drc_warnings": 0,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "netlist_parity": {
+      "board": "encoder",
+      "checked_connected_pins": 18,
+      "mismatches": [],
+      "passed": true
+    },
     "commands": {
       "drc": 0,
       "erc": 0,
       "schematic_pdf": 0,
-      "pcb_svg": 2
+      "pcb_svg": 0,
+      "netlist": 0
     },
+    "digital_checks_passed": true,
     "manufacturing_release": false,
-    "reason": "Prototype requires independent circuit, power, connector, EMC and magnetic calibration review. DRC/ERC reports are preserved without exclusions.",
+    "reason": "Digital checks do not validate real power distribution, EMC, contact sensing, magnetic cross-talk, tolerances or metrological accuracy.",
     "gerber_export": 0,
     "drill_export": 0
   },
   {
     "board": "carrier",
     "router_session_imported": true,
-    "tracks_and_vias": 159,
+    "tracks_and_vias": 148,
     "drc_unconnected_items": 0,
-    "drc_violations": 0,
+    "drc_errors": 0,
+    "drc_warnings": 0,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "netlist_parity": {
+      "board": "carrier",
+      "checked_connected_pins": 66,
+      "mismatches": [],
+      "passed": true
+    },
     "commands": {
       "drc": 0,
       "erc": 0,
       "schematic_pdf": 0,
-      "pcb_svg": 2
+      "pcb_svg": 0,
+      "netlist": 0
     },
+    "digital_checks_passed": true,
     "manufacturing_release": false,
-    "reason": "Prototype requires independent circuit, power, connector, EMC and magnetic calibration review. DRC/ERC reports are preserved without exclusions.",
+    "reason": "Digital checks do not validate real power distribution, EMC, contact sensing, magnetic cross-talk, tolerances or metrological accuracy.",
     "gerber_export": 0,
     "drill_export": 0
   }

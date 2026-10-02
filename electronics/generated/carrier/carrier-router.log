@@ -1,27 +1,11 @@
-2026-10-02 19:33:01.274 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
-2026-10-02 19:33:01.301 [main] INFO  Settings were loaded from freerouting.json
-2026-10-02 19:33:02.314 [main] INFO  Opening 'electronics/generated/carrier/carrier.dsn'...
+2026-10-02 19:38:35.495 [main] INFO  Freerouting v1.9.0 (build-date: 2023-10-30)
+2026-10-02 19:38:35.532 [main] INFO  Settings were loaded from freerouting.json
+2026-10-02 19:38:36.549 [main] INFO  Opening 'electronics/generated/carrier/carrier.dsn'...
 
-(java:3418): dbind-WARNING **: 19:33:02.503: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
-java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
-	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
-	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:722)
-	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
-	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
-	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
-Caused by: java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
-	at app.freerouting.management.VersionChecker.processResponse(VersionChecker.java:39)
-	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
-	... 9 more
-2026-10-02 19:33:04.073 [Thread-1] INFO  Starting auto-routing...
-2026-10-02 19:33:04.791 [Thread-1] INFO  Auto-routing was completed in 0.72 seconds.
-2026-10-02 19:33:04.892 [Thread-1] INFO  Starting route optimization on 1 thread...
-2026-10-02 19:33:05.862 [Thread-1] INFO  Route optimization was completed in 0.97 seconds and it improved the design by ~50.31%.
-2026-10-02 19:33:05.866 [Thread-1] INFO  Saving 'electronics/generated/carrier/carrier.ses'...
+(java:3477): dbind-WARNING **: 19:38:36.814: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+2026-10-02 19:38:37.099 [ForkJoinPool.commonPool-worker-1] INFO  New version available: v2.4.1
+2026-10-02 19:38:38.460 [Thread-1] INFO  Starting auto-routing...
+2026-10-02 19:38:39.247 [Thread-1] INFO  Auto-routing was completed in 0.79 seconds.
+2026-10-02 19:38:39.348 [Thread-1] INFO  Starting route optimization on 1 thread...
+2026-10-02 19:38:41.016 [Thread-1] INFO  Route optimization was completed in 1.67 seconds.
+2026-10-02 19:38:41.022 [Thread-1] INFO  Saving 'electronics/generated/carrier/carrier.ses'...

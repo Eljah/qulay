@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/runner/work/qulay/qulay/electronics/generated/encoder/encoder.kicad_sch</source>
+    <date>2026-10-02T19:38:42+0000</date>
+    <tool>Eeschema 9.0.9-9.0.9~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>QULAY QL-01 encoder</title>
+        <company/>
+        <rev>0.1 PROTOTYPE</rev>
+        <date>2026-10-02</date>
+        <source>encoder.kicad_sch</source>
+        <comment number="1" value="NOT FOR FABRICATION UNTIL DRC/ERC AND HARDWARE REVIEW"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n X7R</value>
+      <footprint>QL:C0603</footprint>
+      <fields>
+        <field name="Footprint">QL:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="encoder_C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="encoder.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db939d0d-e87f-5185-b44c-155817274d24</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10u 6.3V X7R</value>
+      <footprint>QL:C0603</footprint>
+      <fields>
+        <field name="Footprint">QL:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="encoder_C2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="encoder.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1df20844-0482-59f1-9e97-3c5d970c9d83</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>CHAIN_3V3_ONLY</value>
+      <footprint>QL:H6</footprint>
+      <fields>
+        <field name="Footprint">QL:H6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="encoder_J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="encoder.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eeac297c-d2e8-5058-9fcc-9ae10d6d10f0</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>AS5048A</value>
+      <footprint>QL:TSSOP14</footprint>
+      <fields>
+        <field name="Footprint">QL:TSSOP14</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="encoder_U1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="encoder.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34f0674a-6384-56be-a0ac-0eb972fce62e</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="QL" part="encoder_C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">100n X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="encoder_C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">10u 6.3V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="encoder_J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">CHAIN_3V3_ONLY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="power_out"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="CS" type="output"/>
+        <pin num="4" name="SCK" type="output"/>
+        <pin num="5" name="DIN" type="output"/>
+        <pin num="6" name="DOUT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="encoder_U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">AS5048A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CS" type="input"/>
+        <pin num="2" name="SCK" type="input"/>
+        <pin num="3" name="DOUT" type="tri_state"/>
+        <pin num="4" name="DIN" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="NC" type="passive"/>
+        <pin num="7" name="NC" type="passive"/>
+        <pin num="8" name="NC" type="passive"/>
+        <pin num="9" name="NC" type="passive"/>
+        <pin num="10" name="NC" type="passive"/>
+        <pin num="11" name="SENS_3V3" type="power_in"/>
+        <pin num="12" name="SENS_3V3" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="NC" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="QL">
+      <uri>/home/runner/work/qulay/qulay/electronics/generated/encoder/QL.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CS" class="Default">
+      <node ref="J1" pin="3" pinfunction="CS" pintype="output"/>
+      <node ref="U1" pin="1" pinfunction="CS" pintype="input"/>
+    </net>
+    <net code="2" name="/DIN" class="Default">
+      <node ref="J1" pin="5" pinfunction="DIN" pintype="output"/>
+      <node ref="U1" pin="4" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="3" name="/DOUT" class="Default">
+      <node ref="J1" pin="6" pinfunction="DOUT" pintype="input"/>
+      <node ref="U1" pin="3" pinfunction="DOUT" pintype="tri_state"/>
+    </net>
+    <net code="4" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="U1" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="5" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="5" name="/SCK" class="Default">
+      <node ref="J1" pin="4" pinfunction="SCK" pintype="output"/>
+      <node ref="U1" pin="2" pinfunction="SCK" pintype="input"/>
+    </net>
+    <net code="6" name="/SENS_3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="SENS_3V3" pintype="power_out"/>
+      <node ref="U1" pin="11" pinfunction="SENS_3V3" pintype="power_in"/>
+      <node ref="U1" pin="12" pinfunction="SENS_3V3" pintype="power_in"/>
+    </net>
+    <net code="7" name="unconnected-(U1-NC-Pad6)" class="Default">
+      <node ref="U1" pin="6" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="8" name="unconnected-(U1-NC-Pad7)" class="Default">
+      <node ref="U1" pin="7" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="9" name="unconnected-(U1-NC-Pad8)" class="Default">
+      <node ref="U1" pin="8" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="10" name="unconnected-(U1-NC-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(U1-NC-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(U1-NC-Pad14)" class="Default">
+      <node ref="U1" pin="14" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

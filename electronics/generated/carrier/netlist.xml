@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/runner/work/qulay/qulay/electronics/generated/carrier/carrier.kicad_sch</source>
+    <date>2026-10-02T19:38:44+0000</date>
+    <tool>Eeschema 9.0.9-9.0.9~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>QULAY QL-01 carrier</title>
+        <company/>
+        <rev>0.1 PROTOTYPE</rev>
+        <date>2026-10-02</date>
+        <source>carrier.kicad_sch</source>
+        <comment number="1" value="NOT FOR FABRICATION UNTIL DRC/ERC AND HARDWARE REVIEW"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>QL:C0603</footprint>
+      <fields>
+        <field name="Footprint">QL:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>35298230-82e4-52d0-bee5-5da77ebf703c</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10u 6.3V</value>
+      <footprint>QL:C0603</footprint>
+      <fields>
+        <field name="Footprint">QL:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_C2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5e850dc7-6378-57b8-9daf-2161c19bdcd8</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>PTC_hold_0.75A_review_derating</value>
+      <footprint>QL:F1206</footprint>
+      <fields>
+        <field name="Footprint">QL:F1206</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_F1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c19efcfe-c3be-517b-b439-7b96851d87ab</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>EXTERNAL_3V3_CURRENT_LIMITED</value>
+      <footprint>QL:H2</footprint>
+      <fields>
+        <field name="Footprint">QL:H2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>21e918cb-7c95-55fa-8550-5718bf0a3fd4</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>SPI_BANK_0</value>
+      <footprint>QL:H6</footprint>
+      <fields>
+        <field name="Footprint">QL:H6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7cab9e2b-fdfe-5bec-9ef3-887c877e75ff</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>SPI_BANK_1</value>
+      <footprint>QL:H6</footprint>
+      <fields>
+        <field name="Footprint">QL:H6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a3003f5-45d4-5209-9f73-a1e20eb581b2</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>SPI_BANK_2</value>
+      <footprint>QL:H6</footprint>
+      <fields>
+        <field name="Footprint">QL:H6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c58fa87-c65f-5fc8-81e1-f4e21abbeb6c</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>SPI_BANK_3</value>
+      <footprint>QL:H6</footprint>
+      <fields>
+        <field name="Footprint">QL:H6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cfc8bd9-aed5-585b-b680-25560bc1d9cb</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>ADXL355_3V3_MODULE</value>
+      <footprint>QL:H7</footprint>
+      <fields>
+        <field name="Footprint">QL:H7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b422ef49-b03d-59e3-9a8e-d6ab163a5da6</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>ODOMETER_3V3_ONLY</value>
+      <footprint>QL:H4</footprint>
+      <fields>
+        <field name="Footprint">QL:H4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_J7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c11a3741-5ecc-5afe-ba46-1c17d9129bd0</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>Raspberry_Pi_Pico_USB_powered</value>
+      <footprint>QL:PICO40</footprint>
+      <fields>
+        <field name="Footprint">QL:PICO40</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="carrier_U1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>160dd307-c398-5a70-9244-0dbd56818f6d</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="QL" part="carrier_C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">100n</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">10u 6.3V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_F1">
+      <fields>
+        <field name="Reference">F1</field>
+        <field name="Value">PTC_hold_0.75A_review_derating</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EXT_3V3" type="passive"/>
+        <pin num="2" name="SENS_3V3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">EXTERNAL_3V3_CURRENT_LIMITED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EXT_3V3" type="power_out"/>
+        <pin num="2" name="GND" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J2">
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">SPI_BANK_0</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="CS0" type="passive"/>
+        <pin num="4" name="SCK0" type="passive"/>
+        <pin num="5" name="MOSI0" type="passive"/>
+        <pin num="6" name="MISO0" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J3">
+      <fields>
+        <field name="Reference">J3</field>
+        <field name="Value">SPI_BANK_1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="CS1" type="passive"/>
+        <pin num="4" name="SCK0" type="passive"/>
+        <pin num="5" name="MOSI0" type="passive"/>
+        <pin num="6" name="MISO0" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J4">
+      <fields>
+        <field name="Reference">J4</field>
+        <field name="Value">SPI_BANK_2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="CS2" type="passive"/>
+        <pin num="4" name="SCK0" type="passive"/>
+        <pin num="5" name="MOSI0" type="passive"/>
+        <pin num="6" name="MISO0" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J5">
+      <fields>
+        <field name="Reference">J5</field>
+        <field name="Value">SPI_BANK_3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="CS3" type="passive"/>
+        <pin num="4" name="SCK0" type="passive"/>
+        <pin num="5" name="MOSI0" type="passive"/>
+        <pin num="6" name="MISO0" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J6">
+      <fields>
+        <field name="Reference">J6</field>
+        <field name="Value">ADXL355_3V3_MODULE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PICO_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SCK1" type="passive"/>
+        <pin num="4" name="MOSI1" type="passive"/>
+        <pin num="5" name="MISO1" type="passive"/>
+        <pin num="6" name="CS_ADXL" type="passive"/>
+        <pin num="7" name="DRDY_ADXL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_J7">
+      <fields>
+        <field name="Reference">J7</field>
+        <field name="Value">ODOMETER_3V3_ONLY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PICO_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="ODO_A" type="passive"/>
+        <pin num="4" name="ODO_B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="carrier_U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">Raspberry_Pi_Pico_USB_powered</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ODO_A" type="passive"/>
+        <pin num="2" name="ODO_B" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="SCK0" type="passive"/>
+        <pin num="5" name="MOSI0" type="passive"/>
+        <pin num="6" name="MISO0" type="passive"/>
+        <pin num="7" name="CS0" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="CS1" type="passive"/>
+        <pin num="10" name="CS2" type="passive"/>
+        <pin num="11" name="CS3" type="passive"/>
+        <pin num="12" name="NC" type="passive"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="SCK1" type="passive"/>
+        <pin num="15" name="MOSI1" type="passive"/>
+        <pin num="16" name="MISO1" type="passive"/>
+        <pin num="17" name="CS_ADXL" type="passive"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="DRDY_ADXL" type="passive"/>
+        <pin num="20" name="NC" type="passive"/>
+        <pin num="21" name="NC" type="passive"/>
+        <pin num="22" name="NC" type="passive"/>
+        <pin num="23" name="GND" type="passive"/>
+        <pin num="24" name="NC" type="passive"/>
+        <pin num="25" name="NC" type="passive"/>
+        <pin num="26" name="NC" type="passive"/>
+        <pin num="27" name="NC" type="passive"/>
+        <pin num="28" name="GND" type="passive"/>
+        <pin num="29" name="NC" type="passive"/>
+        <pin num="30" name="NC" type="passive"/>
+        <pin num="31" name="NC" type="passive"/>
+        <pin num="32" name="NC" type="passive"/>
+        <pin num="33" name="GND" type="passive"/>
+        <pin num="34" name="NC" type="passive"/>
+        <pin num="35" name="NC" type="passive"/>
+        <pin num="36" name="PICO_3V3" type="power_out"/>
+        <pin num="37" name="NC" type="passive"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="NC" type="passive"/>
+        <pin num="40" name="NC" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="QL">
+      <uri>/home/runner/work/qulay/qulay/electronics/generated/carrier/QL.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CS0" class="Default">
+      <node ref="J2" pin="3" pinfunction="CS0" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="CS0" pintype="passive"/>
+    </net>
+    <net code="2" name="/CS1" class="Default">
+      <node ref="J3" pin="3" pinfunction="CS1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="CS1" pintype="passive"/>
+    </net>
+    <net code="3" name="/CS2" class="Default">
+      <node ref="J4" pin="3" pinfunction="CS2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="CS2" pintype="passive"/>
+    </net>
+    <net code="4" name="/CS3" class="Default">
+      <node ref="J5" pin="3" pinfunction="CS3" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="CS3" pintype="passive"/>
+    </net>
+    <net code="5" name="/CS_ADXL" class="Default">
+      <node ref="J6" pin="6" pinfunction="CS_ADXL" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="CS_ADXL" pintype="passive"/>
+    </net>
+    <net code="6" name="/DRDY_ADXL" class="Default">
+      <node ref="J6" pin="7" pinfunction="DRDY_ADXL" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="DRDY_ADXL" pintype="passive"/>
+    </net>
+    <net code="7" name="/EXT_3V3" class="Default">
+      <node ref="F1" pin="1" pinfunction="EXT_3V3" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="EXT_3V3" pintype="power_out"/>
+    </net>
+    <net code="8" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="J2" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="33" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="9" name="/MISO0" class="Default">
+      <node ref="J2" pin="6" pinfunction="MISO0" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="MISO0" pintype="passive"/>
+      <node ref="J4" pin="6" pinfunction="MISO0" pintype="passive"/>
+      <node ref="J5" pin="6" pinfunction="MISO0" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="MISO0" pintype="passive"/>
+    </net>
+    <net code="10" name="/MISO1" class="Default">
+      <node ref="J6" pin="5" pinfunction="MISO1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="MISO1" pintype="passive"/>
+    </net>
+    <net code="11" name="/MOSI0" class="Default">
+      <node ref="J2" pin="5" pinfunction="MOSI0" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="MOSI0" pintype="passive"/>
+      <node ref="J4" pin="5" pinfunction="MOSI0" pintype="passive"/>
+      <node ref="J5" pin="5" pinfunction="MOSI0" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="MOSI0" pintype="passive"/>
+    </net>
+    <net code="12" name="/MOSI1" class="Default">
+      <node ref="J6" pin="4" pinfunction="MOSI1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="MOSI1" pintype="passive"/>
+    </net>
+    <net code="13" name="/ODO_A" class="Default">
+      <node ref="J7" pin="3" pinfunction="ODO_A" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="ODO_A" pintype="passive"/>
+    </net>
+    <net code="14" name="/ODO_B" class="Default">
+      <node ref="J7" pin="4" pinfunction="ODO_B" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="ODO_B" pintype="passive"/>
+    </net>
+    <net code="15" name="/PICO_3V3" class="Default">
+      <node ref="J6" pin="1" pinfunction="PICO_3V3" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="PICO_3V3" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="PICO_3V3" pintype="power_out"/>
+    </net>
+    <net code="16" name="/SCK0" class="Default">
+      <node ref="J2" pin="4" pinfunction="SCK0" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="SCK0" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="SCK0" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="SCK0" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="SCK0" pintype="passive"/>
+    </net>
+    <net code="17" name="/SCK1" class="Default">
+      <node ref="J6" pin="3" pinfunction="SCK1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="SCK1" pintype="passive"/>
+    </net>
+    <net code="18" name="/SENS_3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="F1" pin="2" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+    </net>
+    <net code="19" name="unconnected-(U1-NC-Pad12)" class="Default">
+      <node ref="U1" pin="12" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U1-NC-Pad20)" class="Default">
+      <node ref="U1" pin="20" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U1-NC-Pad21)" class="Default">
+      <node ref="U1" pin="21" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U1-NC-Pad22)" class="Default">
+      <node ref="U1" pin="22" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U1-NC-Pad24)" class="Default">
+      <node ref="U1" pin="24" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U1-NC-Pad25)" class="Default">
+      <node ref="U1" pin="25" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U1-NC-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U1-NC-Pad27)" class="Default">
+      <node ref="U1" pin="27" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U1-NC-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U1-NC-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U1-NC-Pad31)" class="Default">
+      <node ref="U1" pin="31" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U1-NC-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U1-NC-Pad34)" class="Default">
+      <node ref="U1" pin="34" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U1-NC-Pad35)" class="Default">
+      <node ref="U1" pin="35" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U1-NC-Pad37)" class="Default">
+      <node ref="U1" pin="37" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U1-NC-Pad39)" class="Default">
+      <node ref="U1" pin="39" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U1-NC-Pad40)" class="Default">
+      <node ref="U1" pin="40" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

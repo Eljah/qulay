@@ -1,0 +1,70 @@
+19:38:43: Debug: Adding duplicate image handler for 'PNG file'
+19:38:43: Debug: Adding duplicate image handler for 'JPEG file'
+19:38:43: Debug: Adding duplicate image handler for 'TIFF file'
+19:38:43: Debug: Adding duplicate image handler for 'GIF file'
+19:38:43: Debug: Adding duplicate image handler for 'PNM file'
+19:38:43: Debug: Adding duplicate image handler for 'PCX file'
+19:38:43: Debug: Adding duplicate image handler for 'IFF file'
+19:38:43: Debug: Adding duplicate image handler for 'Windows icon file'
+19:38:43: Debug: Adding duplicate image handler for 'Windows cursor file'
+19:38:43: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+19:38:43: Debug: Adding duplicate image handler for 'TGA file'
+19:38:43: Debug: Adding duplicate image handler for 'XPM file'
+[
+  {
+    "board": "encoder",
+    "router_session_imported": true,
+    "tracks_and_vias": 36,
+    "drc_unconnected_items": 0,
+    "drc_errors": 0,
+    "drc_warnings": 0,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "netlist_parity": {
+      "board": "encoder",
+      "checked_connected_pins": 18,
+      "mismatches": [],
+      "passed": true
+    },
+    "commands": {
+      "drc": 0,
+      "erc": 0,
+      "schematic_pdf": 0,
+      "pcb_svg": 0,
+      "netlist": 0
+    },
+    "digital_checks_passed": true,
+    "manufacturing_release": false,
+    "reason": "Digital checks do not validate real power distribution, EMC, contact sensing, magnetic cross-talk, tolerances or metrological accuracy.",
+    "gerber_export": 0,
+    "drill_export": 0
+  },
+  {
+    "board": "carrier",
+    "router_session_imported": true,
+    "tracks_and_vias": 148,
+    "drc_unconnected_items": 0,
+    "drc_errors": 0,
+    "drc_warnings": 0,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "netlist_parity": {
+      "board": "carrier",
+      "checked_connected_pins": 66,
+      "mismatches": [],
+      "passed": true
+    },
+    "commands": {
+      "drc": 0,
+      "erc": 0,
+      "schematic_pdf": 0,
+      "pcb_svg": 0,
+      "netlist": 0
+    },
+    "digital_checks_passed": true,
+    "manufacturing_release": false,
+    "reason": "Digital checks do not validate real power distribution, EMC, contact sensing, magnetic cross-talk, tolerances or metrological accuracy.",
+    "gerber_export": 0,
+    "drill_export": 0
+  }
+]

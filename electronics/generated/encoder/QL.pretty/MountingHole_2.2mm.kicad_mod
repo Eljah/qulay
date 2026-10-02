@@ -3,11 +3,11 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" "MH1"
+	(property "Reference" "MH2"
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "f7e071a0-5310-4498-8559-ec8253681892")
+		(uuid "d855920d-9c11-417f-a25e-0d4b3a58f721")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18,7 +18,7 @@
 	(property "Value" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "5230f15d-a8e4-4de7-90b1-a39bdfd571a5")
+		(uuid "8571f72f-084e-4ac6-a92a-1379d06bac65")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "700536cc-f04e-416b-8b23-c4cd07dfd867")
+		(uuid "c6c1c38e-e58c-4fa0-b395-f80d968201c1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "613a2e41-d86e-4fbf-937f-7a7d405effa4")
+		(uuid "30a366f1-86fc-48a7-b978-905462a92427")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,7 +55,7 @@
 		(size 2.2 2.2)
 		(drill 2.2)
 		(layers "*.Cu" "*.Mask")
-		(uuid "adf5f164-6c58-4e31-b470-0cc815fc274d")
+		(uuid "86844234-b071-4736-b13e-c8c184966de2")
 	)
 	(embedded_fonts no)
 )

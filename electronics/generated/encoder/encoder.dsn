@@ -31,22 +31,30 @@
     )
   )
   (placement
+    (component QL:H6
+      (place J1 4000.000000 -3000.000000 front 0.000000 (PN CHAIN_3V3_ONLY))
+    )
     (component QL:TSSOP14
       (place U1 9000.000000 -12000.000000 front 0.000000 (PN AS5048A))
-    )
-    (component QL:MountingHole_2.2mm
-      (place MH2 15500.000000 -21000.000000 front 0.000000)
-      (place MH1 2500.000000 -21000.000000 front 0.000000)
     )
     (component QL:C0603
       (place C1 14000.000000 -15000.000000 front 0.000000 (PN "100n X7R"))
       (place C2 14000.000000 -18000.000000 front 0.000000 (PN "10u 6.3V X7R"))
     )
-    (component QL:H6
-      (place J1 4000.000000 -3000.000000 front 0.000000 (PN CHAIN_3V3_ONLY))
+    (component QL:MountingHole_2.2mm
+      (place MH1 2500.000000 -21000.000000 front 0.000000)
+      (place MH2 15500.000000 -21000.000000 front 0.000000)
     )
   )
   (library
+    (image QL:H6
+      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
+      (pin Round[A]Pad_1350.000000_um 2 2000 0)
+      (pin Round[A]Pad_1350.000000_um 3 4000 0)
+      (pin Round[A]Pad_1350.000000_um 4 6000 0)
+      (pin Round[A]Pad_1350.000000_um 5 8000 0)
+      (pin Round[A]Pad_1350.000000_um 6 10000 0)
+    )
     (image QL:TSSOP14
       (pin Rect[T]Pad_1500.000000x450.000000_um 1 -2850 1950)
       (pin Rect[T]Pad_1500.000000x450.000000_um 2 -2850 1300)
@@ -63,21 +71,13 @@
       (pin Rect[T]Pad_1500.000000x450.000000_um 13 2850 1300)
       (pin Rect[T]Pad_1500.000000x450.000000_um 14 2850 1950)
     )
-    (image QL:MountingHole_2.2mm
-      (keepout "" (circle F.Cu 2600))
-      (keepout "" (circle B.Cu 2600))
-    )
     (image QL:C0603
       (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
       (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
     )
-    (image QL:H6
-      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
-      (pin Round[A]Pad_1350.000000_um 2 2000 0)
-      (pin Round[A]Pad_1350.000000_um 3 4000 0)
-      (pin Round[A]Pad_1350.000000_um 4 6000 0)
-      (pin Round[A]Pad_1350.000000_um 5 8000 0)
-      (pin Round[A]Pad_1350.000000_um 6 10000 0)
+    (image QL:MountingHole_2.2mm
+      (keepout "" (circle F.Cu 2600))
+      (keepout "" (circle B.Cu 2600))
     )
     (padstack Round[A]Pad_1350.000000_um
       (shape (circle F.Cu 1350))
@@ -105,22 +105,22 @@
   )
   (network
     (net CS
-      (pins U1-1 J1-3)
+      (pins J1-3 U1-1)
     )
     (net DIN
-      (pins U1-4 J1-5)
+      (pins J1-5 U1-4)
     )
     (net DOUT
-      (pins U1-3 J1-6)
+      (pins J1-6 U1-3)
     )
     (net GND
-      (pins U1-5 U1-13 C1-2 J1-2 C2-2)
+      (pins J1-2 U1-5 U1-13 C1-2 C2-2)
     )
     (net SCK
-      (pins U1-2 J1-4)
+      (pins J1-4 U1-2)
     )
     (net SENS_3V3
-      (pins U1-11 U1-12 C1-1 J1-1 C2-1)
+      (pins J1-1 U1-11 U1-12 C1-1 C2-1)
     )
     (class kicad_default CS DIN DOUT GND SCK SENS_3V3
       (circuit

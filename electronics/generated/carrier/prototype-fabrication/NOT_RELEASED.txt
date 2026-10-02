@@ -1,1 +1,1 @@
-PROTOTYPE OUTPUT ONLY. No manufacturing release. Read design-status.json and verification.json.
+PROTOTYPE ONLY. No manufacturing release. Check verification.json and hardware review.

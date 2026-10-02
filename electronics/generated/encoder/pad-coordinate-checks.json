@@ -1,15 +1,15 @@
 [
   {
+    "reference": "J1",
+    "distinct_pad_positions": 6
+  },
+  {
     "reference": "U1",
     "distinct_pad_positions": 14
   },
   {
     "reference": "C1",
     "distinct_pad_positions": 2
-  },
-  {
-    "reference": "J1",
-    "distinct_pad_positions": 6
   },
   {
     "reference": "C2",
