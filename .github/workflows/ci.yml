@@ -2,18 +2,23 @@ name: Java and end-to-end verification
 on:
   push:
     branches: ['feature/qulay-prototype-20261002']
-    paths: ['software/**', 'pom.xml', 'tools/e2e.py', '.github/workflows/ci.yml']
+    paths: ['software/**', 'pom.xml', 'tools/e2e.py', 'tools/test_summary.py', '.github/workflows/ci.yml']
   pull_request:
-    paths: ['software/**', 'pom.xml', 'tools/e2e.py', '.github/workflows/ci.yml']
+    paths: ['software/**', 'pom.xml', 'tools/e2e.py', 'tools/test_summary.py', '.github/workflows/ci.yml']
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: qulay-java-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   verify:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '21'
@@ -24,6 +29,18 @@ jobs:
         run: java -jar software/simulator/target/simulator-0.1.0.jar generated/demo
       - name: HTTP, offline sync and persistent storage end-to-end
         run: python3 tools/e2e.py
+      - name: Actual Swing desktop screenshots with labelled synthetic inputs
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends xvfb fonts-dejavu-core
+          python3 - <<'PY'
+          import json,subprocess
+          for item in json.load(open('generated/demo/index.json')):
+              if item['scenario'] not in ('gentle','dropout'):continue
+              subprocess.run(['xvfb-run','-a','java','-jar','software/desktop/target/desktop-0.1.0.jar','--preview',f"generated/demo/surveys/{item['id']}.json",'--screenshot',f"generated/verification/desktop-{item['scenario']}.png"],check=True,timeout=45)
+          PY
+      - name: Summarize executed checks
+        run: python3 tools/test_summary.py
       - name: Preserve runnable applications and test evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -35,3 +52,6 @@ jobs:
             software/*/target/surefire-reports/*
             generated/demo
             generated/verification
+      - name: Save evidence in Git without replacing source edits
+        if: github.event_name == 'push' && github.ref_name == 'feature/qulay-prototype-20261002'
+        run: bash tools/publish_generated.sh generated/verification software pom.xml tools/e2e.py tools/test_summary.py .github/workflows/ci.yml
