@@ -1,0 +1,15 @@
+{
+  "mode": "datum-rail",
+  "parts": 389,
+  "all_shapes_valid": true,
+  "coordinate_units": "mm",
+  "release": "CONCEPT_LAYOUT_NOT_FOR_PRODUCTION",
+  "not_verified": [
+    "full assembly interference",
+    "spring fatigue",
+    "fits and retainers",
+    "sealing",
+    "loaded frame and rail deformation",
+    "metrological accuracy"
+  ]
+}

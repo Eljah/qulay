@@ -1,0 +1,14 @@
+id,length_mm,section_mm,cut
+F01-L,840,25x25x2,square ends; weld fixture
+F01-R,840,25x25x2,square ends; weld fixture
+F02-rear,750,25x25x2,square ends; weld fixture
+F02-front,750,25x25x2,square ends; weld fixture
+F03-rear-cross,750,25x25x2,square ends; weld fixture
+W-leg-rear-L,160,25x25x2,square ends; weld fixture
+W-leg-rear-R,160,25x25x2,square ends; weld fixture
+W-leg-front-L,160,25x25x2,square ends; weld fixture
+W-leg-front-R,160,25x25x2,square ends; weld fixture
+C01-pivot-beam,780,40x40x2,square ends; weld fixture
+H01-L,680,25x25x2,square ends; weld fixture
+H01-R,680,25x25x2,square ends; weld fixture
+H02-grip,445,25x25x2,square ends; weld fixture

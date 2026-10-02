@@ -1,0 +1,369 @@
+id,material,solid_volume_mm3,note
+F01-L,steel,154560.0,
+F01-R,steel,154560.0,
+F02-rear,steel,138000.0,
+F02-front,steel,138000.0,
+F03-rear-cross,steel,138000.0,
+W-leg-rear-L,steel,57040.0,
+W-axle-rear-L,steel,7012.03,axle envelope; retainers not detailed
+W-wheel-rear-L,purchased wheel,1095599.02,rigid calibrated substitute needed on datum rails
+W-leg-rear-R,steel,29440.0,
+W-axle-rear-R,steel,7012.03,axle envelope; retainers not detailed
+W-wheel-rear-R,purchased wheel,1095599.02,rigid calibrated substitute needed on datum rails
+W-leg-front-L,steel,57040.0,
+W-axle-front-L,steel,7012.03,axle envelope; retainers not detailed
+W-wheel-front-L,purchased wheel,1095599.02,rigid calibrated substitute needed on datum rails
+W-leg-front-R,steel,29440.0,
+W-axle-front-R,steel,7012.03,axle envelope; retainers not detailed
+W-wheel-front-R,purchased wheel,1095599.02,rigid calibrated substitute needed on datum rails
+C-slide-L,steel,119700.0,"cassette slide/clamp envelope, travel 220 mm"
+C-slide-R,steel,119700.0,"cassette slide/clamp envelope, travel 220 mm"
+C01-pivot-beam,steel,237120.0,
+A-01,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-01,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-01a,688 bearing,753.98,
+RB-01b,688 bearing,753.98,
+RA-01,steel axle,1105.84,
+PB-01,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-01,shaft,1156.11,
+PM-01,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-01,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-01,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-01,bearing bracket envelope,1512.0,
+A-02,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-02,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-02a,688 bearing,753.98,
+RB-02b,688 bearing,753.98,
+RA-02,steel axle,1105.84,
+PB-02,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-02,shaft,1156.11,
+PM-02,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-02,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-02,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-02,bearing bracket envelope,1512.0,
+A-03,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-03,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-03a,688 bearing,753.98,
+RB-03b,688 bearing,753.98,
+RA-03,steel axle,1105.84,
+PB-03,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-03,shaft,1156.11,
+PM-03,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-03,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-03,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-03,bearing bracket envelope,1512.0,
+A-04,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-04,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-04a,688 bearing,753.98,
+RB-04b,688 bearing,753.98,
+RA-04,steel axle,1105.84,
+PB-04,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-04,shaft,1156.11,
+PM-04,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-04,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-04,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-04,bearing bracket envelope,1512.0,
+A-05,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-05,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-05a,688 bearing,753.98,
+RB-05b,688 bearing,753.98,
+RA-05,steel axle,1105.84,
+PB-05,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-05,shaft,1156.11,
+PM-05,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-05,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-05,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-05,bearing bracket envelope,1512.0,
+A-06,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-06,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-06a,688 bearing,753.98,
+RB-06b,688 bearing,753.98,
+RA-06,steel axle,1105.84,
+PB-06,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-06,shaft,1156.11,
+PM-06,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-06,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-06,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-06,bearing bracket envelope,1512.0,
+A-07,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-07,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-07a,688 bearing,753.98,
+RB-07b,688 bearing,753.98,
+RA-07,steel axle,1105.84,
+PB-07,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-07,shaft,1156.11,
+PM-07,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-07,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-07,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-07,bearing bracket envelope,1512.0,
+A-08,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-08,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-08a,688 bearing,753.98,
+RB-08b,688 bearing,753.98,
+RA-08,steel axle,1105.84,
+PB-08,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-08,shaft,1156.11,
+PM-08,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-08,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-08,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-08,bearing bracket envelope,1512.0,
+A-09,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-09,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-09a,688 bearing,753.98,
+RB-09b,688 bearing,753.98,
+RA-09,steel axle,1105.84,
+PB-09,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-09,shaft,1156.11,
+PM-09,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-09,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-09,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-09,bearing bracket envelope,1512.0,
+A-10,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-10,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-10a,688 bearing,753.98,
+RB-10b,688 bearing,753.98,
+RA-10,steel axle,1105.84,
+PB-10,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-10,shaft,1156.11,
+PM-10,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-10,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-10,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-10,bearing bracket envelope,1512.0,
+A-11,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-11,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-11a,688 bearing,753.98,
+RB-11b,688 bearing,753.98,
+RA-11,steel axle,1105.84,
+PB-11,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-11,shaft,1156.11,
+PM-11,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-11,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-11,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-11,bearing bracket envelope,1512.0,
+A-12,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-12,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-12a,688 bearing,753.98,
+RB-12b,688 bearing,753.98,
+RA-12,steel axle,1105.84,
+PB-12,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-12,shaft,1156.11,
+PM-12,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-12,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-12,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-12,bearing bracket envelope,1512.0,
+A-13,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-13,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-13a,688 bearing,753.98,
+RB-13b,688 bearing,753.98,
+RA-13,steel axle,1105.84,
+PB-13,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-13,shaft,1156.11,
+PM-13,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-13,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-13,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-13,bearing bracket envelope,1512.0,
+A-14,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-14,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-14a,688 bearing,753.98,
+RB-14b,688 bearing,753.98,
+RA-14,steel axle,1105.84,
+PB-14,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-14,shaft,1156.11,
+PM-14,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-14,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-14,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-14,bearing bracket envelope,1512.0,
+A-15,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-15,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-15a,688 bearing,753.98,
+RB-15b,688 bearing,753.98,
+RA-15,steel axle,1105.84,
+PB-15,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-15,shaft,1156.11,
+PM-15,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-15,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-15,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-15,bearing bracket envelope,1512.0,
+A-16,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-16,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-16a,688 bearing,753.98,
+RB-16b,688 bearing,753.98,
+RA-16,steel axle,1105.84,
+PB-16,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-16,shaft,1156.11,
+PM-16,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-16,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-16,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-16,bearing bracket envelope,1512.0,
+A-17,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-17,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-17a,688 bearing,753.98,
+RB-17b,688 bearing,753.98,
+RA-17,steel axle,1105.84,
+PB-17,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-17,shaft,1156.11,
+PM-17,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-17,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-17,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-17,bearing bracket envelope,1512.0,
+A-18,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-18,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-18a,688 bearing,753.98,
+RB-18b,688 bearing,753.98,
+RA-18,steel axle,1105.84,
+PB-18,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-18,shaft,1156.11,
+PM-18,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-18,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-18,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-18,bearing bracket envelope,1512.0,
+A-19,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-19,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-19a,688 bearing,753.98,
+RB-19b,688 bearing,753.98,
+RA-19,steel axle,1105.84,
+PB-19,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-19,shaft,1156.11,
+PM-19,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-19,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-19,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-19,bearing bracket envelope,1512.0,
+A-20,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-20,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-20a,688 bearing,753.98,
+RB-20b,688 bearing,753.98,
+RA-20,steel axle,1105.84,
+PB-20,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-20,shaft,1156.11,
+PM-20,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-20,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-20,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-20,bearing bracket envelope,1512.0,
+A-21,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-21,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-21a,688 bearing,753.98,
+RB-21b,688 bearing,753.98,
+RA-21,steel axle,1105.84,
+PB-21,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-21,shaft,1156.11,
+PM-21,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-21,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-21,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-21,bearing bracket envelope,1512.0,
+A-22,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-22,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-22a,688 bearing,753.98,
+RB-22b,688 bearing,753.98,
+RA-22,steel axle,1105.84,
+PB-22,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-22,shaft,1156.11,
+PM-22,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-22,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-22,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-22,bearing bracket envelope,1512.0,
+A-23,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-23,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-23a,688 bearing,753.98,
+RB-23b,688 bearing,753.98,
+RA-23,steel axle,1105.84,
+PB-23,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-23,shaft,1156.11,
+PM-23,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-23,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-23,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-23,bearing bracket envelope,1512.0,
+A-24,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-24,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-24a,688 bearing,753.98,
+RB-24b,688 bearing,753.98,
+RA-24,steel axle,1105.84,
+PB-24,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-24,shaft,1156.11,
+PM-24,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-24,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-24,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-24,bearing bracket envelope,1512.0,
+A-25,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-25,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-25a,688 bearing,753.98,
+RB-25b,688 bearing,753.98,
+RA-25,steel axle,1105.84,
+PB-25,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-25,shaft,1156.11,
+PM-25,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-25,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-25,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-25,bearing bracket envelope,1512.0,
+A-26,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-26,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-26a,688 bearing,753.98,
+RB-26b,688 bearing,753.98,
+RA-26,steel axle,1105.84,
+PB-26,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-26,shaft,1156.11,
+PM-26,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-26,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-26,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-26,bearing bracket envelope,1512.0,
+A-27,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-27,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-27a,688 bearing,753.98,
+RB-27b,688 bearing,753.98,
+RA-27,steel axle,1105.84,
+PB-27,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-27,shaft,1156.11,
+PM-27,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-27,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-27,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-27,bearing bracket envelope,1512.0,
+A-28,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-28,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-28a,688 bearing,753.98,
+RB-28b,688 bearing,753.98,
+RA-28,steel axle,1105.84,
+PB-28,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-28,shaft,1156.11,
+PM-28,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-28,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-28,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-28,bearing bracket envelope,1512.0,
+A-29,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-29,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-29a,688 bearing,753.98,
+RB-29b,688 bearing,753.98,
+RA-29,steel axle,1105.84,
+PB-29,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-29,shaft,1156.11,
+PM-29,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-29,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-29,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-29,bearing bracket envelope,1512.0,
+A-30,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-30,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-30a,688 bearing,753.98,
+RB-30b,688 bearing,753.98,
+RA-30,steel axle,1105.84,
+PB-30,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-30,shaft,1156.11,
+PM-30,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-30,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-30,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-30,bearing bracket envelope,1512.0,
+A-31,steel laser plate,15033.3,240 mm centre distance; 3 mm; 8.1 mm holes
+R-31,POM/urethane crown,12214.51,"spherical crown R20, width12; material/hysteresis to validate"
+RB-31a,688 bearing,753.98,
+RB-31b,688 bearing,753.98,
+RA-31,steel axle,1105.84,
+PB-31,688 bearing,753.98,single-bearing envelope; stiffness and endplay need bench qualification
+PS-31,shaft,1156.11,
+PM-31,diametrically magnetised magnet,84.82,magnet alignment and magnetic cross-talk require test
+PE-31,sensor PCB envelope,691.2,mechanical envelope only; exact connector clearance not released
+SP-31,torsion spring envelope,158.34,wire/legs/preload/fatigue specification pending 3-channel rig
+BR-31,bearing bracket envelope,1512.0,
+E-enclosure,purchased enclosure,2624000.0,Pi and acquisition carrier; sealed connectors not detailed
+B-battery-envelope,certified battery assembly,1638000.0,purchased battery+BMS; no cell-pack fabrication instructions
+H01-L,steel,125120.0,
+H01-R,steel,125120.0,
+H02-grip,steel,81880.0,
+REFERENCE-road,reference only,12600000.0,
+REFERENCE-curb,reference only,91800000.0,vertical face deliberately not traversed
