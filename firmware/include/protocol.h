@@ -3,6 +3,14 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include <inttypes.h>
+/* Some newlib configurations omit these despite providing uint64_t. RP2040 ABI uses long long. */
+#ifndef PRIu64
+#define PRIu64 "llu"
+#endif
+#ifndef PRId64
+#define PRId64 "lld"
+#endif
 static inline uint32_t ql_crc32(const unsigned char *data,size_t len){uint32_t c=0xffffffffu;for(size_t i=0;i<len;i++){c^=data[i];for(unsigned k=0;k<8;k++)c=(c>>1)^((0u-(c&1u))&0xedb88320u);}return ~c;}
 static inline unsigned ql_parity(uint16_t x){x^=x>>8;x^=x>>4;x^=x>>2;x^=x>>1;return x&1u;}
 static inline uint16_t ql_read_command(uint16_t address){uint16_t w=0x4000u|(address&0x3fffu);return w|(ql_parity(w)<<15);}

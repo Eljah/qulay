@@ -19,14 +19,14 @@ jobs:
       - name: ARM compiler and fixed Pico SDK
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib
+          sudo apt-get install -y --no-install-recommends gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib libusb-1.0-0-dev
           git clone --depth 1 --branch 2.1.1 https://github.com/raspberrypi/pico-sdk.git /tmp/pico-sdk
           git -C /tmp/pico-sdk submodule update --init --depth 1 lib/tinyusb
       - name: Compile UF2 and ELF, not an execution-on-hardware claim
         env:
           PICO_SDK_PATH: /tmp/pico-sdk
         run: |
-          cmake -S firmware -B firmware/build -DPICO_BOARD=pico -DPICO_NO_PICOTOOL=1 -DCMAKE_BUILD_TYPE=Release
+          cmake -S firmware -B firmware/build -DPICO_BOARD=pico -DCMAKE_BUILD_TYPE=Release
           cmake --build firmware/build -j2
           cp firmware/build/qulay_acquisition.uf2 firmware/build/qulay_acquisition.elf generated/firmware/
           sha256sum generated/firmware/* > generated/firmware/SHA256SUMS
