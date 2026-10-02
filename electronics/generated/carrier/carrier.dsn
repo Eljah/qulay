@@ -31,50 +31,50 @@
     )
   )
   (placement
-    (component QL:H6
-      (place J4 54000.000000 -52000.000000 front 0.000000 (PN SPI_BANK_2))
-      (place J5 54000.000000 -63000.000000 front 0.000000 (PN SPI_BANK_3))
-      (place J3 54000.000000 -41000.000000 front 0.000000 (PN SPI_BANK_1))
-      (place J2 54000.000000 -30000.000000 front 0.000000 (PN SPI_BANK_0))
-    )
-    (component QL:F1206
-      (place F1 60000.000000 -18000.000000 front 0.000000 (PN PTC_hold_0.75A_review_derating))
-    )
-    (component QL:PICO40
-      (place U1 25000.000000 -47000.000000 front 0.000000 (PN Raspberry_Pi_Pico_USB_powered))
-    )
     (component QL:MountingHole_2.2mm
       (place MH2 76000.000000 -4000.000000 front 0.000000)
-      (place MH3 4000.000000 -96000.000000 front 0.000000)
       (place MH4 76000.000000 -96000.000000 front 0.000000)
       (place MH1 4000.000000 -4000.000000 front 0.000000)
+      (place MH3 4000.000000 -96000.000000 front 0.000000)
     )
     (component QL:H2
       (place J1 57000.000000 -12000.000000 front 0.000000 (PN EXTERNAL_3V3_CURRENT_LIMITED))
     )
+    (component QL:C0603
+      (place C2 67000.000000 -22000.000000 front 0.000000 (PN "10u 6.3V"))
+      (place C1 67000.000000 -18000.000000 front 0.000000 (PN 100n))
+    )
+    (component QL:PICO40
+      (place U1 25000.000000 -47000.000000 front 0.000000 (PN Raspberry_Pi_Pico_USB_powered))
+    )
     (component QL:H4
       (place J7 14000.000000 -85000.000000 front 0.000000 (PN ODOMETER_3V3_ONLY))
     )
-    (component QL:C0603
-      (place C1 67000.000000 -18000.000000 front 0.000000 (PN 100n))
-      (place C2 67000.000000 -22000.000000 front 0.000000 (PN "10u 6.3V"))
+    (component QL:H6
+      (place J3 54000.000000 -41000.000000 front 0.000000 (PN SPI_BANK_1))
+      (place J2 54000.000000 -30000.000000 front 0.000000 (PN SPI_BANK_0))
+      (place J5 54000.000000 -63000.000000 front 0.000000 (PN SPI_BANK_3))
+      (place J4 54000.000000 -52000.000000 front 0.000000 (PN SPI_BANK_2))
+    )
+    (component QL:F1206
+      (place F1 60000.000000 -18000.000000 front 0.000000 (PN PTC_hold_0.75A_review_derating))
     )
     (component QL:H7
       (place J6 52000.000000 -80000.000000 front 0.000000 (PN ADXL355_3V3_MODULE))
     )
   )
   (library
-    (image QL:H6
+    (image QL:MountingHole_2.2mm
+      (keepout "" (circle F.Cu 2700))
+      (keepout "" (circle B.Cu 2700))
+    )
+    (image QL:H2
       (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
       (pin Round[A]Pad_1350.000000_um 2 2000 0)
-      (pin Round[A]Pad_1350.000000_um 3 4000 0)
-      (pin Round[A]Pad_1350.000000_um 4 6000 0)
-      (pin Round[A]Pad_1350.000000_um 5 8000 0)
-      (pin Round[A]Pad_1350.000000_um 6 10000 0)
     )
-    (image QL:F1206
-      (pin Rect[T]Pad_1200.000000x1800.000000_um 1 -1600 0)
-      (pin Rect[T]Pad_1200.000000x1800.000000_um 2 1600 0)
+    (image QL:C0603
+      (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
+      (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
     )
     (image QL:PICO40
       (pin Rect[A]Pad_1700.000000x1700.000000_um 1 -8890 24130)
@@ -118,23 +118,23 @@
       (pin Round[A]Pad_1700.000000_um 39 8890 21590)
       (pin Round[A]Pad_1700.000000_um 40 8890 24130)
     )
-    (image QL:MountingHole_2.2mm
-      (keepout "" (circle F.Cu 2700))
-      (keepout "" (circle B.Cu 2700))
-    )
-    (image QL:H2
-      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
-      (pin Round[A]Pad_1350.000000_um 2 2000 0)
-    )
     (image QL:H4
       (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
       (pin Round[A]Pad_1350.000000_um 2 2000 0)
       (pin Round[A]Pad_1350.000000_um 3 4000 0)
       (pin Round[A]Pad_1350.000000_um 4 6000 0)
     )
-    (image QL:C0603
-      (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
-      (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
+    (image QL:H6
+      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
+      (pin Round[A]Pad_1350.000000_um 2 2000 0)
+      (pin Round[A]Pad_1350.000000_um 3 4000 0)
+      (pin Round[A]Pad_1350.000000_um 4 6000 0)
+      (pin Round[A]Pad_1350.000000_um 5 8000 0)
+      (pin Round[A]Pad_1350.000000_um 6 10000 0)
+    )
+    (image QL:F1206
+      (pin Rect[T]Pad_1200.000000x1800.000000_um 1 -1600 0)
+      (pin Rect[T]Pad_1200.000000x1800.000000_um 2 1600 0)
     )
     (image QL:H7
       (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
@@ -187,7 +187,7 @@
       (pins U1-9 J3-3)
     )
     (net CS2
-      (pins J4-3 U1-10)
+      (pins U1-10 J4-3)
     )
     (net CS3
       (pins U1-11 J5-3)
@@ -199,20 +199,20 @@
       (pins U1-19 J6-7)
     )
     (net EXT_3V3
-      (pins F1-1 J1-1)
+      (pins J1-1 F1-1)
     )
     (net GND
-      (pins J4-2 U1-3 U1-8 U1-13 U1-18 U1-23 U1-28 U1-33 U1-38 J5-2 J3-2 J1-2 J7-2
-        C1-2 C2-2 J2-2 J6-2)
+      (pins J1-2 C2-2 U1-3 U1-8 U1-13 U1-18 U1-23 U1-28 U1-33 U1-38 J7-2 J3-2 C1-2
+        J2-2 J5-2 J6-2 J4-2)
     )
     (net MISO0
-      (pins J4-6 U1-6 J5-6 J3-6 J2-6)
+      (pins U1-6 J3-6 J2-6 J5-6 J4-6)
     )
     (net MISO1
       (pins U1-16 J6-5)
     )
     (net MOSI0
-      (pins J4-5 U1-5 J5-5 J3-5 J2-5)
+      (pins U1-5 J3-5 J2-5 J5-5 J4-5)
     )
     (net MOSI1
       (pins U1-15 J6-4)
@@ -227,13 +227,13 @@
       (pins U1-36 J7-1 J6-1)
     )
     (net SCK0
-      (pins J4-4 U1-4 J5-4 J3-4 J2-4)
+      (pins U1-4 J3-4 J2-4 J5-4 J4-4)
     )
     (net SCK1
       (pins U1-14 J6-3)
     )
     (net SENS_3V3
-      (pins J4-1 F1-2 J5-1 J3-1 C1-1 C2-1 J2-1)
+      (pins C2-1 J3-1 F1-2 C1-1 J2-1 J5-1 J4-1)
     )
     (class kicad_default CS0 CS1 CS2 CS3 CS_ADXL DRDY_ADXL EXT_3V3 GND MISO0
       MISO1 MOSI0 MOSI1 ODO_A ODO_B PICO_3V3 SCK0 SCK1 SENS_3V3

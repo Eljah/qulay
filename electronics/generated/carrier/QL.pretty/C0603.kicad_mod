@@ -3,10 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" "C2"
+	(property "Reference" "C1"
 		(at 0 -3 0)
 		(layer "F.SilkS")
-		(uuid "7f5bc8e7-4317-4d0f-8dd0-08664c626eca")
+		(uuid "5e16c4bf-ebd5-4118-8212-a283201b5a4f")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -14,11 +14,11 @@
 			)
 		)
 	)
-	(property "Value" "10u 6.3V"
+	(property "Value" "100n"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f8b1f3ff-ba6f-496b-b404-b551670e69b1")
+		(uuid "cbef89ab-0976-4fc7-9d5c-af8590ff796e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "662765eb-1227-465c-baae-beab77d5bac8")
+		(uuid "423f11c5-2395-4344-9a92-8e315b95e03a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bfd4d502-a477-4b6b-8efc-f54d75e3f678")
+		(uuid "25e4994e-9a10-4434-b565-354836f5a076")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,14 +55,14 @@
 		(size 0.85 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "0becca5e-e126-4952-87c0-4a8ec1c74610")
+		(uuid "94ab3c3a-6f40-4b16-ad4e-029dd6436efb")
 	)
 	(pad "2" smd rect
 		(at 0.8 0)
 		(size 0.85 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "77c9674f-825a-4ea5-9838-fc931d364e81")
+		(uuid "cfadb827-863f-4710-962f-8254fdbc8bb4")
 	)
 	(embedded_fonts no)
 )
