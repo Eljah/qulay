@@ -1,0 +1,9 @@
+**/target/
+**/__pycache__/
+.venv/
+.idea/
+*.iml
+.env
+runtime/
+firmware/build/
+*.lck
