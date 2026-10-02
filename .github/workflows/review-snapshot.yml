@@ -1,0 +1,41 @@
+name: Source snapshot and build diagnostics
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['.github/workflows/review-snapshot.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preserve exact source and recent build evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p review
+          git archive HEAD -o review/source.zip
+          gh api 'repos/Eljah/qulay/actions/runs?per_page=12' --jq '[.workflow_runs[]|{id,name,head_sha,status,conclusion,html_url}]' > review/runs.json
+          python3 - <<'PY'
+          import json,subprocess,pathlib
+          root=pathlib.Path('review')
+          for r in json.loads((root/'runs.json').read_text()):
+              if r['conclusion']!='failure':continue
+              jobs=json.loads(subprocess.check_output(['gh','api',f"repos/Eljah/qulay/actions/runs/{r['id']}/jobs"]))['jobs']
+              for j in jobs:
+                  if j['conclusion']!='failure':continue
+                  text=subprocess.check_output(['gh','api',f"repos/Eljah/qulay/actions/jobs/{j['id']}/logs"]).decode(errors='replace')
+                  (root/f"job-{j['id']}.log").write_text(text)
+                  lines=text.splitlines();selected=[]
+                  for i,line in enumerate(lines):
+                      if any(k in line for k in ['Traceback','Error:','error:','FAILED','RuntimeError','TypeError','ERROR]']):selected.extend(lines[max(0,i-2):i+8])
+                  (root/f"job-{j['id']}-errors.txt").write_text('\n'.join(dict.fromkeys(selected)))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qulay-review-snapshot
+          path: review
+          retention-days: 30
