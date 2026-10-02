@@ -1,0 +1,89 @@
+{
+  "scope": "three adjacent measurement channels + shared pivot beam in stated static pose; not entire trolley or continuous motion",
+  "broad_phase_candidates": 58,
+  "overlap_threshold_mm3": 0.01,
+  "overlaps": [
+    {
+      "a": "C01-pivot-beam",
+      "b": "BR-15",
+      "volume_mm3": 120.0
+    },
+    {
+      "a": "C01-pivot-beam",
+      "b": "BR-16",
+      "volume_mm3": 120.0
+    },
+    {
+      "a": "C01-pivot-beam",
+      "b": "BR-17",
+      "volume_mm3": 120.0
+    },
+    {
+      "a": "PB-15",
+      "b": "BR-15",
+      "volume_mm3": 100.624358
+    },
+    {
+      "a": "PS-15",
+      "b": "PM-15",
+      "volume_mm3": 84.823002
+    },
+    {
+      "a": "PS-15",
+      "b": "BR-15",
+      "volume_mm3": 20.614238
+    },
+    {
+      "a": "PE-15",
+      "b": "PB-16",
+      "volume_mm3": 120.637158
+    },
+    {
+      "a": "PE-15",
+      "b": "PS-16",
+      "volume_mm3": 40.212386
+    },
+    {
+      "a": "PB-16",
+      "b": "BR-16",
+      "volume_mm3": 100.624358
+    },
+    {
+      "a": "PS-16",
+      "b": "PM-16",
+      "volume_mm3": 84.823002
+    },
+    {
+      "a": "PS-16",
+      "b": "BR-16",
+      "volume_mm3": 20.614238
+    },
+    {
+      "a": "PE-16",
+      "b": "PB-17",
+      "volume_mm3": 120.637158
+    },
+    {
+      "a": "PE-16",
+      "b": "PS-17",
+      "volume_mm3": 40.212386
+    },
+    {
+      "a": "PB-17",
+      "b": "BR-17",
+      "volume_mm3": 100.624358
+    },
+    {
+      "a": "PS-17",
+      "b": "PM-17",
+      "volume_mm3": 84.823002
+    },
+    {
+      "a": "PS-17",
+      "b": "BR-17",
+      "volume_mm3": 20.614238
+    }
+  ],
+  "all_selected_shapes_valid": true,
+  "manufacturing_release": false
+}

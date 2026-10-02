@@ -1,0 +1,29 @@
+{
+  "crossing": {
+    "scope": "three adjacent measurement channels + shared pivot beam in stated static pose; not entire trolley or continuous motion",
+    "broad_phase_candidates": 72,
+    "overlap_threshold_mm3": 0.01,
+    "overlaps": [],
+    "all_selected_shapes_valid": true,
+    "minimum_nominal_PCB_to_next_shaft_axial_gap_mm": 2.0,
+    "manufacturing_release": false
+  },
+  "along-curb": {
+    "scope": "three adjacent measurement channels + shared pivot beam in stated static pose; not entire trolley or continuous motion",
+    "broad_phase_candidates": 72,
+    "overlap_threshold_mm3": 0.01,
+    "overlaps": [],
+    "all_selected_shapes_valid": true,
+    "minimum_nominal_PCB_to_next_shaft_axial_gap_mm": 2.0,
+    "manufacturing_release": false
+  },
+  "datum-rail": {
+    "scope": "three adjacent measurement channels + shared pivot beam in stated static pose; not entire trolley or continuous motion",
+    "broad_phase_candidates": 72,
+    "overlap_threshold_mm3": 0.01,
+    "overlaps": [],
+    "all_selected_shapes_valid": true,
+    "minimum_nominal_PCB_to_next_shaft_axial_gap_mm": 2.0,
+    "manufacturing_release": false
+  }
+}

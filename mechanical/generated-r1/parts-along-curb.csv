@@ -1,0 +1,493 @@
+id,material,volume_mm3,note
+F01-L,steel,154560.0,
+F01-R,steel,154560.0,
+F02-rear,steel,138000.0,
+F02-front,steel,138000.0,
+F03-rear-cross,steel,138000.0,
+W-leg-rear-L,steel,57040.0,
+W-axle-rear-L,steel,7012.035,axle envelope; retainers not detailed
+W-wheel-rear-L,purchased wheel,1095599.022,rigid calibrated substitute needed on datum rails
+W-leg-rear-R,steel,29440.0,
+W-axle-rear-R,steel,7012.035,axle envelope; retainers not detailed
+W-wheel-rear-R,purchased wheel,1095599.022,rigid calibrated substitute needed on datum rails
+W-leg-front-L,steel,57040.0,
+W-axle-front-L,steel,7012.035,axle envelope; retainers not detailed
+W-wheel-front-L,purchased wheel,1095599.022,rigid calibrated substitute needed on datum rails
+W-leg-front-R,steel,29440.0,
+W-axle-front-R,steel,7012.035,axle envelope; retainers not detailed
+W-wheel-front-R,purchased wheel,1095599.022,rigid calibrated substitute needed on datum rails
+C-slide-L,steel,119700.0,"cassette slide/clamp envelope, travel 220 mm"
+C-slide-R,steel,119700.0,"cassette slide/clamp envelope, travel 220 mm"
+C01-pivot-beam,steel,237120.0,
+A-01,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-01,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-01a,688 bearing,753.982,
+RB-01b,688 bearing,753.982,
+RA-01,steel axle,1105.841,
+A-02,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-02,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-02a,688 bearing,753.982,
+RB-02b,688 bearing,753.982,
+RA-02,steel axle,1105.841,
+A-03,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-03,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-03a,688 bearing,753.982,
+RB-03b,688 bearing,753.982,
+RA-03,steel axle,1105.841,
+A-04,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-04,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-04a,688 bearing,753.982,
+RB-04b,688 bearing,753.982,
+RA-04,steel axle,1105.841,
+A-05,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-05,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-05a,688 bearing,753.982,
+RB-05b,688 bearing,753.982,
+RA-05,steel axle,1105.841,
+A-06,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-06,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-06a,688 bearing,753.982,
+RB-06b,688 bearing,753.982,
+RA-06,steel axle,1105.841,
+A-07,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-07,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-07a,688 bearing,753.982,
+RB-07b,688 bearing,753.982,
+RA-07,steel axle,1105.841,
+A-08,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-08,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-08a,688 bearing,753.982,
+RB-08b,688 bearing,753.982,
+RA-08,steel axle,1105.841,
+A-09,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-09,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-09a,688 bearing,753.982,
+RB-09b,688 bearing,753.982,
+RA-09,steel axle,1105.841,
+A-10,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-10,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-10a,688 bearing,753.982,
+RB-10b,688 bearing,753.982,
+RA-10,steel axle,1105.841,
+A-11,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-11,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-11a,688 bearing,753.982,
+RB-11b,688 bearing,753.982,
+RA-11,steel axle,1105.841,
+A-12,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-12,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-12a,688 bearing,753.982,
+RB-12b,688 bearing,753.982,
+RA-12,steel axle,1105.841,
+A-13,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-13,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-13a,688 bearing,753.982,
+RB-13b,688 bearing,753.982,
+RA-13,steel axle,1105.841,
+A-14,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-14,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-14a,688 bearing,753.982,
+RB-14b,688 bearing,753.982,
+RA-14,steel axle,1105.841,
+A-15,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-15,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-15a,688 bearing,753.982,
+RB-15b,688 bearing,753.982,
+RA-15,steel axle,1105.841,
+A-16,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-16,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-16a,688 bearing,753.982,
+RB-16b,688 bearing,753.982,
+RA-16,steel axle,1105.841,
+A-17,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-17,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-17a,688 bearing,753.982,
+RB-17b,688 bearing,753.982,
+RA-17,steel axle,1105.841,
+A-18,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-18,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-18a,688 bearing,753.982,
+RB-18b,688 bearing,753.982,
+RA-18,steel axle,1105.841,
+A-19,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-19,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-19a,688 bearing,753.982,
+RB-19b,688 bearing,753.982,
+RA-19,steel axle,1105.841,
+A-20,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-20,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-20a,688 bearing,753.982,
+RB-20b,688 bearing,753.982,
+RA-20,steel axle,1105.841,
+A-21,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-21,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-21a,688 bearing,753.982,
+RB-21b,688 bearing,753.982,
+RA-21,steel axle,1105.841,
+A-22,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-22,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-22a,688 bearing,753.982,
+RB-22b,688 bearing,753.982,
+RA-22,steel axle,1105.841,
+A-23,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-23,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-23a,688 bearing,753.982,
+RB-23b,688 bearing,753.982,
+RA-23,steel axle,1105.841,
+A-24,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-24,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-24a,688 bearing,753.982,
+RB-24b,688 bearing,753.982,
+RA-24,steel axle,1105.841,
+A-25,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-25,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-25a,688 bearing,753.982,
+RB-25b,688 bearing,753.982,
+RA-25,steel axle,1105.841,
+A-26,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-26,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-26a,688 bearing,753.982,
+RB-26b,688 bearing,753.982,
+RA-26,steel axle,1105.841,
+A-27,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-27,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-27a,688 bearing,753.982,
+RB-27b,688 bearing,753.982,
+RA-27,steel axle,1105.841,
+A-28,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-28,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-28a,688 bearing,753.982,
+RB-28b,688 bearing,753.982,
+RA-28,steel axle,1105.841,
+A-29,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-29,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-29a,688 bearing,753.982,
+RB-29b,688 bearing,753.982,
+RA-29,steel axle,1105.841,
+A-30,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-30,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-30a,688 bearing,753.982,
+RB-30b,688 bearing,753.982,
+RA-30,steel axle,1105.841,
+A-31,steel laser plate,15033.298,240 mm centre distance; 3 mm; 8.1 mm holes
+R-31,POM/urethane crown,12214.515,"spherical crown R20, width12; material/hysteresis to validate"
+RB-31a,688 bearing,753.982,
+RB-31b,688 bearing,753.982,
+RA-31,steel axle,1105.841,
+E-enclosure,purchased enclosure,2624000.0,Pi and acquisition carrier; sealed connectors not detailed
+B-battery-envelope,certified battery assembly,1638000.0,purchased battery+BMS; no cell-pack fabrication instructions
+H01-L,steel,125120.0,
+H01-R,steel,125120.0,
+H02-grip,steel,81880.0,
+REFERENCE-road,reference only,12600000.0,
+REFERENCE-curb,reference only,91800000.0,vertical face deliberately not traversed
+BR-01,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-01,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-01,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-01,spacer,246.269,Y -6.5..-2.5
+PM-01,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-01,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-01,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-01,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-01,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-01,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-02,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-02,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-02,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-02,spacer,246.269,Y -6.5..-2.5
+PM-02,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-02,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-02,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-02,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-02,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-02,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-03,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-03,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-03,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-03,spacer,246.269,Y -6.5..-2.5
+PM-03,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-03,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-03,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-03,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-03,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-03,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-04,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-04,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-04,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-04,spacer,246.269,Y -6.5..-2.5
+PM-04,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-04,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-04,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-04,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-04,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-04,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-05,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-05,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-05,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-05,spacer,246.269,Y -6.5..-2.5
+PM-05,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-05,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-05,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-05,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-05,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-05,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-06,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-06,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-06,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-06,spacer,246.269,Y -6.5..-2.5
+PM-06,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-06,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-06,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-06,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-06,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-06,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-07,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-07,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-07,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-07,spacer,246.269,Y -6.5..-2.5
+PM-07,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-07,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-07,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-07,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-07,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-07,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-08,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-08,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-08,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-08,spacer,246.269,Y -6.5..-2.5
+PM-08,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-08,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-08,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-08,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-08,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-08,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-09,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-09,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-09,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-09,spacer,246.269,Y -6.5..-2.5
+PM-09,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-09,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-09,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-09,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-09,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-09,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-10,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-10,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-10,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-10,spacer,246.269,Y -6.5..-2.5
+PM-10,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-10,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-10,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-10,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-10,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-10,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-11,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-11,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-11,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-11,spacer,246.269,Y -6.5..-2.5
+PM-11,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-11,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-11,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-11,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-11,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-11,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-12,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-12,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-12,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-12,spacer,246.269,Y -6.5..-2.5
+PM-12,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-12,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-12,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-12,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-12,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-12,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-13,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-13,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-13,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-13,spacer,246.269,Y -6.5..-2.5
+PM-13,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-13,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-13,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-13,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-13,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-13,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-14,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-14,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-14,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-14,spacer,246.269,Y -6.5..-2.5
+PM-14,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-14,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-14,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-14,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-14,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-14,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-15,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-15,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-15,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-15,spacer,246.269,Y -6.5..-2.5
+PM-15,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-15,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-15,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-15,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-15,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-15,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-16,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-16,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-16,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-16,spacer,246.269,Y -6.5..-2.5
+PM-16,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-16,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-16,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-16,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-16,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-16,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-17,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-17,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-17,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-17,spacer,246.269,Y -6.5..-2.5
+PM-17,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-17,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-17,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-17,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-17,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-17,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-18,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-18,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-18,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-18,spacer,246.269,Y -6.5..-2.5
+PM-18,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-18,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-18,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-18,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-18,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-18,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-19,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-19,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-19,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-19,spacer,246.269,Y -6.5..-2.5
+PM-19,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-19,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-19,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-19,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-19,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-19,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-20,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-20,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-20,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-20,spacer,246.269,Y -6.5..-2.5
+PM-20,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-20,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-20,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-20,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-20,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-20,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-21,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-21,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-21,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-21,spacer,246.269,Y -6.5..-2.5
+PM-21,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-21,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-21,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-21,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-21,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-21,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-22,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-22,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-22,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-22,spacer,246.269,Y -6.5..-2.5
+PM-22,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-22,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-22,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-22,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-22,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-22,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-23,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-23,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-23,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-23,spacer,246.269,Y -6.5..-2.5
+PM-23,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-23,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-23,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-23,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-23,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-23,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-24,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-24,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-24,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-24,spacer,246.269,Y -6.5..-2.5
+PM-24,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-24,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-24,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-24,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-24,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-24,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-25,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-25,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-25,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-25,spacer,246.269,Y -6.5..-2.5
+PM-25,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-25,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-25,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-25,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-25,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-25,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-26,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-26,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-26,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-26,spacer,246.269,Y -6.5..-2.5
+PM-26,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-26,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-26,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-26,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-26,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-26,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-27,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-27,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-27,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-27,spacer,246.269,Y -6.5..-2.5
+PM-27,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-27,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-27,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-27,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-27,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-27,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-28,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-28,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-28,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-28,spacer,246.269,Y -6.5..-2.5
+PM-28,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-28,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-28,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-28,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-28,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-28,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-29,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-29,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-29,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-29,spacer,246.269,Y -6.5..-2.5
+PM-29,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-29,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-29,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-29,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-29,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-29,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-30,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-30,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-30,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-30,spacer,246.269,Y -6.5..-2.5
+PM-30,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-30,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-30,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-30,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-30,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-30,torsion spring envelope,158.336,not a released spring winding or fatigue design
+BR-31,aluminium bracket,5640.384,bearing bore 16.05; retention/fasteners require review
+PB-31,688 bearing,753.982,centre Y=0; +/-2.5 mm
+PS-31,steel shaft,829.38,Y -11.5..+5; positive arm coupling remains to detail
+PC-31,spacer,246.269,Y -6.5..-2.5
+PM-31,magnet,84.823,Y +5..+8; end-face attachment; no overlap with shaft
+PE-31,PCB FR4 envelope,679.036,Y9.9..11.5; holes match encoder PCB
+IC-31,AS5048A package envelope,38.4,magnet-face to package 0.7 mm; actual sensitive-layer gap needs calibration
+STL-31,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+STR-31,nonmagnetic standoff,64.861,"PCB support, unthreaded CAD bore"
+SP-31,torsion spring envelope,158.336,not a released spring winding or fatigue design
