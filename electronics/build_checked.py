@@ -4,8 +4,6 @@ from pathlib import Path
 import runpy,json,re
 import pcbnew as p
 HERE=Path(__file__).resolve().parent
-# GuessPluginTypeFromLibPath cannot identify an empty .pretty directory in KiCad 9.
-# Select the native writer rather than dropping the footprint libraries.
 _native=p.PCB_IO_KICAD_SEXPR()
 def save_footprint(libname,footprint):
     return _native.FootprintSave(str(libname),footprint)
@@ -20,9 +18,9 @@ for name in ['encoder','carrier']:
             for pad in f.Pads():pad.SetFPRelativePosition(vec(0,0))
             save_footprint(d/'QL.pretty',f)
             continue
-        kind=f.GetFPID().GetLibItemName();expected={row[0]:row[1:] for row in layout(kind)}
+        kind=str(f.GetFPID().GetLibItemName());expected={row[0]:row[1:] for row in layout(kind)}
         for pad in f.Pads():
-            dx,dy,*_=expected[pad.GetNumber()]
+            dx,dy,*_=expected[str(pad.GetNumber())]
             pad.SetFPRelativePosition(vec(dx,dy))
             world=pad.GetPosition();origin=f.GetPosition()
             assert abs(world.x-origin.x-p.FromMM(dx))<2 and abs(world.y-origin.y-p.FromMM(dy))<2,(f.GetReference(),pad.GetNumber())
