@@ -1,0 +1,50 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-02T19:42:54.213Z  INFO 2595 --- [           main] org.qulay.server.ServerApp               : Starting ServerApp v0.1.0 using Java 21.0.12.1 with PID 2595 (/home/runner/work/qulay/qulay/software/server/target/server-0.1.0.jar started by runner in /home/runner/work/qulay/qulay)
+2026-10-02T19:42:54.216Z  INFO 2595 --- [           main] org.qulay.server.ServerApp               : No active profile set, falling back to 1 default profile: "default"
+2026-10-02T19:42:55.337Z  INFO 2595 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18080 (http)
+2026-10-02T19:42:55.386Z  INFO 2595 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-02T19:42:55.386Z  INFO 2595 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-02T19:42:55.417Z  INFO 2595 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-02T19:42:55.418Z  INFO 2595 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1121 ms
+2026-10-02T19:42:55.548Z  INFO 2595 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-10-02T19:42:55.880Z  INFO 2595 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18080 (http) with context path '/'
+2026-10-02T19:42:55.895Z  INFO 2595 --- [           main] org.qulay.server.ServerApp               : Started ServerApp in 2.364 seconds (process running for 2.837)
+2026-10-02T19:42:56.156Z  INFO 2595 --- [.1-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-02T19:42:56.156Z  INFO 2595 --- [.1-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-02T19:42:56.157Z  INFO 2595 --- [.1-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-02T19:42:59.221Z  INFO 2595 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-02T19:42:59.224Z  INFO 2595 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-02T19:43:00.307Z  INFO 2691 --- [           main] org.qulay.server.ServerApp               : Starting ServerApp v0.1.0 using Java 21.0.12.1 with PID 2691 (/home/runner/work/qulay/qulay/software/server/target/server-0.1.0.jar started by runner in /home/runner/work/qulay/qulay)
+2026-10-02T19:43:00.310Z  INFO 2691 --- [           main] org.qulay.server.ServerApp               : No active profile set, falling back to 1 default profile: "default"
+2026-10-02T19:43:01.272Z  INFO 2691 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 18080 (http)
+2026-10-02T19:43:01.289Z  INFO 2691 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-02T19:43:01.289Z  INFO 2691 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-02T19:43:01.317Z  INFO 2691 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-02T19:43:01.319Z  INFO 2691 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 946 ms
+2026-10-02T19:43:01.445Z  INFO 2691 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-10-02T19:43:01.698Z  INFO 2691 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 18080 (http) with context path '/'
+2026-10-02T19:43:01.714Z  INFO 2691 --- [           main] org.qulay.server.ServerApp               : Started ServerApp in 1.908 seconds (process running for 2.378)
+2026-10-02T19:43:01.878Z  INFO 2691 --- [.1-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-02T19:43:01.878Z  INFO 2691 --- [.1-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-02T19:43:01.879Z  INFO 2691 --- [.1-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-02T19:43:01.954Z  INFO 2691 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-02T19:43:01.959Z  INFO 2691 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

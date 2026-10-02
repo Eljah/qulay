@@ -1,0 +1,53 @@
+{
+  "scope": "JVM + HTTP + filesystem; NOT hardware",
+  "checks": [
+    {
+      "test": "unauthenticated request rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "checksum mismatch rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "first upload",
+      "result": "PASS"
+    },
+    {
+      "test": "idempotent duplicate",
+      "result": "PASS"
+    },
+    {
+      "test": "UUID conflict rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "unknown schema rejected",
+      "result": "PASS"
+    },
+    {
+      "test": "server computes geometry and blocks acceptance",
+      "result": "PASS"
+    },
+    {
+      "test": "coordinate export",
+      "result": "PASS"
+    },
+    {
+      "test": "plan creation",
+      "result": "PASS"
+    },
+    {
+      "test": "plan downloaded to USB directory",
+      "result": "PASS"
+    },
+    {
+      "test": "offline agent sync uploads seven passes",
+      "result": "PASS"
+    },
+    {
+      "test": "surveys survive server restart",
+      "result": "PASS"
+    }
+  ]
+}
