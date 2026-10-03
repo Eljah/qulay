@@ -1,7 +1,7 @@
 {
-  "pages": 20,
+  "pages": 21,
   "a3_pages": 1,
-  "a4_pages": 19,
+  "a4_pages": 20,
   "layout": [
     {
       "page": 1,
@@ -214,6 +214,17 @@
     },
     {
       "page": 20,
+      "title": "Приложение А. Параметры датчика и магнита",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 627.8,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 21,
       "title": "19. Источники и карта реализации",
       "size_pt": [
         595.2755905511812,
@@ -227,5 +238,5 @@
   "numeric_examples_passed": true,
   "hardware_test_performed": false,
   "manufacturing_release": false,
-  "document_sha256": "2602f71c42ae12dc894af65ee2bda3c5e014fdf7b43a06f3061b90a58bbb65b8"
+  "document_sha256": "69800032a670935dd75e94eca0b74286d6edfdc4a30c2fc2ad598d53ad23c143"
 }
