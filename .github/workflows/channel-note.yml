@@ -1,0 +1,54 @@
+name: Single roller tilt channel note
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['docs/channel/**', '.github/workflows/channel-note.yml']
+permissions:
+  contents: write
+concurrency:
+  group: qulay-channel-note
+  cancel-in-progress: false
+jobs:
+  note:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preserve exact sources and verify engineering baseline
+        run: |
+          mkdir -p channel-review
+          git archive HEAD -o channel-review/source.zip
+          git diff --exit-code a72e3a0d45d8b01d22f80cbc825711bc627f5c7f HEAD -- config/geometry.json mechanical/build.py mechanical/revision_b.py electronics/generated/encoder electronics/generated/harness.csv firmware/src/main.c firmware/include/protocol.h software/agent/src/main/java/org/qulay/agent/Wire.java software/core/src/main/java/org/qulay/core/Model.java software/core/src/main/java/org/qulay/core/Geometry.java
+      - name: Install CAD and PDF toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-dejavu-core libgl1 libegl1
+          python -m pip install cadquery==2.8.0 ezdxf reportlab pymupdf pillow
+      - name: Render actual CAD and build explanatory note
+        run: |
+          python docs/channel/prepare_cad.py 2>&1 | tee channel-review/cad.log
+          python docs/channel/build_guide.py 2>&1 | tee channel-review/document.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qulay-single-channel-note
+          retention-days: 90
+          path: |
+            docs/channel
+            channel-review
+      - name: Publish finished note to the existing feature branch
+        run: |
+          test "$GITHUB_REF_NAME" = 'feature/qulay-prototype-20261002'
+          test -f docs/channel/Qulay_One_Roller_Tilt_AS5048A_R1.pdf
+          git config user.name 'qulay-docs'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/channel
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'docs: publish single roller AS5048A explanation and CAD figures [skip ci]'
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
