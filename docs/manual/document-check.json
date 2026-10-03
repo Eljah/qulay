@@ -1,0 +1,8 @@
+{
+  "pages": 37,
+  "a4_pages": 24,
+  "a3_pages": 13,
+  "source_commit": "a72e3a0d45d8b01d22f80cbc825711bc627f5c7f",
+  "document_sha256": "1804627f5a6b2c64062d69ff5b6f2f7034d42bdec61261cde690108444fad07a",
+  "note": "Layout and source traceability check; not hardware validation"
+}

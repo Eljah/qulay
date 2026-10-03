@@ -1,0 +1,123 @@
+{
+  "source_commit": "a72e3a0d45d8b01d22f80cbc825711bc627f5c7f",
+  "document_revision": "D1",
+  "created_date": "2026-10-03",
+  "source_files": [
+    {
+      "path": "config/geometry.json",
+      "sha256": "b9b0ae8135b0d85ea6a85d5e9eff94a4ec3059d7e5ed9e8ea5c1b339351333b2"
+    },
+    {
+      "path": "docs/METROLOGY.md",
+      "sha256": "e1ab5c917f11815b368d1eec44abd4683ce23df7028a0290ff69e8099c045262"
+    },
+    {
+      "path": "docs/REVISION_R1.md",
+      "sha256": "20deea64782ad5bec1e598271263c75f298162768bcd3bdc584acd8cbdd28c77"
+    },
+    {
+      "path": "docs/SOFTWARE.md",
+      "sha256": "aa7686b7fde5884cf5aac6f0d71407dc34d62a70541220b6aee46ec7ee237379"
+    },
+    {
+      "path": "electronics/README.md",
+      "sha256": "14458a38f8c52490d1fc7eb13820d05ab8fe4535a4cecd74aa089c38e08e0d25"
+    },
+    {
+      "path": "electronics/generated/carrier/carrier-schematic.pdf",
+      "sha256": "1513323f43d76c16f21312297c08b9f4aa6a5e21215207aefe21ad429f9743e7"
+    },
+    {
+      "path": "electronics/generated/carrier/carrier.kicad_pcb",
+      "sha256": "f733ac3b9275954a60ed7bd6b9f3630dcb7f172940cead2eb3aa78c94d33075d"
+    },
+    {
+      "path": "electronics/generated/carrier/connections.csv",
+      "sha256": "3affd94af831e429e9f796f84a70c262ea7ca562c6a02c3cf0a68e5451e3a1ee"
+    },
+    {
+      "path": "electronics/generated/encoder/connections.csv",
+      "sha256": "5a368729952f356f71051f53539050e00301b72bbdee9c74042a927526d9a6e7"
+    },
+    {
+      "path": "electronics/generated/encoder/encoder-schematic.pdf",
+      "sha256": "75089b2ca57bd2197cb441363d82ac906452d2a7c846cacdbf600381a484acb8"
+    },
+    {
+      "path": "electronics/generated/encoder/encoder.kicad_pcb",
+      "sha256": "f02c393ed43171da2e822ad990e45cff5a6963fca849757eec9b7bd4225f24b2"
+    },
+    {
+      "path": "electronics/generated/harness.csv",
+      "sha256": "1b8777ddfa1e8bc49d9e95f4e2e180f23c92f840e54ef83648ae1cbcc5231420"
+    },
+    {
+      "path": "electronics/generated/verification-summary.json",
+      "sha256": "e8c6c18db8d4e22e75428d0ddee78bbe2c9f323ed7f4c7734d8f4d852dcfe3d0"
+    },
+    {
+      "path": "firmware/README.md",
+      "sha256": "8cbd09e6dff514158446c51846b211ba41440c6a8c1e402a1846224d24995e18"
+    },
+    {
+      "path": "firmware/src/main.c",
+      "sha256": "ae03c511238119de4de1eabc0a469d12d40d0a62634edefd6dc7d9f1b53846fe"
+    },
+    {
+      "path": "generated/verification/summary.json",
+      "sha256": "fed1a3ca7f84d06dbc830e72705c8deb26a22fe047b900bdf83ac3e9243fde9d"
+    },
+    {
+      "path": "mechanical/build.py",
+      "sha256": "aa06c88a78b8189b105c6fb55c6a43692e41032eb1e2ace4e494652b0e062bdc"
+    },
+    {
+      "path": "mechanical/generated-r1/along-curb-iso.png",
+      "sha256": "c93d873391471776b6e21dab4d48e80ecaab7fcacc5bf2f8c22976eba1067f7d"
+    },
+    {
+      "path": "mechanical/generated-r1/collision-checks.json",
+      "sha256": "b6d032a1caa3d16bbbbb7a4a15b7adf046b0c5dd935b4b5722700655978271a6"
+    },
+    {
+      "path": "mechanical/generated-r1/crossing-iso.png",
+      "sha256": "0e25ea9398bcb7875c3654517fa1d2edf8b6843a6fc3b617a22bb85100e2c55e"
+    },
+    {
+      "path": "mechanical/generated-r1/datum-rail-iso.png",
+      "sha256": "2c9c3011b4fbe31a78ec4eb21b28899f1debe48dcc6f2b8deef98bcbbd21e944"
+    },
+    {
+      "path": "mechanical/generated-r1/parts-crossing.csv",
+      "sha256": "a9b2651e69436649a0d368942387a701accff639e041dbc0cbc4d1744ae949d3"
+    },
+    {
+      "path": "mechanical/generated-r1/pivot-bracket-5mm.dxf",
+      "sha256": "b57361d46f57d9fa4ec7efb71ae90008b80227eeaaa4cb123eb3e60f67378f11"
+    },
+    {
+      "path": "mechanical/generated-r1/pivot-detail.png",
+      "sha256": "67382781686964a3baf315524b64167324358dec006715fd80e62ffef27bbe71"
+    },
+    {
+      "path": "mechanical/generated-r1/pivot-section.png",
+      "sha256": "615a4153c5d0983090ba516525796ffb3be0a8ad04df667bc80be53cd3f64945"
+    },
+    {
+      "path": "mechanical/generated/arm-240mm-3mm.dxf",
+      "sha256": "05e6317ee6e566933fd2fefa9027ba8e4eedd7f25bb2411d843da4b358da9dc6"
+    },
+    {
+      "path": "mechanical/generated/cut-list-crossing.csv",
+      "sha256": "3965d1ba160893470685153d7d666202bc7e7a707c76de109d9fe55f2e467f5f"
+    },
+    {
+      "path": "mechanical/revision_b.py",
+      "sha256": "01661808afe863f44418ba603bcfea2c47fba2c395cfd7142382bb9f6870296b"
+    }
+  ],
+  "external_sources": [
+    "https://www.infineon.com/assets/row/public/documents/24/49/infineon-as5048a-as5048b-datasheet-en.pdf",
+    "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html"
+  ]
+}
