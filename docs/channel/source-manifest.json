@@ -1,0 +1,72 @@
+{
+  "engineering_commit": "a72e3a0d45d8b01d22f80cbc825711bc627f5c7f",
+  "reviewed_snapshot": "00f3a3f66a0dfe225c04cfb24890cf087a88f5a7",
+  "files": [
+    {
+      "path": "config/geometry.json",
+      "sha256": "b9b0ae8135b0d85ea6a85d5e9eff94a4ec3059d7e5ed9e8ea5c1b339351333b2"
+    },
+    {
+      "path": "mechanical/build.py",
+      "sha256": "aa06c88a78b8189b105c6fb55c6a43692e41032eb1e2ace4e494652b0e062bdc"
+    },
+    {
+      "path": "mechanical/revision_b.py",
+      "sha256": "01661808afe863f44418ba603bcfea2c47fba2c395cfd7142382bb9f6870296b"
+    },
+    {
+      "path": "electronics/generated/encoder/connections.csv",
+      "sha256": "5a368729952f356f71051f53539050e00301b72bbdee9c74042a927526d9a6e7"
+    },
+    {
+      "path": "electronics/generated/encoder/BOM.csv",
+      "sha256": "1a4d132de52212a05575e088e75d0adbc5545a1a71146f43d70aa39f6d0fbc26"
+    },
+    {
+      "path": "electronics/generated/encoder/encoder-schematic.pdf",
+      "sha256": "75089b2ca57bd2197cb441363d82ac906452d2a7c846cacdbf600381a484acb8"
+    },
+    {
+      "path": "electronics/generated/encoder/encoder.kicad_pcb",
+      "sha256": "f02c393ed43171da2e822ad990e45cff5a6963fca849757eec9b7bd4225f24b2"
+    },
+    {
+      "path": "electronics/generated/harness.csv",
+      "sha256": "1b8777ddfa1e8bc49d9e95f4e2e180f23c92f840e54ef83648ae1cbcc5231420"
+    },
+    {
+      "path": "firmware/src/main.c",
+      "sha256": "ae03c511238119de4de1eabc0a469d12d40d0a62634edefd6dc7d9f1b53846fe"
+    },
+    {
+      "path": "firmware/include/protocol.h",
+      "sha256": "b52c055cbf59ffb0103813f7ad76aa939e57e725ef5ba59035ea3a144c4797c5"
+    },
+    {
+      "path": "software/agent/src/main/java/org/qulay/agent/Wire.java",
+      "sha256": "5be743a5c01b09abfe62bf593597f417a655dcacf29c6aa958f3654d924ccd3c"
+    },
+    {
+      "path": "software/core/src/main/java/org/qulay/core/Model.java",
+      "sha256": "3e6515b0dd16dfddff47d16082273632ba596f3f4b689f119f0f61c6ba894350"
+    },
+    {
+      "path": "software/core/src/main/java/org/qulay/core/Geometry.java",
+      "sha256": "46c7d248385b0e41e77ff554d94150e2ad32154703d2907864069aedcd5dc5a4"
+    }
+  ],
+  "external_references": [
+    {
+      "id": "D1",
+      "url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-as5048a-as5048b-datasheet-en.pdf"
+    },
+    {
+      "id": "D2",
+      "url": "https://www.infineon.com/part/AS5048A"
+    },
+    {
+      "id": "D3",
+      "url": "https://www.analog.com/en/resources/analog-dialogue/raqs/raq-issue-144.html"
+    }
+  ]
+}

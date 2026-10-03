@@ -1,0 +1,43 @@
+{
+  "kind": "calculated_examples_not_hardware_data",
+  "zeroRad": 0,
+  "L_mm": 240,
+  "H_mm": 220,
+  "r_mm": 20,
+  "examples": [
+    {
+      "N": 14336,
+      "raw": "0xb800",
+      "angle_deg": -45.0,
+      "center_x_mm": 169.7056274847714,
+      "height_mm": 30.294372515228616
+    },
+    {
+      "N": 14564,
+      "raw": "0xb8e4",
+      "angle_deg": -39.99023437499998,
+      "center_x_mm": 183.87695764711515,
+      "height_mm": 45.76231184810561
+    }
+  ],
+  "sensitivities": [
+    {
+      "surface_height_mm": 0,
+      "angle_deg": -56.44269023807929,
+      "sensitivity_mm_per_rad": 132.66499161421598,
+      "one_lsb_height_mm": 0.05087638709030425,
+      "height_effect_of_0p8_degree_mm": 1.8523527246389886
+    },
+    {
+      "surface_height_mm": 150,
+      "angle_deg": -12.024699180565824,
+      "sensitivity_mm_per_rad": 234.73389188611003,
+      "one_lsb_height_mm": 0.09001932010472949,
+      "height_effect_of_0p8_degree_mm": 3.277503423546418
+    }
+  ],
+  "spi_payload_us_at_1MHz": 1984,
+  "frame_step_mm_at_0p2_mps_and_100Hz": 2.0,
+  "grade_example_percent": 5,
+  "grade_example_degrees": 2.862405226111748
+}

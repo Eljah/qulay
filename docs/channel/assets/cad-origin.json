@@ -1,0 +1,35 @@
+{
+  "engineering_commit": "a72e3a0d45d8b01d22f80cbc825711bc627f5c7f",
+  "generator": "mechanical/revision_b.py:revised(crossing)",
+  "channel_index": 15,
+  "cad_suffix": "16",
+  "solids": [
+    "A-16",
+    "R-16",
+    "RB-16a",
+    "RB-16b",
+    "RA-16",
+    "BR-16",
+    "PB-16",
+    "PS-16",
+    "PC-16",
+    "PM-16",
+    "PE-16",
+    "IC-16",
+    "STL-16",
+    "STR-16",
+    "SP-16"
+  ],
+  "exploded_offsets_mm_y": {
+    "PS": -22,
+    "PC": -14,
+    "SP": -14,
+    "PB": -7,
+    "PM": 8,
+    "IC": 15,
+    "PE": 20,
+    "STL": 10,
+    "STR": 10
+  },
+  "note": "Exploded offsets are for illustration only; installed dimensions are unchanged."
+}

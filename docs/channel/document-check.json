@@ -1,0 +1,231 @@
+{
+  "pages": 20,
+  "a3_pages": 1,
+  "a4_pages": 19,
+  "layout": [
+    {
+      "page": 1,
+      "title": "Один ролик — один измерительный канал",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 525.3,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 2,
+      "title": "1. Какие движения надо различать",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 581.8,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 3,
+      "title": "2. Что вращается, а что остаётся неподвижным",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 580.2,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 4,
+      "title": "3. Размерная цепь шарнира и незакрытые узлы",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 594.0,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 5,
+      "title": "4. Как AS5048A видит поворот магнита",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 549.2,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 6,
+      "title": "5. Что находится на плате одного канала",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 485.70000000000005,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 7,
+      "title": "6. Принципиальная схема одного канала",
+      "size_pt": [
+        1190.5511811023623,
+        841.8897637795277
+      ],
+      "content_height_pt": 57.6,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 8,
+      "title": "7. Как читается одно цифровое значение",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 601.4,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 9,
+      "title": "8. Как отдельный датчик попадает в свой канал",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 571.5000000000001,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 10,
+      "title": "9. Что происходит за один кадр опроса",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 460.9,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 11,
+      "title": "10. От числа N к углу рычага α",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 497.7,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 12,
+      "title": "11. От угла к координате: численный пример",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 467.7,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 13,
+      "title": "12. Зачем нужен общий датчик наклона рамы",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 399.0,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 14,
+      "title": "13. Почему α не является уклоном покрытия",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 549.0,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 15,
+      "title": "14. Разрешение датчика и реальная точность",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 496.3,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 16,
+      "title": "15. Диагностика датчика ≠ контакт с покрытием",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 481.1,
+      "available_height_pt": 654.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 17,
+      "title": "16. Как проверить один собранный канал",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 469.6,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 18,
+      "title": "17. Индивидуальная калибровка канала",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 631.8000000000001,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 19,
+      "title": "18. Неисправности и границы готовности",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 485.09999999999997,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    },
+    {
+      "page": 20,
+      "title": "19. Источники и карта реализации",
+      "size_pt": [
+        595.2755905511812,
+        841.8897637795277
+      ],
+      "content_height_pt": 360.2,
+      "available_height_pt": 679.8897637795277,
+      "image_height_factor": 1.0
+    }
+  ],
+  "numeric_examples_passed": true,
+  "hardware_test_performed": false,
+  "manufacturing_release": false,
+  "document_sha256": "2602f71c42ae12dc894af65ee2bda3c5e014fdf7b43a06f3061b90a58bbb65b8"
+}
