@@ -14,6 +14,8 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.utils import ImageReader
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 DATA=json.loads((HERE/'guide.json').read_text())
+if (HERE/'appendix.json').is_file():
+ DATA['pages'].insert(-1,json.loads((HERE/'appendix.json').read_text()))
 FONT=Path('/usr/share/fonts/truetype/dejavu')
 for name,file in [('Body','DejaVuSans.ttf'),('Bold','DejaVuSans-Bold.ttf'),('Mono','DejaVuSansMono.ttf')]:pdfmetrics.registerFont(TTFont(name,str(FONT/file)))
 pdfmetrics.registerFontFamily('Body',normal='Body',bold='Bold',italic='Body',boldItalic='Bold')
@@ -59,7 +61,7 @@ class Diagram(Flowable):
  def motion(self,c):
   o=(82,185);scale=.61;L=240*scale;r=20*scale
   c.setStrokeColor(GRAY);c.setDash(3,3);c.line(o[0],o[1],245,o[1]);c.setDash()
-  label(c,252,181,'+X рамы',9);arrow(c,38,143,38,202,GRAY);label(c,26,209,'+Z',9)
+  label(c,220,198,'+X',9);arrow(c,38,143,38,202,GRAY);label(c,26,209,'+Z',9)
   c.setFillColor(colors.HexColor('#87969D'));c.rect(o[0]-12,o[1]-3,24,28,fill=1,stroke=0)
   positions=[]
   for a,col,dash in [(-56.44269,ORANGE,False),(-12.02470,TEAL,True)]:
@@ -119,8 +121,8 @@ class Diagram(Flowable):
   a=math.atan2(39,222);r=46;contact=(130,56+(130-24)*39/222);center=(contact[0]-r*math.sin(a),contact[1]+r*math.cos(a))
   c.setFillColor(colors.white);c.setStrokeColor(INK);c.circle(*center,r,fill=1,stroke=1);c.circle(*center,2,fill=1,stroke=1)
   arrow(c,*contact,center[0],center[1]);label(c,center[0]+10,center[1]-13,'r · n',11)
-  c.setFillColor(ORANGE);c.circle(*contact,3,fill=1,stroke=0)
   label(c,32,186,'Центр ролика c',11,'Bold');arrow(c,122,178,center[0],center[1]+7)
+  c.setFillColor(ORANGE);c.circle(*contact,3,fill=1,stroke=0)
   label(c,113,34,'Точка контакта p',10)
   boxlabel(c,280,111,201,67,'На наклоне:\np = c − r · n',size=14)
   label(c,278,77,'Поправка идёт по нормали,',10);label(c,278,60,'а не всегда строго по вертикали.',10)
@@ -212,7 +214,16 @@ def main():
   c.showPage()
  c.save()
  doc=fitz.open(tmp);sch=fitz.open(ROOT/'electronics/generated/encoder/encoder-schematic.pdf')
- for index,rect in overlays:doc[index].show_pdf_page(rect,sch,0,keep_proportion=True)
+ # Magnified vector fragments of the same KiCad sheet; named nets remain unchanged.
+ clips=[('U1 — AS5048A',fitz.Rect(75,108,261,212)),('J1 — разъём',fitz.Rect(414,120,594,202)),('C1 — 100 нФ',fitz.Rect(754,119,928,202)),('C2 — 10 мкФ',fitz.Rect(73,318,253,402))]
+ for index,rect in overlays:
+  page=doc[index];page.insert_font(fontname='QLNoteLabel',fontfile=str(FONT/'DejaVuSans.ttf'))
+  gap=16;cw=(rect.width-gap)/2;ch=(rect.height-gap)/2
+  for k,(caption,clip) in enumerate(clips):
+   x=rect.x0+(k%2)*(cw+gap);y=rect.y0+(k//2)*(ch+gap)
+   pane=fitz.Rect(x,y,x+cw,y+ch);page.draw_rect(pane,color=(.80,.85,.87),width=.6)
+   page.insert_text((x+12,y+22),caption,fontname='QLNoteLabel',fontsize=13,color=(.09,.27,.29))
+   page.show_pdf_page(fitz.Rect(x+10,y+35,x+cw-10,y+ch-10),sch,0,clip=clip,keep_proportion=True)
  if target.exists():target.unlink()
  doc.save(target,garbage=4,deflate=True);doc.close();tmp.unlink();sch.close()
  files=['config/geometry.json','mechanical/build.py','mechanical/revision_b.py','electronics/generated/encoder/connections.csv','electronics/generated/encoder/BOM.csv','electronics/generated/encoder/encoder-schematic.pdf','electronics/generated/encoder/encoder.kicad_pcb','electronics/generated/harness.csv','firmware/src/main.c','firmware/include/protocol.h','software/agent/src/main/java/org/qulay/agent/Wire.java','software/core/src/main/java/org/qulay/core/Model.java','software/core/src/main/java/org/qulay/core/Geometry.java']
