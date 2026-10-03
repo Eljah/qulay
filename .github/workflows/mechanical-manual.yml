@@ -1,0 +1,49 @@
+name: Mechanical and installation manual
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['docs/manual/**', '.github/workflows/mechanical-manual.yml']
+permissions:
+  contents: write
+concurrency:
+  group: qulay-mechanical-manual
+  cancel-in-progress: false
+jobs:
+  manual:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve source used for documentation
+        run: |
+          mkdir -p manual-review
+          git archive a72e3a0d45d8b01d22f80cbc825711bc627f5c7f -o manual-review/source.zip
+          git rev-parse HEAD > manual-review/build-commit.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qulay-manual-source
+          path: manual-review
+          retention-days: 30
+      - name: Build manual when sources are present
+        run: |
+          if [ ! -f docs/manual/build_manual.py ]; then
+            echo 'Source snapshot prepared; manual authoring files are not committed yet.'
+            exit 0
+          fi
+          python -m pip install reportlab pymupdf pillow
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-dejavu-core
+          python docs/manual/build_manual.py
+      - name: Publish manual if generated
+        run: |
+          if [ ! -f docs/manual/QL01-R1-Mechanical-Installation.pdf ]; then exit 0; fi
+          test "$GITHUB_REF_NAME" = "feature/qulay-prototype-20261002"
+          git config user.name 'qulay-docs'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/manual
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'docs: publish mechanical and installation manual PDF [skip ci]'
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
