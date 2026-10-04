@@ -1,0 +1,55 @@
+name: R2 firmware compilation
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['firmware/r2/**', '.github/workflows/r2-firmware.yml']
+permissions:
+  contents: write
+jobs:
+  firmware:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Protocol host tests and ARM toolchain
+        run: |
+          mkdir -p generated/firmware-r2
+          cc -std=c11 -Wall -Wextra -Werror -Ifirmware/include firmware/tests/protocol_test.c -o /tmp/ql-protocol
+          /tmp/ql-protocol | tee generated/firmware-r2/host-protocol.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib libusb-1.0-0-dev
+          git clone --depth 1 --branch 2.1.1 https://github.com/raspberrypi/pico-sdk.git /tmp/pico-sdk
+          git -C /tmp/pico-sdk submodule update --init --depth 1 lib/tinyusb
+      - name: Compile both hardware configurations
+        env:
+          PICO_SDK_PATH: /tmp/pico-sdk
+        run: |
+          for mode in full bench; do
+            option=OFF
+            if [ "$mode" = bench ]; then option=ON; fi
+            cmake -S firmware/r2 -B /tmp/r2-$mode -DPICO_BOARD=pico -DCMAKE_BUILD_TYPE=Release -DQULAY_BENCH_THREE=$option
+            cmake --build /tmp/r2-$mode -j2
+            cp /tmp/r2-$mode/qulay_r2.uf2 generated/firmware-r2/qulay-r2-$mode.uf2
+            cp /tmp/r2-$mode/qulay_r2.elf generated/firmware-r2/qulay-r2-$mode.elf
+          done
+          sha256sum generated/firmware-r2/*.uf2 generated/firmware-r2/*.elf > generated/firmware-r2/SHA256SUMS
+          printf 'Compiled for RP2040. Not flashed, not tested on physical hardware.\n' > generated/firmware-r2/SCOPE.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qulay-r2-firmware
+          retention-days: 90
+          path: generated/firmware-r2
+      - name: Publish compiled firmware and checks
+        run: |
+          test "$GITHUB_REF_NAME" = 'feature/qulay-prototype-20261002'
+          git config user.name 'qulay-r2-build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add generated/firmware-r2
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'build(r2): preserve full and bench UF2 firmware [skip ci]'
+          git stash push -u -m 'transient build outputs'
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
