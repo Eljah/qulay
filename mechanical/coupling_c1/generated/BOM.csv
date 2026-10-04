@@ -1,0 +1,7 @@
+id,quantity_per_channel,quantity_31_channels,material,note
+C1-SHAFT,1,31,"C45, certificate Rp0.2 >= 300 MPa",one-piece flange; M3 threads represented by major-diameter voids
+C1-ARM,1,31,"steel, certificate Rp0.2 >= 300 MPa",3 mm finish-ground at boss; pin holes machined in matched assembly
+C1-PIN-1,1,31,hardened ground steel dowel,3 mm; finish length 5.80 +/-0.05; ends modelled without grinding relief
+C1-PIN-2,1,31,hardened ground steel dowel,3 mm; finish length 5.80 +/-0.05; ends modelled without grinding relief
+C1-SCREW-1,1,31,"DIN 7991 M3 x 6, class 10.9",finish overall length 5.70 +/-0.05; head <=6.0; nominal countersunk recess 0.10
+C1-SCREW-2,1,31,"DIN 7991 M3 x 6, class 10.9",finish overall length 5.70 +/-0.05; head <=6.0; nominal countersunk recess 0.10

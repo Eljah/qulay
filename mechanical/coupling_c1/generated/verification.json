@@ -1,0 +1,111 @@
+{
+  "nominal_unit": {
+    "candidates": 9,
+    "overlaps": []
+  },
+  "unit_solids_valid": true,
+  "interference_fit_model": "nominal coincident pin surfaces; 2..4 micrometre interference is a manufacturing requirement, not a CAD collision",
+  "pitch_mm": 25,
+  "nominal_flange_to_previous_PCB_clearance_mm": 1.0,
+  "axial_tolerance_budget_mm": {
+    "flange_location": 0.05,
+    "PCB_and_mount_stack": 0.1,
+    "axial_float_limit": 0.05,
+    "PCB_warp": 0.1
+  },
+  "minimum_clearance_with_allocated_budget_mm": 0.7,
+  "scope": "changed coupling against retained R1 neighbours; not certification of complete trolley",
+  "static_modes": {
+    "crossing": {
+      "candidates": 84,
+      "overlaps": []
+    },
+    "along-curb": {
+      "candidates": 78,
+      "overlaps": []
+    },
+    "datum-rail": {
+      "candidates": 84,
+      "overlaps": []
+    }
+  },
+  "sweep": [
+    {
+      "angle_deg": -70,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -65,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -60,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -55,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -50,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -45,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -40,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -35,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -30,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -25,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -20,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -15,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -10,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": -5,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": 0,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": 5,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": 10,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": 15,
+      "new_vs_retained_overlaps": []
+    },
+    {
+      "angle_deg": 20,
+      "new_vs_retained_overlaps": []
+    }
+  ],
+  "passed": true
+}

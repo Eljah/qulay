@@ -1,0 +1,37 @@
+{
+  "basis": "closed-form conservative one-pin load assumption; no friction credit, no FEA or fatigue validation",
+  "assumed_allowable_pin_shear_MPa": 180,
+  "assumed_allowable_hole_bearing_MPa": 150,
+  "steel_certificate_minimum_yield_MPa": 300,
+  "cases": [
+    {
+      "torque_Nm": 2.4,
+      "equivalent_force_at_240mm_N": 10.0,
+      "one_pin_force_N": 300.0,
+      "one_pin_shear_MPa": 42.44131815783876,
+      "one_pin_bearing_MPa": 41.66666666666667,
+      "shaft_nominal_torsion_MPa": 23.8732414637843,
+      "shaft_upper_bound_elastic_twist_deg": 0.061980067806211306,
+      "pin_shear_margin_to_assumed_180MPa": 4.241150082346221,
+      "hole_bearing_margin_to_assumed_150MPa": 3.5999999999999996
+    },
+    {
+      "torque_Nm": 4.8,
+      "equivalent_force_at_240mm_N": 20.0,
+      "one_pin_force_N": 600.0,
+      "one_pin_shear_MPa": 84.88263631567752,
+      "one_pin_bearing_MPa": 83.33333333333334,
+      "shaft_nominal_torsion_MPa": 47.7464829275686,
+      "shaft_upper_bound_elastic_twist_deg": 0.12396013561242261,
+      "pin_shear_margin_to_assumed_180MPa": 2.1205750411731104,
+      "hole_bearing_margin_to_assumed_150MPa": 1.7999999999999998
+    }
+  ],
+  "joint_lost_motion_acceptance_deg": 0.02,
+  "indicator_at_100mm_limit_mm": 0.03490658645764051,
+  "measured_diametral_interference_mm": [
+    0.002,
+    0.004
+  ],
+  "important": "2.4 Nm is specified coupling design torque, not the measured operating torque of the trolley. 4.8 Nm is a proposed static bench proof, not a performed test."
+}
