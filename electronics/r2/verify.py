@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""R2 checks are executed by KiCad against the serialized routed projects, without exclusions."""
+"""KiCad checks on serialized circuit boards, with no rule exclusions."""
 from pathlib import Path
 import sys,json,subprocess,shutil
 import pcbnew as p
@@ -11,7 +11,7 @@ def run(args,log):
  if r.returncode:print(r.stdout)
  return r.returncode
 summary=[];failures=[]
-for name in ['force','adc','carrier_r2']:
+for name in ['force','adc','carrier_r2','power_good']:
  d=OUT/name;pcb=d/f'{name}.kicad_pcb';b=p.LoadBoard(str(pcb));session=d/f'{name}.ses'
  imported=session.is_file() and bool(p.ImportSpecctraSES(b,str(session)))
  b.BuildConnectivity();p.SaveBoard(str(pcb),b);polish.finish(d,name)
@@ -28,14 +28,14 @@ for name in ['force','adc','carrier_r2']:
  dv=drc.get('violations',[]);ev=[v for s in erc.get('sheets',[]) for v in s.get('violations',[])];unconnected=len(drc.get('unconnected_items',[]))
  parity=polish.compare(d,name,b) if codes['netlist']==0 else {'passed':False}
  de=sum(v.get('severity')=='error' for v in dv);ee=sum(v.get('severity')=='error' for v in ev)
- clean=bool(imported and all(v==0 for v in codes.values()) and 'violations' in drc and 'sheets' in erc and not unconnected and not de and not ee and parity['passed'])
+ clean=bool(imported and all(v==0 for v in codes.values()) and 'violations' in drc and 'sheets' in erc and not unconnected and not dv and not ev and parity['passed'])
  report={'board':name,'router_session_imported':bool(imported),'tracks_and_vias':len(list(b.GetTracks())),'drc_errors':de,'drc_warnings':len(dv)-de,'unconnected':unconnected,'erc_errors':ee,'erc_warnings':len(ev)-ee,'netlist_parity':parity,'commands':codes,'digital_checks_passed':clean,'manufacturing_release':False,'hardware_tested':False,'limits':'No EMC, thermal, force-calibration or actual sensor testing is implied.'}
  fab=d/'prototype-fabrication'
  if fab.exists():shutil.rmtree(fab)
  if clean:
   fab.mkdir();report['gerber_export']=run(['kicad-cli','pcb','export','gerbers','-o',str(fab)+'/',str(pcb)],d/'gerber.log');report['drill_export']=run(['kicad-cli','pcb','export','drill','-o',str(fab)+'/',str(pcb)],d/'drill.log')
-  (fab/'PROTOTYPE_ONLY.txt').write_text('Digital prototype output. Independent electrical and mechanical review plus physical qualification required.\n')
+  (fab/'PROTOTYPE_ONLY.txt').write_text('Prototype output; physical qualification required.\n')
  else:failures.append(name)
  (d/'verification.json').write_text(json.dumps(report,indent=2));summary.append(report)
 (OUT/'verification-summary.json').write_text(json.dumps(summary,indent=2));print(json.dumps(summary,indent=2))
-if failures:raise RuntimeError('R2 board verification failed: '+','.join(failures))
+if failures:raise RuntimeError('Board verification failed: '+','.join(failures))
