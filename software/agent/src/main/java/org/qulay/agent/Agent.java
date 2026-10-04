@@ -73,8 +73,9 @@ public final class Agent {
   }
   if(frames.size()<count)throw new IOException("incomplete pass retained as .wire.partial; no finished survey emitted");
   String device=Objects.toString(System.getenv("QULAY_DEVICE_ID"),"QL01-PICO-PROTOTYPE");
-  Survey survey=new Survey(1,id,plan.id(),device,plan.targets().get(target).mode(),Datum.FREE_ROLL,replay,plan.ruleProfileId(),cal,frames,
-    "Target index="+target+"; source="+(replay?"FILE_REPLAY_NOT_FIELD_EVIDENCE":"USB_CDC")+"; rejected="+rejected+". Q1 contact remains unknown; external height datum absent.");
+  int schema=frames.stream().anyMatch(f->f.r2()!=null)?2:1;
+  Survey survey=new Survey(schema,id,plan.id(),device,plan.targets().get(target).mode(),Datum.FREE_ROLL,replay,plan.ruleProfileId(),cal,frames,
+    "Target index="+target+"; source="+(replay?"FILE_REPLAY_NOT_FIELD_EVIDENCE":"USB_CDC")+"; rejected="+rejected+". Q1 contact unknown; Q2 contact requires qualified per-channel calibration; independent height datum absent.");
   Json.writeSurvey(out,survey);Files.move(journal,out.resolve(id+".wire"));
   System.out.println("Saved "+id+"; metrological acceptance remains blocked");
  }

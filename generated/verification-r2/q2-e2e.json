@@ -1,0 +1,41 @@
+{
+  "scope": "synthetic Q2 input, real JVM agent, disk, HTTP and server; no physical hardware",
+  "checks": [
+    {
+      "test": "Q2 agent capture completes",
+      "result": "PASS"
+    },
+    {
+      "test": "one complete survey",
+      "result": "PASS"
+    },
+    {
+      "test": "schema2 metadata retained",
+      "result": "PASS"
+    },
+    {
+      "test": "replay cannot become field evidence",
+      "result": "PASS"
+    },
+    {
+      "test": "qualified synthetic static contact reaches geometry",
+      "result": "PASS"
+    },
+    {
+      "test": "schema2 upload accepted",
+      "result": "PASS"
+    },
+    {
+      "test": "Q2 raw diagnostic survives HTTP roundtrip",
+      "result": "PASS"
+    },
+    {
+      "test": "prototype cannot issue acceptance",
+      "result": "PASS"
+    },
+    {
+      "test": "no longitudinal height fabricated",
+      "result": "PASS"
+    }
+  ]
+}

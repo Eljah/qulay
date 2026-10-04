@@ -15,7 +15,12 @@ public final class Geometry {
   if(!f.attitudeValid())reason="ATTITUDE_INVALID";else if(f.flags()[index]!=0)reason="SENSOR_OR_CONTACT_FLAGS_"+f.flags()[index];
   double angle;try{angle=c.angle(f.angle14()[index]);}catch(IllegalArgumentException e){return new Point(f.sequence(),index,0,0,0,false,"OUTSIDE_CALIBRATION");}
   if(angle<Math.toRadians(-70)||angle>Math.toRadians(20)){ok=false;reason="MECHANICAL_RANGE";}
-  double[] v=rotate(c.pivotXmm()+c.lengthMm()*Math.cos(angle),c.pivotYmm(),c.pivotZmm()+c.lengthMm()*Math.sin(angle),f.rollRad(),f.pitchRad(),f.yawRad());
+  double tip=0;
+  if(f.r2()!=null){
+   var reading=ContactModel.read(c.contact(),f.r2().contactAdc()[index],angle,(f.r2().interlocks()&4)!=0);tip=reading.displacementMm();
+   if(reading.flags()!=0||(f.r2().interlocks()&3)!=3){ok=false;reason=reading.flags()!=0?reading.reason():"Q2_INTERLOCK_OPEN";}
+  }
+  double[] v=rotate(c.pivotXmm()+c.lengthMm()*Math.cos(angle)-tip*Math.sin(angle),c.pivotYmm(),c.pivotZmm()+c.lengthMm()*Math.sin(angle)+tip*Math.cos(angle),f.rollRad(),f.pitchRad(),f.yawRad());
   return new Point(f.sequence(),index,f.xMm()+v[0],v[1],(f.datumZmm()==null?0:f.datumZmm())+v[2],ok,reason);
  }
  public static Point[][] centers(Survey s){

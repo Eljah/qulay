@@ -11,7 +11,8 @@ public final class Model {
  public enum Datum { FREE_ROLL, DATUM_RAIL, EXTERNAL_POSE }
  public enum Decision { PASS, FAIL, INDETERMINATE, INSUFFICIENT_DATA }
  public record Channel(double pivotXmm,double pivotYmm,double pivotZmm,double lengthMm,double radiusMm,
-                       double zeroRad,double[] measuredRad,double[] correctedRad) {
+                       double zeroRad,double[] measuredRad,double[] correctedRad, ContactModel.ContactCalibration contact) {
+  public Channel(double px,double py,double pz,double l,double r,double zero,double[] measured,double[] corrected){this(px,py,pz,l,r,zero,measured,corrected,null);}
   public double angle(int word) {
    double a=Math.IEEEremainder((word & 0x3fff)*2*Math.PI/16384.0+zeroRad,2*Math.PI);
    if(measuredRad.length==0) return a;
@@ -24,7 +25,10 @@ public final class Model {
  public record Calibration(String id,boolean traceable,double odometerMmPerTick,double expandedHeightUncertaintyMm,
                            double expandedGradeUncertainty,List<Channel> channels) {}
  public record Frame(long sequence,long timeUs,long odometerTicks,double xMm,double rollRad,double pitchRad,
-                     double yawRad,Double datumZmm,int[] accel20,int[] angle14,int[] flags,boolean attitudeValid) {}
+                     double yawRad,Double datumZmm,int[] accel20,int[] angle14,int[] flags,boolean attitudeValid,R2Raw r2) {
+  public Frame(long seq,long time,long odo,double x,double roll,double pitch,double yaw,Double z,int[] accel,int[] angles,int[] status,boolean attitude){this(seq,time,odo,x,roll,pitch,yaw,z,accel,angles,status,attitude,null);}
+ }
+ public record R2Raw(int[] contactAdc,int[] diagnostic16,int[] angleOffsetUs,int[] contactOffsetUs,int interlocks) {}
  public record Survey(int schema,UUID id,UUID planId,String deviceId,Mode mode,Datum datum,boolean simulated,
                       String ruleProfileId,Calibration calibration,List<Frame> frames,String notes) {}
  public record Target(String name,double latitude,double longitude,Mode mode,String notes) {}
@@ -41,7 +45,7 @@ public final class Model {
  }
  public static void finite(double v,String label){if(!Double.isFinite(v))throw new IllegalArgumentException(label+" must be finite");}
  public static void validate(Survey s) {
-  Objects.requireNonNull(s); if(s.schema!=1)throw new IllegalArgumentException("unsupported schema");
+  Objects.requireNonNull(s); if(s.schema!=1&&s.schema!=2)throw new IllegalArgumentException("unsupported schema");
   Objects.requireNonNull(s.id);Objects.requireNonNull(s.planId);Objects.requireNonNull(s.mode);Objects.requireNonNull(s.datum);
   if(s.deviceId==null||s.deviceId.isBlank()||s.deviceId.length()>120)throw new IllegalArgumentException("deviceId");
   if(s.ruleProfileId==null||s.ruleProfileId.length()>120)throw new IllegalArgumentException("ruleProfileId");
@@ -54,6 +58,7 @@ public final class Model {
   if(c.expandedGradeUncertainty<0||c.expandedHeightUncertaintyMm<0)throw new IllegalArgumentException("negative uncertainty");
   double previousY=Double.NEGATIVE_INFINITY;
   for(Channel ch:c.channels){
+   if(ch.contact()!=null)ContactModel.validate(ch.contact());
    for(double x:new double[]{ch.pivotXmm,ch.pivotYmm,ch.pivotZmm,ch.lengthMm,ch.radiusMm,ch.zeroRad})finite(x,"geometry");
    if(ch.lengthMm<10||ch.lengthMm>1000||ch.radiusMm<1||ch.radiusMm>100||ch.pivotYmm<=previousY)throw new IllegalArgumentException("channel geometry/order");previousY=ch.pivotYmm;
    if(ch.measuredRad==null||ch.correctedRad==null||ch.measuredRad.length!=ch.correctedRad.length||ch.measuredRad.length==1)throw new IllegalArgumentException("calibration LUT");
@@ -62,6 +67,11 @@ public final class Model {
   if(s.frames==null||s.frames.size()<3||s.frames.size()>20000)throw new IllegalArgumentException("frame count 3..20000");
   long lastSeq=-1,lastTime=-1;
   for(Frame f:s.frames){
+   if(s.schema==2&&f.r2()==null||s.schema==1&&f.r2()!=null)throw new IllegalArgumentException("schema and Q2 metadata differ");
+   if(f.r2()!=null){R2Raw q=f.r2();if(q.interlocks()<0||(q.interlocks()&~7)!=0)throw new IllegalArgumentException("Q2 interlocks");
+    for(int[] v:new int[][]{q.contactAdc(),q.diagnostic16(),q.angleOffsetUs(),q.contactOffsetUs()})if(v==null||v.length!=31)throw new IllegalArgumentException("Q2 vectors");
+    for(int j=0;j<31;j++)if(q.contactAdc()[j]<0||q.contactAdc()[j]>4095||q.diagnostic16()[j]<0||q.diagnostic16()[j]>65535||q.angleOffsetUs()[j]<0||q.angleOffsetUs()[j]>20000||q.contactOffsetUs()[j]<0||q.contactOffsetUs()[j]>20000)throw new IllegalArgumentException("Q2 raw range");
+   }
    if(f.sequence<=lastSeq||f.timeUs<=lastTime)throw new IllegalArgumentException("sequence/time must increase");lastSeq=f.sequence;lastTime=f.timeUs;
    if(f.angle14==null||f.flags==null||f.angle14.length!=CHANNELS||f.flags.length!=CHANNELS||f.accel20==null||f.accel20.length!=3)throw new IllegalArgumentException("frame vector sizes");
    for(double x:new double[]{f.xMm,f.rollRad,f.pitchRad,f.yawRad})finite(x,"pose");if(f.datumZmm!=null)finite(f.datumZmm,"datum Z");

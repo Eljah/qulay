@@ -1,0 +1,171 @@
+{
+  "source_commit": "8714092b0b7d3000ac8a5d6de0d6408adf9ce239",
+  "run_id": "37198055777",
+  "suites": [
+    {
+      "name": "org.qulay.simulator.CurbTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.simulator.SimulatorTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.server.StoreTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.agent.WireTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.agent.WireV2Test",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.agent.CaptureSafetyTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.core.JsonIntegrityTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.core.ContactModelTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "org.qulay.core.GeometryTest",
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "totals": {
+    "tests": 72,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "legacy_e2e": {
+    "scope": "JVM + HTTP + filesystem; NOT hardware",
+    "checks": [
+      {
+        "test": "unauthenticated request rejected",
+        "result": "PASS"
+      },
+      {
+        "test": "checksum mismatch rejected",
+        "result": "PASS"
+      },
+      {
+        "test": "first upload",
+        "result": "PASS"
+      },
+      {
+        "test": "idempotent duplicate",
+        "result": "PASS"
+      },
+      {
+        "test": "UUID conflict rejected",
+        "result": "PASS"
+      },
+      {
+        "test": "unknown schema rejected",
+        "result": "PASS"
+      },
+      {
+        "test": "server computes geometry and blocks acceptance",
+        "result": "PASS"
+      },
+      {
+        "test": "coordinate export",
+        "result": "PASS"
+      },
+      {
+        "test": "plan creation",
+        "result": "PASS"
+      },
+      {
+        "test": "plan downloaded to USB directory",
+        "result": "PASS"
+      },
+      {
+        "test": "offline agent sync uploads seven passes",
+        "result": "PASS"
+      },
+      {
+        "test": "surveys survive server restart",
+        "result": "PASS"
+      }
+    ]
+  },
+  "q2_e2e": {
+    "scope": "synthetic Q2 input, real JVM agent, disk, HTTP and server; no physical hardware",
+    "checks": [
+      {
+        "test": "Q2 agent capture completes",
+        "result": "PASS"
+      },
+      {
+        "test": "one complete survey",
+        "result": "PASS"
+      },
+      {
+        "test": "schema2 metadata retained",
+        "result": "PASS"
+      },
+      {
+        "test": "replay cannot become field evidence",
+        "result": "PASS"
+      },
+      {
+        "test": "qualified synthetic static contact reaches geometry",
+        "result": "PASS"
+      },
+      {
+        "test": "schema2 upload accepted",
+        "result": "PASS"
+      },
+      {
+        "test": "Q2 raw diagnostic survives HTTP roundtrip",
+        "result": "PASS"
+      },
+      {
+        "test": "prototype cannot issue acceptance",
+        "result": "PASS"
+      },
+      {
+        "test": "no longitudinal height fabricated",
+        "result": "PASS"
+      }
+    ]
+  },
+  "hardware_executed": false,
+  "metrology_validated": false
+}

@@ -3,6 +3,7 @@ import org.qulay.core.Model;import static org.qulay.core.Model.*;import java.nio
 public final class Wire {
  private Wire(){}
  public static Frame parse(String line,Calibration calibration){
+  if(line!=null&&line.startsWith("Q2,"))return WireV2.parse(line,calibration);
   if(line.length()>1024)throw new IllegalArgumentException("oversized wire line");int star=line.lastIndexOf('*');if(star<0)throw new IllegalArgumentException("missing CRC");String payload=line.substring(0,star);CRC32 crc=new CRC32();crc.update(payload.getBytes(StandardCharsets.US_ASCII));if(Long.parseUnsignedLong(line.substring(star+1).trim(),16)!=crc.getValue())throw new IllegalArgumentException("CRC mismatch");
   String[] a=payload.split(",",-1);if(a.length!=39||!a[0].equals("Q1"))throw new IllegalArgumentException("wire version/length");
   long seq=Long.parseLong(a[1]),us=Long.parseLong(a[2]),odom=Long.parseLong(a[3]),valid=Long.parseUnsignedLong(a[7],16);

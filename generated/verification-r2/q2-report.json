@@ -1,0 +1,22 @@
+{
+  "algorithm": "QL-01-0.1",
+  "ruleProfile": "DEMO-ONLY-01",
+  "acceptanceEligible": false,
+  "blockers": [
+    "SIMULATION_NOT_FIELD_EVIDENCE",
+    "CALIBRATION_NOT_TRACEABLE",
+    "RULES_NOT_NORMATIVE",
+    "NO_INDEPENDENT_HEIGHT_DATUM",
+    "PROTOTYPE_METROLOGY_NOT_VALIDATED"
+  ],
+  "maximumLongitudinalGrade": null,
+  "maximumCrossGrade": 0.0,
+  "largestAdjacentLevelChangeMm": null,
+  "validFraction": 1.0,
+  "demonstrationDecisions": {
+    "longitudinal": "INSUFFICIENT_DATA",
+    "cross": "PASS",
+    "adjacentLevelChange": "INSUFFICIENT_DATA"
+  },
+  "warning": "DEMONSTRATION ONLY. Adjacent level change is not a certified step-height measurement. No detected jump is not proof of absence. FREE_ROLL transverse values use a vertical-radius approximation."
+}

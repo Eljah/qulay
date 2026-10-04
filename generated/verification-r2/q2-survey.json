@@ -1,0 +1,1209 @@
+{
+  "schema" : 2,
+  "id" : "75c62172-b24e-4f43-93df-0d34da5bcc14",
+  "planId" : "1753c26a-60bc-3269-add9-6a56628d5f3b",
+  "deviceId" : "QL01-PICO-PROTOTYPE",
+  "mode" : "CROSSING",
+  "datum" : "FREE_ROLL",
+  "simulated" : true,
+  "ruleProfileId" : "DEMO-ONLY-01",
+  "calibration" : {
+    "id" : "SYNTHETIC-Q2-E2E-NOT-FOR-HARDWARE",
+    "traceable" : false,
+    "odometerMmPerTick" : 0.1,
+    "expandedHeightUncertaintyMm" : 2.0,
+    "expandedGradeUncertainty" : 0.005,
+    "channels" : [ {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -375.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -350.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -325.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -300.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -275.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -250.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -225.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -200.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -175.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -150.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -125.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -100.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -75.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -50.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : -25.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 0.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 25.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 50.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 75.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 100.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 125.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 150.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 175.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 200.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 225.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 250.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 275.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 300.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 325.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 350.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    }, {
+      "pivotXmm" : 0.0,
+      "pivotYmm" : 375.0,
+      "pivotZmm" : 0.0,
+      "lengthMm" : 240.0,
+      "radiusMm" : 20.0,
+      "zeroRad" : 0.0,
+      "measuredRad" : [ ],
+      "correctedRad" : [ ],
+      "contact" : {
+        "qualified" : true,
+        "certificate" : "SYNTHETIC-Q2-TEST-ONLY",
+        "adcCounts" : [ 1000.0, 2000.0, 3000.0 ],
+        "displacementMm" : [ -0.1, 0.1, 0.3 ],
+        "angleRad" : [ -1.3, 0.0, 0.5 ],
+        "hangingMm" : [ 0.0, 0.0, 0.0 ],
+        "stiffnessNPerMm" : 10.0,
+        "expandedDisplacementUncertaintyMm" : 0.005
+      }
+    } ]
+  },
+  "frames" : [ {
+    "sequence" : 0,
+    "timeUs" : 0,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 1,
+    "timeUs" : 10000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 2,
+    "timeUs" : 20000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 3,
+    "timeUs" : 30000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 4,
+    "timeUs" : 40000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 5,
+    "timeUs" : 50000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 6,
+    "timeUs" : 60000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 7,
+    "timeUs" : 70000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 8,
+    "timeUs" : 80000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 9,
+    "timeUs" : 90000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 10,
+    "timeUs" : 100000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 11,
+    "timeUs" : 110000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 12,
+    "timeUs" : 120000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 13,
+    "timeUs" : 130000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 14,
+    "timeUs" : 140000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 15,
+    "timeUs" : 150000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 16,
+    "timeUs" : 160000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 17,
+    "timeUs" : 170000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 18,
+    "timeUs" : 180000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 19,
+    "timeUs" : 190000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 20,
+    "timeUs" : 200000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 21,
+    "timeUs" : 210000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 22,
+    "timeUs" : 220000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 23,
+    "timeUs" : 230000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 24,
+    "timeUs" : 240000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 25,
+    "timeUs" : 250000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 26,
+    "timeUs" : 260000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 27,
+    "timeUs" : 270000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 28,
+    "timeUs" : 280000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  }, {
+    "sequence" : 29,
+    "timeUs" : 290000,
+    "odometerTicks" : 0,
+    "xMm" : 0.0,
+    "rollRad" : 0.0,
+    "pitchRad" : -0.0,
+    "yawRad" : 0.0,
+    "datumZmm" : null,
+    "accel20" : [ 0, 0, 256000 ],
+    "angle14" : [ 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336, 14336 ],
+    "flags" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    "attitudeValid" : true,
+    "r2" : {
+      "contactAdc" : [ 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000 ],
+      "diagnostic16" : [ 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024, 33024 ],
+      "angleOffsetUs" : [ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 ],
+      "contactOffsetUs" : [ 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200 ],
+      "interlocks" : 7
+    }
+  } ],
+  "notes" : "Target index=0; source=FILE_REPLAY_NOT_FIELD_EVIDENCE; rejected=0. Q1 contact unknown; Q2 contact requires qualified per-channel calibration; independent height datum absent."
+}
