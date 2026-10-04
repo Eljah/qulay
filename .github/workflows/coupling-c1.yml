@@ -1,0 +1,62 @@
+name: C1 positive arm shaft coupling
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['mechanical/coupling_c1/build.py', 'mechanical/coupling_c1/document.py', 'mechanical/coupling_c1/README.md', '.github/workflows/coupling-c1.yml']
+permissions:
+  contents: write
+concurrency:
+  group: qulay-coupling-c1
+  cancel-in-progress: false
+jobs:
+  coupling:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify unchanged engineering baseline
+        run: git diff --exit-code 3d26a5449f2bf5eea4555df82f0002fc7f63131f -- config/geometry.json mechanical/build.py mechanical/revision_b.py
+      - name: Install CAD and drawing toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libgl1 libegl1 fonts-dejavu-core poppler-utils
+          python -m pip install cadquery==2.8.0 ezdxf reportlab==4.4.9 pymupdf==1.26.7
+      - name: Build actual solids and collision checks
+        run: python mechanical/coupling_c1/build.py
+      - name: Build note and dimensioned A3 drawings
+        run: |
+          python mechanical/coupling_c1/document.py
+          pdfinfo mechanical/coupling_c1/generated/Qulay_C1_Lever_Shaft_Coupling.pdf
+          git rev-parse HEAD > mechanical/coupling_c1/generated/source-commit.txt
+          python - <<'PY'
+          import json,pathlib,hashlib
+          root=pathlib.Path('mechanical/coupling_c1/generated')
+          check=json.loads((root/'verification.json').read_text())
+          assert check['passed'] and len(check['sweep'])==19
+          calc=json.loads((root/'calculations.json').read_text())
+          assert all(c['pin_shear_margin_to_assumed_180MPa']>2 for c in calc['cases'])
+          assert all(c['hole_bearing_margin_to_assumed_150MPa']>1.79 for c in calc['cases'])
+          (root/'SHA256SUMS').write_text('\n'.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name for p in sorted(root.iterdir()) if p.is_file() and p.name!='SHA256SUMS')+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qulay-c1-coupling
+          path: mechanical/coupling_c1/generated
+          retention-days: 90
+      - name: Publish models and drawings without overwriting historical CAD
+        run: |
+          test "$GITHUB_REF_NAME" = 'feature/qulay-prototype-20261002'
+          git config user.name 'qulay-cad-build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add mechanical/coupling_c1/generated
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'build(c1): publish positive coupling CAD, drawings and verification [skip ci]'
+          git stash push -u -m 'transient CAD state'
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
