@@ -1,0 +1,12 @@
+{
+  "device": "TPS3808G33DBVR",
+  "threshold_nominal_V": 3.07,
+  "release_delay_nominal_ms": 20,
+  "CT": "not connected",
+  "J1.1": "carrier_r2.J9.4 PICO_3V3",
+  "J1.2": "carrier_r2.J9.1 GND",
+  "J1.3": "sensor supply after 1A fuse, NOT Pico3V3",
+  "J1.4": "carrier_r2.J9.3 POWER_GOOD",
+  "pull_up": "10k to SENS_3V3; existing MCU100k pull-down gives low on broken wire or absent sensor power",
+  "limits": "Not a complete overvoltage or battery protection circuit; independent fuse/reverse-polarity protection required"
+}

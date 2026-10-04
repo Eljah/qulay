@@ -1,0 +1,15 @@
+reference,pin,net,pin_type
+U1,1,POWER_GOOD,open_collector
+U1,2,GND,power_in
+U1,3,PICO_3V3,input
+U1,4,NC,passive
+U1,5,SENS_3V3,input
+U1,6,PICO_3V3,power_in
+J1,1,PICO_3V3,power_out
+J1,2,GND,power_out
+J1,3,SENS_3V3,power_out
+J1,4,POWER_GOOD,input
+C1,1,PICO_3V3,passive
+C1,2,GND,passive
+R1,1,SENS_3V3,passive
+R1,2,POWER_GOOD,passive

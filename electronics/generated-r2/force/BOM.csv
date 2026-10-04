@@ -1,5 +1,5 @@
 reference,value,footprint,quantity_per_board
-U1,DRV5055A3DBZR,SOT23,1
+U1,DRV5055A3QDBZR,SOT23,1
 J1,HALL_3V3_GND_OUT,H3,1
 C1,100n X7R,C0603,1
 R1,3k3 1%,R0603,1

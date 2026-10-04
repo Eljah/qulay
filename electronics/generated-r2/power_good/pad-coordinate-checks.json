@@ -1,0 +1,18 @@
+[
+  {
+    "reference": "J1",
+    "distinct_pads": 4
+  },
+  {
+    "reference": "U1",
+    "distinct_pads": 6
+  },
+  {
+    "reference": "C1",
+    "distinct_pads": 2
+  },
+  {
+    "reference": "R1",
+    "distinct_pads": 2
+  }
+]

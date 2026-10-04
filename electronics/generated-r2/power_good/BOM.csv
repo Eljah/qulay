@@ -1,0 +1,5 @@
+reference,value,footprint,quantity_per_board
+U1,TPS3808G33DBVR,SOT23_6,1
+J1,PICO3V3_GND_SENSE3V3_PG,H4,1
+C1,100n X7R,C0603,1
+R1,10k fail-low pull-up,R0603,1

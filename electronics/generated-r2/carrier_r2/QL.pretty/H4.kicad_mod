@@ -3,10 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(property "Reference" "J7"
+	(property "Reference" "J9"
 		(at 0 -3 0)
 		(layer "F.Fab")
-		(uuid "4a46465a-e17c-4381-967e-d05a2e921fd5")
+		(uuid "72ab92a2-5f57-419c-9c8e-9e57b7b26ebc")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -14,11 +14,11 @@
 			)
 		)
 	)
-	(property "Value" "ODOMETER_3V3_ONLY"
+	(property "Value" "INTERLOCK_GND_LIFT_PG_REMOTE_PULLUP"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e90e17a4-6b6a-4776-b07a-94339a3417f8")
+		(uuid "eb010908-d63e-4600-bd69-19da98b17110")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d7838d28-15ba-4fe6-9221-6522acd026f0")
+		(uuid "27f42d7d-fd02-4fee-aac2-cb159fdbf539")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ad0c51c7-81a8-478d-aa8c-2974ac9373db")
+		(uuid "a649a38a-0a45-4fa7-86af-a2346bd7d1d3")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57,7 +57,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "ce3b5ce2-4aeb-4353-8d75-db5282c2de8e")
+		(uuid "5a6694af-0d8c-49af-81e2-086c65099313")
 	)
 	(pad "2" thru_hole circle
 		(at 2 0)
@@ -65,7 +65,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "94da0106-84af-4794-a6b8-450b2a685bf6")
+		(uuid "21710259-4831-4bc5-8a9c-288c7d9c9596")
 	)
 	(pad "3" thru_hole circle
 		(at 4 0)
@@ -73,7 +73,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "2014c51d-bc46-4b64-9c33-245fe07a5cdf")
+		(uuid "94476213-efff-4a10-8963-01910c7e55a4")
 	)
 	(pad "4" thru_hole circle
 		(at 6 0)
@@ -81,7 +81,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "2c2fd4df-87d4-4f75-b7e9-117647ad2bad")
+		(uuid "60492583-085b-4f17-b650-83d7609add35")
 	)
 	(embedded_fonts no)
 )

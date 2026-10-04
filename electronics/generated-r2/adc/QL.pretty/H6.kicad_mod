@@ -6,7 +6,7 @@
 	(property "Reference" "J1"
 		(at 0 -3 0)
 		(layer "F.Fab")
-		(uuid "a46ebdd7-0d3f-42b5-befc-11ee06c29568")
+		(uuid "1e54c2ce-62ad-45fc-8356-00cb84cd2c1d")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -18,7 +18,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8b9c605e-291f-4aff-beaa-8b18111601f6")
+		(uuid "eca78f57-e650-4147-a39b-1dae28971f05")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "12f3599c-7882-424c-b0c9-a68c941896f7")
+		(uuid "2500499f-afa3-43df-a468-478b8364467e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f2d05ea7-598c-40dd-9b1d-31fcf28ff8af")
+		(uuid "98a73ee5-8ac9-4984-b126-496f576d118d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57,7 +57,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 45)
-		(uuid "9ebb6c8f-9e22-468d-8723-b04ffcba6108")
+		(uuid "8eece6ba-a292-44b7-9761-4c9c2d618814")
 	)
 	(pad "2" thru_hole circle
 		(at 2 0)
@@ -65,7 +65,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "7ec601ed-ec7a-44cc-a48d-ac1629d35a89")
+		(uuid "a3656c9d-5f38-482a-908b-47c56581ce8e")
 	)
 	(pad "3" thru_hole circle
 		(at 4 0)
@@ -73,7 +73,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "5da64553-d20e-48bc-8b5d-a892c805e34d")
+		(uuid "6976b384-6084-40c2-a517-3b89f4d483fd")
 	)
 	(pad "4" thru_hole circle
 		(at 6 0)
@@ -81,7 +81,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "ed35b180-5d20-4c1d-aedd-d73eeb6565ae")
+		(uuid "a4296ce7-37a8-4b91-9077-9a3f01b50f32")
 	)
 	(pad "5" thru_hole circle
 		(at 8 0)
@@ -89,7 +89,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "b968ef99-7b7b-4b0e-97cf-12557d42341e")
+		(uuid "51e82904-1f15-47fe-8748-f7444323bde1")
 	)
 	(pad "6" thru_hole circle
 		(at 10 0)
@@ -97,7 +97,7 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "ef6b157c-53f4-48af-880d-5d2fe83cc563")
+		(uuid "869f60fb-c1ed-4c10-ab26-6551e9f8f366")
 	)
 	(embedded_fonts no)
 )

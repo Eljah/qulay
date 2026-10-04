@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "QL") (type "KiCad") (uri "${KIPRJMOD}/QL.pretty") (options "") (descr "Embedded prototype footprints")))

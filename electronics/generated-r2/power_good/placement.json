@@ -1,0 +1,54 @@
+{
+  "board_mm": [
+    20,
+    20
+  ],
+  "mount_holes_mm": [
+    [
+      2.5,
+      2.5
+    ],
+    [
+      17.5,
+      17.5
+    ]
+  ],
+  "components": [
+    {
+      "ref": "U1",
+      "xy_mm": [
+        10,
+        9
+      ],
+      "footprint": "SOT23_6",
+      "value": "TPS3808G33DBVR"
+    },
+    {
+      "ref": "J1",
+      "xy_mm": [
+        7,
+        15
+      ],
+      "footprint": "H4",
+      "value": "PICO3V3_GND_SENSE3V3_PG"
+    },
+    {
+      "ref": "C1",
+      "xy_mm": [
+        14,
+        7
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "R1",
+      "xy_mm": [
+        10,
+        4.5
+      ],
+      "footprint": "R0603",
+      "value": "10k fail-low pull-up"
+    }
+  ]
+}

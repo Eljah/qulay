@@ -33,18 +33,18 @@
   (placement
     (component QL:R0603
       (place R1 12700.000000 -5500.000000 front 0.000000 (PN "3k3 1%"))
-      (place C2 13000.000000 -8000.000000 front 0.000000 (PN "1u X7R 6.3V"))
       (place C1 4800.000000 -5500.000000 front 0.000000 (PN "100n X7R"))
-    )
-    (component QL:MountingHole_2.2mm
-      (place MH2 16000.000000 -10000.000000 front 0.000000)
-      (place MH1 2000.000000 -2000.000000 front 0.000000)
-    )
-    (component QL:SOT23
-      (place U1 9000.000000 -6000.000000 front 0.000000 (PN DRV5055A3DBZR))
+      (place C2 13000.000000 -8000.000000 front 0.000000 (PN "1u X7R 6.3V"))
     )
     (component QL:H3
       (place J1 5000.000000 -9500.000000 front 0.000000 (PN HALL_3V3_GND_OUT))
+    )
+    (component QL:SOT23
+      (place U1 9000.000000 -6000.000000 front 0.000000 (PN DRV5055A3QDBZR))
+    )
+    (component QL:MountingHole_2.2mm
+      (place MH1 2000.000000 -2000.000000 front 0.000000)
+      (place MH2 16000.000000 -10000.000000 front 0.000000)
     )
   )
   (library
@@ -52,19 +52,19 @@
       (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
       (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
     )
-    (image QL:MountingHole_2.2mm
-      (keepout "" (circle F.Cu 2700))
-      (keepout "" (circle B.Cu 2700))
+    (image QL:H3
+      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
+      (pin Round[A]Pad_1350.000000_um 2 2000 0)
+      (pin Round[A]Pad_1350.000000_um 3 4000 0)
     )
     (image QL:SOT23
       (pin Rect[T]Pad_1000.000000x600.000000_um 1 -1100 950)
       (pin Rect[T]Pad_1000.000000x600.000000_um 2 -1100 -950)
       (pin Rect[T]Pad_1000.000000x600.000000_um 3 1100 0)
     )
-    (image QL:H3
-      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
-      (pin Round[A]Pad_1350.000000_um 2 2000 0)
-      (pin Round[A]Pad_1350.000000_um 3 4000 0)
+    (image QL:MountingHole_2.2mm
+      (keepout "" (circle F.Cu 2700))
+      (keepout "" (circle B.Cu 2700))
     )
     (padstack Round[A]Pad_1350.000000_um
       (shape (circle F.Cu 1350))
@@ -92,16 +92,16 @@
   )
   (network
     (net FORCE_OUT
-      (pins R1-2 C2-1 J1-3)
+      (pins R1-2 J1-3 C2-1)
     )
     (net GND
-      (pins C2-2 U1-3 J1-2 C1-2)
+      (pins J1-2 C1-2 U1-3 C2-2)
     )
     (net HALL_RAW
       (pins R1-1 U1-2)
     )
     (net SENS_3V3
-      (pins U1-1 J1-1 C1-1)
+      (pins J1-1 C1-1 U1-1)
     )
     (class kicad_default FORCE_OUT GND HALL_RAW SENS_3V3
       (circuit

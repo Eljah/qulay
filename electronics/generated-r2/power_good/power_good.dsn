@@ -1,0 +1,121 @@
+(pcb "/home/runner/work/qulay/qulay/electronics/generated-r2/power_good/power_good.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "9.0.9-9.0.9~ubuntu24.04.1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  20000 -20000  0 -20000  0 0  20000 0  20000 -20000)
+    )
+    (via "Via[0-1]_600:300_um")
+    (rule
+      (width 200)
+      (clearance 200.1)
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component QL:H4
+      (place J1 7000.000000 -15000.000000 front 0.000000 (PN PICO3V3_GND_SENSE3V3_PG))
+    )
+    (component QL:SOT23_6
+      (place U1 10000.000000 -9000.000000 front 0.000000 (PN TPS3808G33DBVR))
+    )
+    (component QL:MountingHole_2.2mm
+      (place MH1 2500.000000 -2500.000000 front 0.000000)
+      (place MH2 17500.000000 -17500.000000 front 0.000000)
+    )
+    (component QL:C0603
+      (place C1 14000.000000 -7000.000000 front 0.000000 (PN "100n X7R"))
+      (place R1 10000.000000 -4500.000000 front 0.000000 (PN "10k fail-low pull-up"))
+    )
+  )
+  (library
+    (image QL:H4
+      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
+      (pin Round[A]Pad_1350.000000_um 2 2000 0)
+      (pin Round[A]Pad_1350.000000_um 3 4000 0)
+      (pin Round[A]Pad_1350.000000_um 4 6000 0)
+    )
+    (image QL:SOT23_6
+      (pin Rect[T]Pad_1000.000000x600.000000_um 1 -1100 950)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 2 -1100 0)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 3 -1100 -950)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 4 1100 -950)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 5 1100 0)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 6 1100 950)
+    )
+    (image QL:MountingHole_2.2mm
+      (keepout "" (circle F.Cu 2700))
+      (keepout "" (circle B.Cu 2700))
+    )
+    (image QL:C0603
+      (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
+      (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
+    )
+    (padstack Round[A]Pad_1350.000000_um
+      (shape (circle F.Cu 1350))
+      (shape (circle B.Cu 1350))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_850.000000x950.000000_um
+      (shape (rect F.Cu -425 -475 425 475))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1000.000000x600.000000_um
+      (shape (rect F.Cu -500 -300 500 300))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1350.000000x1350.000000_um
+      (shape (rect F.Cu -675 -675 675 675))
+      (shape (rect B.Cu -675 -675 675 675))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins J1-2 U1-2 C1-2)
+    )
+    (net PICO_3V3
+      (pins J1-1 U1-3 U1-6 C1-1)
+    )
+    (net POWER_GOOD
+      (pins J1-4 U1-1 R1-2)
+    )
+    (net SENS_3V3
+      (pins J1-3 U1-5 R1-1)
+    )
+    (class kicad_default GND PICO_3V3 POWER_GOOD SENS_3V3
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 200)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

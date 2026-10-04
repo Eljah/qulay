@@ -4,18 +4,18 @@
     (resolution um 10)
     (component QL:R0603
       (place R1 127000 -55000 front 0)
-      (place C2 130000 -80000 front 0)
       (place C1 48000 -55000 front 0)
+      (place C2 130000 -80000 front 0)
     )
-    (component QL:MountingHole_2.2mm
-      (place MH2 160000 -100000 front 0)
-      (place MH1 20000 -20000 front 0)
+    (component QL:H3
+      (place J1 50000 -95000 front 0)
     )
     (component QL:SOT23
       (place U1 90000 -60000 front 0)
     )
-    (component QL:H3
-      (place J1 50000 -95000 front 0)
+    (component QL:MountingHole_2.2mm
+      (place MH1 20000 -20000 front 0)
+      (place MH2 160000 -100000 front 0)
     )
   )
   (was_is
@@ -50,8 +50,21 @@
       (net FORCE_OUT
         (wire
           (path F.Cu 2000
-            122000 -80000
+            118366 -80000
+            135000 -63366
+            135000 -55000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            118366 -80000
             114731 -80000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            122000 -80000
+            118366 -80000
           )
         )
         (wire
@@ -59,25 +72,6 @@
             90000 -95000
             99731 -95000
             114731 -80000
-          )
-        )
-        (wire
-          (path F.Cu 2000
-            122000 -80000
-            122000 -72231
-          )
-        )
-        (wire
-          (path F.Cu 2000
-            135000 -55000
-            127731 -55000
-          )
-        )
-        (wire
-          (path F.Cu 2000
-            122000 -72231
-            127731 -66500
-            127731 -55000
           )
         )
       )
@@ -93,8 +87,8 @@
         )
         (wire
           (path F.Cu 2000
-            70000 -60000
             70000 -95000
+            70000 -60000
           )
         )
         (wire
