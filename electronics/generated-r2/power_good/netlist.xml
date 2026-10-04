@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/runner/work/qulay/qulay/electronics/generated-r2/power_good/power_good.kicad_sch</source>
+    <date>2026-10-04T14:20:18+0000</date>
+    <tool>Eeschema 9.0.9-9.0.9~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>QULAY QL-01 power_good</title>
+        <company/>
+        <rev>0.1 PROTOTYPE</rev>
+        <date>2026-10-02</date>
+        <source>power_good.kicad_sch</source>
+        <comment number="1" value="NOT FOR FABRICATION UNTIL DRC/ERC AND HARDWARE REVIEW"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n X7R</value>
+      <footprint>QL:C0603</footprint>
+      <fields>
+        <field name="Footprint">QL:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="power_good_C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power_good.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9acfb2f0-0178-54d2-afbb-d563af6bfb45</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>PICO3V3_GND_SENSE3V3_PG</value>
+      <footprint>QL:H4</footprint>
+      <fields>
+        <field name="Footprint">QL:H4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="power_good_J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power_good.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27f0e1a5-da68-52b5-a720-43cf76a9bdb8</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k fail-low pull-up</value>
+      <footprint>QL:R0603</footprint>
+      <fields>
+        <field name="Footprint">QL:R0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="power_good_R1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power_good.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77bc01ce-a47a-5789-8683-59920b4d2aad</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>TPS3808G33DBVR</value>
+      <footprint>QL:SOT23_6</footprint>
+      <fields>
+        <field name="Footprint">QL:SOT23_6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="QL" part="power_good_U1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="power_good.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b7418e1-05fd-5b5a-9e5e-f47ec512df8a</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="QL" part="power_good_C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">100n X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PICO_3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="power_good_J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">PICO3V3_GND_SENSE3V3_PG</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PICO_3V3" type="power_out"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="SENS_3V3" type="power_out"/>
+        <pin num="4" name="POWER_GOOD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="power_good_R1">
+      <fields>
+        <field name="Reference">R1</field>
+        <field name="Value">10k fail-low pull-up</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SENS_3V3" type="passive"/>
+        <pin num="2" name="POWER_GOOD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="QL" part="power_good_U1">
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">TPS3808G33DBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="POWER_GOOD" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="PICO_3V3" type="input"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="SENS_3V3" type="input"/>
+        <pin num="6" name="PICO_3V3" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="QL">
+      <uri>/home/runner/work/qulay/qulay/electronics/generated-r2/power_good/QL.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="GND" pintype="power_out"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="2" name="/PICO_3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="PICO_3V3" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="PICO_3V3" pintype="power_out"/>
+      <node ref="U1" pin="3" pinfunction="PICO_3V3" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="PICO_3V3" pintype="power_in"/>
+    </net>
+    <net code="3" name="/POWER_GOOD" class="Default">
+      <node ref="J1" pin="4" pinfunction="POWER_GOOD" pintype="input"/>
+      <node ref="R1" pin="2" pinfunction="POWER_GOOD" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="POWER_GOOD" pintype="open_collector"/>
+    </net>
+    <net code="4" name="/SENS_3V3" class="Default">
+      <node ref="J1" pin="3" pinfunction="SENS_3V3" pintype="power_out"/>
+      <node ref="R1" pin="1" pinfunction="SENS_3V3" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="SENS_3V3" pintype="input"/>
+    </net>
+    <net code="5" name="unconnected-(U1-NC-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

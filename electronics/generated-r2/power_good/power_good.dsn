@@ -31,23 +31,23 @@
     )
   )
   (placement
-    (component QL:R0603
-      (place R1 10000.000000 -4500.000000 front 0.000000 (PN "10k fail-low pull-up"))
+    (component QL:C0603
       (place C1 14000.000000 -7000.000000 front 0.000000 (PN "100n X7R"))
+      (place R1 10000.000000 -4500.000000 front 0.000000 (PN "10k fail-low pull-up"))
     )
     (component QL:SOT23_6
       (place U1 10000.000000 -9000.000000 front 0.000000 (PN TPS3808G33DBVR))
-    )
-    (component QL:H4
-      (place J1 7000.000000 -15000.000000 front 0.000000 (PN PICO3V3_GND_SENSE3V3_PG))
     )
     (component QL:MountingHole_2.2mm
       (place MH1 2500.000000 -2500.000000 front 0.000000)
       (place MH2 17500.000000 -17500.000000 front 0.000000)
     )
+    (component QL:H4
+      (place J1 7000.000000 -15000.000000 front 0.000000 (PN PICO3V3_GND_SENSE3V3_PG))
+    )
   )
   (library
-    (image QL:R0603
+    (image QL:C0603
       (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
       (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
     )
@@ -59,15 +59,15 @@
       (pin Rect[T]Pad_1000.000000x600.000000_um 5 1100 0)
       (pin Rect[T]Pad_1000.000000x600.000000_um 6 1100 950)
     )
+    (image QL:MountingHole_2.2mm
+      (keepout "" (circle F.Cu 2700))
+      (keepout "" (circle B.Cu 2700))
+    )
     (image QL:H4
       (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
       (pin Round[A]Pad_1350.000000_um 2 2000 0)
       (pin Round[A]Pad_1350.000000_um 3 4000 0)
       (pin Round[A]Pad_1350.000000_um 4 6000 0)
-    )
-    (image QL:MountingHole_2.2mm
-      (keepout "" (circle F.Cu 2700))
-      (keepout "" (circle B.Cu 2700))
     )
     (padstack Round[A]Pad_1350.000000_um
       (shape (circle F.Cu 1350))
@@ -95,16 +95,16 @@
   )
   (network
     (net GND
-      (pins U1-2 C1-2 J1-2)
+      (pins C1-2 U1-2 J1-2)
     )
     (net PICO_3V3
-      (pins U1-3 U1-6 C1-1 J1-1)
+      (pins C1-1 U1-3 U1-6 J1-1)
     )
     (net POWER_GOOD
-      (pins R1-2 U1-1 J1-4)
+      (pins U1-1 R1-2 J1-4)
     )
     (net SENS_3V3
-      (pins R1-1 U1-5 J1-3)
+      (pins U1-5 R1-1 J1-3)
     )
     (class kicad_default GND PICO_3V3 POWER_GOOD SENS_3V3
       (circuit

@@ -1,7 +1,7 @@
 {
   "board": "carrier_r2",
   "router_session_imported": true,
-  "tracks_and_vias": 628,
+  "tracks_and_vias": 619,
   "drc_errors": 0,
   "drc_warnings": 0,
   "unconnected": 0,
