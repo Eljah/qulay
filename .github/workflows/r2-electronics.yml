@@ -27,15 +27,20 @@ jobs:
           sudo apt-get install -y --no-install-recommends kicad xvfb
           curl -fL --retry 3 https://github.com/freerouting/freerouting/releases/download/v1.9.0/freerouting-1.9.0.jar -o /tmp/freerouting.jar
           kicad-cli version
-      - name: Generate final connected boards
-        run: /usr/bin/python3 electronics/r2/finish_design.py
-      - name: Route four serialized boards
+      - name: Preserve established ADC routes before regenerating circuit
         run: |
-          for board in force adc carrier_r2 power_good; do
+          cp electronics/generated-r2/adc/adc.ses /tmp/qulay-adc-verified.ses
+          git rev-parse HEAD > /tmp/qulay-adc-routing-commit.txt
+          /usr/bin/python3 electronics/r2/finish_design.py
+          cp /tmp/qulay-adc-verified.ses electronics/generated-r2/adc/adc.ses
+          cp /tmp/qulay-adc-routing-commit.txt electronics/generated-r2/adc/routing-source-commit.txt
+      - name: Route remaining boards
+        run: |
+          for board in force carrier_r2 power_good; do
             base="electronics/generated-r2/$board/$board"
             timeout 210 xvfb-run -a java -jar /tmp/freerouting.jar -de "$base.dsn" -do "$base.ses" -mp 80 -mt 1 -oit 0.2 -dct 1 -da > "$base-router.log" 2>&1 || echo 'Routing interrupted; verification will report unconnected nets.'
           done
-      - name: ERC DRC netlist and fabrication exports
+      - name: Fresh ERC DRC and netlist checks on all four boards
         run: /usr/bin/python3 electronics/r2/verify.py
       - uses: actions/upload-artifact@v4
         if: always()
@@ -51,7 +56,7 @@ jobs:
           find electronics/generated-r2 -name '*.kicad_prl' -delete
           git add electronics/generated-r2
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'build(r2): publish four routed boards and checks [skip ci]'
+          git commit -m 'build(r2): publish verified four-board electronics baseline [skip ci]'
           git stash push -u -m 'transient build state'
           git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:$GITHUB_REF_NAME"
