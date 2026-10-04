@@ -1,0 +1,6 @@
+{
+  "minimum_clearance_mm": 0.2,
+  "router_clearance_mm": 0.2001,
+  "violations_excluded": false,
+  "pre_routed_net": "MOSI0_BUF"
+}

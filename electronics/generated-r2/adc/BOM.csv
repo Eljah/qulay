@@ -1,0 +1,19 @@
+reference,value,footprint,quantity_per_board
+U1,MCP3208-BI/SL,SOIC16,1
+J1,SPI_POWER,H6,1
+J2,8X_HALL_3V3_GND_SIGNAL,H24,1
+C1,100n X7R,C0603,1
+C2,10u X7R 6.3V,C0603,1
+U2,SN74LVC1G125DBVR_IOFF,SOT23_5,1
+C3,100n X7R,C0603,1
+R1,100k 1% cable-open pull-down,R0603,1
+R2,100k 1% cable-open pull-down,R0603,1
+R3,100k 1% cable-open pull-down,R0603,1
+R4,100k 1% cable-open pull-down,R0603,1
+R5,100k 1% cable-open pull-down,R0603,1
+R6,100k 1% cable-open pull-down,R0603,1
+R7,100k 1% cable-open pull-down,R0603,1
+R8,100k 1% cable-open pull-down,R0603,1
+R9,10k 1%,R0603,1
+R10,10k 1%,R0603,1
+JP1,CH7_1-2_SENSOR_2-3_TEST,H3,1

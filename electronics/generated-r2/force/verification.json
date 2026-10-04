@@ -1,0 +1,30 @@
+{
+  "board": "force",
+  "router_session_imported": true,
+  "tracks_and_vias": 30,
+  "drc_errors": 0,
+  "drc_warnings": 0,
+  "unconnected": 0,
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "netlist_parity": {
+    "board": "force",
+    "checked_connected_pins": 12,
+    "mismatches": [],
+    "passed": true
+  },
+  "commands": {
+    "drc": 0,
+    "erc": 0,
+    "schematic_pdf": 0,
+    "pcb_svg": 0,
+    "assembly_pdf": 0,
+    "netlist": 0
+  },
+  "digital_checks_passed": true,
+  "manufacturing_release": false,
+  "hardware_tested": false,
+  "limits": "No EMC, thermal, force-calibration or actual sensor testing is implied.",
+  "gerber_export": 0,
+  "drill_export": 0
+}

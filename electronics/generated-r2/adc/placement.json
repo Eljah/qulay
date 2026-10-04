@@ -1,0 +1,188 @@
+{
+  "board_mm": [
+    80,
+    50
+  ],
+  "mount_holes_mm": [
+    [
+      4,
+      4
+    ],
+    [
+      76,
+      4
+    ],
+    [
+      4,
+      46
+    ],
+    [
+      76,
+      46
+    ]
+  ],
+  "components": [
+    {
+      "ref": "U1",
+      "xy_mm": [
+        28,
+        27
+      ],
+      "footprint": "SOIC16",
+      "value": "MCP3208-BI/SL"
+    },
+    {
+      "ref": "J1",
+      "xy_mm": [
+        57,
+        29
+      ],
+      "footprint": "H6",
+      "value": "SPI_POWER"
+    },
+    {
+      "ref": "J2",
+      "xy_mm": [
+        12,
+        10
+      ],
+      "footprint": "H24",
+      "value": "8X_HALL_3V3_GND_SIGNAL"
+    },
+    {
+      "ref": "C1",
+      "xy_mm": [
+        34,
+        23
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "C2",
+      "xy_mm": [
+        34,
+        27
+      ],
+      "footprint": "C0603",
+      "value": "10u X7R 6.3V"
+    },
+    {
+      "ref": "U2",
+      "xy_mm": [
+        60,
+        38
+      ],
+      "footprint": "SOT23_5",
+      "value": "SN74LVC1G125DBVR_IOFF"
+    },
+    {
+      "ref": "C3",
+      "xy_mm": [
+        55,
+        38
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "R1",
+      "xy_mm": [
+        14,
+        20
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R2",
+      "xy_mm": [
+        14,
+        25
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R3",
+      "xy_mm": [
+        14,
+        30
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R4",
+      "xy_mm": [
+        14,
+        35
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R5",
+      "xy_mm": [
+        43,
+        20
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R6",
+      "xy_mm": [
+        43,
+        25
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R7",
+      "xy_mm": [
+        43,
+        30
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R8",
+      "xy_mm": [
+        43,
+        35
+      ],
+      "footprint": "R0603",
+      "value": "100k 1% cable-open pull-down"
+    },
+    {
+      "ref": "R9",
+      "xy_mm": [
+        67,
+        18
+      ],
+      "footprint": "R0603",
+      "value": "10k 1%"
+    },
+    {
+      "ref": "R10",
+      "xy_mm": [
+        67,
+        22
+      ],
+      "footprint": "R0603",
+      "value": "10k 1%"
+    },
+    {
+      "ref": "JP1",
+      "xy_mm": [
+        57,
+        18
+      ],
+      "footprint": "H3",
+      "value": "CH7_1-2_SENSOR_2-3_TEST"
+    }
+  ]
+}

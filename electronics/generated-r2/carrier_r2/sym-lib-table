@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "QL") (type "KiCad") (uri "${KIPRJMOD}/QL.kicad_sym") (options "") (descr "Qulay embedded circuit symbols")))

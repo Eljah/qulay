@@ -1,0 +1,350 @@
+{
+  "board_mm": [
+    100,
+    140
+  ],
+  "mount_holes_mm": [
+    [
+      4,
+      4
+    ],
+    [
+      96,
+      4
+    ],
+    [
+      4,
+      136
+    ],
+    [
+      96,
+      136
+    ]
+  ],
+  "components": [
+    {
+      "ref": "U1",
+      "xy_mm": [
+        24,
+        44
+      ],
+      "footprint": "PICO40",
+      "value": "Raspberry_Pi_Pico_USB_powered"
+    },
+    {
+      "ref": "J1",
+      "xy_mm": [
+        79,
+        12
+      ],
+      "footprint": "H2",
+      "value": "EXTERNAL_3V3_FUSED_1A"
+    },
+    {
+      "ref": "U2",
+      "xy_mm": [
+        53,
+        37
+      ],
+      "footprint": "TSSOP20",
+      "value": "SN74LVC244APWR"
+    },
+    {
+      "ref": "U3",
+      "xy_mm": [
+        53,
+        68
+      ],
+      "footprint": "TSSOP20",
+      "value": "SN74LVC244APWR"
+    },
+    {
+      "ref": "U4",
+      "xy_mm": [
+        53,
+        104
+      ],
+      "footprint": "SOIC14",
+      "value": "SN74LVC125AD_IOFF"
+    },
+    {
+      "ref": "C1",
+      "xy_mm": [
+        61,
+        37
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "C2",
+      "xy_mm": [
+        61,
+        68
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "C3",
+      "xy_mm": [
+        61,
+        104
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "C4",
+      "xy_mm": [
+        88,
+        17
+      ],
+      "footprint": "C0603",
+      "value": "10u X7R 6.3V"
+    },
+    {
+      "ref": "J2",
+      "xy_mm": [
+        76,
+        29
+      ],
+      "footprint": "H6",
+      "value": "ENCODER_BANK_0"
+    },
+    {
+      "ref": "J3",
+      "xy_mm": [
+        76,
+        40
+      ],
+      "footprint": "H6",
+      "value": "ENCODER_BANK_1"
+    },
+    {
+      "ref": "J4",
+      "xy_mm": [
+        76,
+        51
+      ],
+      "footprint": "H6",
+      "value": "ENCODER_BANK_2"
+    },
+    {
+      "ref": "J5",
+      "xy_mm": [
+        76,
+        62
+      ],
+      "footprint": "H6",
+      "value": "ENCODER_BANK_3"
+    },
+    {
+      "ref": "J6",
+      "xy_mm": [
+        76,
+        81
+      ],
+      "footprint": "H7",
+      "value": "ADXL355_MODULE"
+    },
+    {
+      "ref": "J7",
+      "xy_mm": [
+        15,
+        83
+      ],
+      "footprint": "H4",
+      "value": "ODOMETER_3V3_ONLY"
+    },
+    {
+      "ref": "J8",
+      "xy_mm": [
+        72,
+        96
+      ],
+      "footprint": "H10",
+      "value": "ADC_BANK_FANOUT"
+    },
+    {
+      "ref": "J9",
+      "xy_mm": [
+        74,
+        124
+      ],
+      "footprint": "H4",
+      "value": "INTERLOCK_GND_LIFT_PG_REMOTE_PULLUP"
+    },
+    {
+      "ref": "R1",
+      "xy_mm": [
+        40,
+        16
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R2",
+      "xy_mm": [
+        40,
+        25
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R3",
+      "xy_mm": [
+        40,
+        34
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R4",
+      "xy_mm": [
+        40,
+        43
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R5",
+      "xy_mm": [
+        40,
+        52
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R6",
+      "xy_mm": [
+        40,
+        61
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R7",
+      "xy_mm": [
+        40,
+        70
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "R8",
+      "xy_mm": [
+        40,
+        79
+      ],
+      "footprint": "R0603",
+      "value": "10k default-CS-high"
+    },
+    {
+      "ref": "Q1",
+      "xy_mm": [
+        25,
+        114
+      ],
+      "footprint": "SOT23",
+      "value": "MMBT3904"
+    },
+    {
+      "ref": "R9",
+      "xy_mm": [
+        18,
+        110
+      ],
+      "footprint": "R0603",
+      "value": "10k"
+    },
+    {
+      "ref": "R10",
+      "xy_mm": [
+        18,
+        116
+      ],
+      "footprint": "R0603",
+      "value": "100k"
+    },
+    {
+      "ref": "R11",
+      "xy_mm": [
+        32,
+        114
+      ],
+      "footprint": "R0603",
+      "value": "10k"
+    },
+    {
+      "ref": "R12",
+      "xy_mm": [
+        64,
+        125
+      ],
+      "footprint": "R0603",
+      "value": "100k wire-open-low"
+    },
+    {
+      "ref": "R13",
+      "xy_mm": [
+        53,
+        115
+      ],
+      "footprint": "R0603",
+      "value": "100k"
+    },
+    {
+      "ref": "R14",
+      "xy_mm": [
+        53,
+        120
+      ],
+      "footprint": "R0603",
+      "value": "100k"
+    },
+    {
+      "ref": "R15",
+      "xy_mm": [
+        64,
+        29
+      ],
+      "footprint": "R0603",
+      "value": "47R source termination"
+    },
+    {
+      "ref": "R16",
+      "xy_mm": [
+        64,
+        33
+      ],
+      "footprint": "R0603",
+      "value": "47R source termination"
+    },
+    {
+      "ref": "R17",
+      "xy_mm": [
+        64,
+        45
+      ],
+      "footprint": "R0603",
+      "value": "47R source termination"
+    },
+    {
+      "ref": "R18",
+      "xy_mm": [
+        64,
+        49
+      ],
+      "footprint": "R0603",
+      "value": "47R source termination"
+    }
+  ]
+}

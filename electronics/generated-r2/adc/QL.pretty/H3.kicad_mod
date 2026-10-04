@@ -1,0 +1,79 @@
+(footprint "H3"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "JP1"
+		(at 0 -3 0)
+		(layer "F.Fab")
+		(uuid "f4c5362f-d5e4-4837-a620-c5857e3105af")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CH7_1-2_SENSOR_2-3_TEST"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dce4c06d-2e2f-4f4f-ac57-286625c392d6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf9eadce-c79d-483f-a0d3-0892fcf80547")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9541c28c-1932-42ec-8a33-a112a04ffa01")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "903c4841-0fb0-4330-91c8-2f8fb874e33f")
+	)
+	(pad "2" thru_hole circle
+		(at 2 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1d2d2152-e088-4161-ba47-3595b8f25e21")
+	)
+	(pad "3" thru_hole circle
+		(at 4 0)
+		(size 1.35 1.35)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4973ebca-0b9a-4614-8faf-ecf9caf904d5")
+	)
+	(embedded_fonts no)
+)

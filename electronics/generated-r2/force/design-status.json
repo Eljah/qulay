@@ -1,0 +1,15 @@
+{
+  "stage": "prototype schematic and PCB; review DRC and router output before manufacture",
+  "hardware_validated": false,
+  "analogue_simulated": false,
+  "rated_accuracy_claimed": false,
+  "board_mm": [
+    18,
+    12
+  ],
+  "notes": [
+    "PCB geometry and circuit do not prove EMC or metrological performance",
+    "Carrier is a Pico acquisition adapter; Raspberry Pi Linux SBC is connected through USB",
+    "Manufacturing release blocked until pinout, power, routing and harness bench checks"
+  ]
+}

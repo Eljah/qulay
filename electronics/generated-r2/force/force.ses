@@ -1,0 +1,180 @@
+(session force
+  (base_design force)
+  (placement
+    (resolution um 10)
+    (component QL:R0603
+      (place R1 127000 -55000 front 0)
+      (place C2 130000 -80000 front 0)
+      (place C1 48000 -55000 front 0)
+    )
+    (component QL:MountingHole_2.2mm
+      (place MH2 160000 -100000 front 0)
+      (place MH1 20000 -20000 front 0)
+    )
+    (component QL:SOT23
+      (place U1 90000 -60000 front 0)
+    )
+    (component QL:H3
+      (place J1 50000 -95000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "9.0.9-9.0.9~ubuntu24.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net FORCE_OUT
+        (wire
+          (path F.Cu 2000
+            122000 -80000
+            114731 -80000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            90000 -95000
+            99731 -95000
+            114731 -80000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            122000 -80000
+            122000 -72231
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            135000 -55000
+            127731 -55000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            122000 -72231
+            127731 -66500
+            127731 -55000
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 2000
+            70000 -95000
+            80219 -105219
+            110055 -105219
+            130731 -84543
+            130731 -80000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            70000 -60000
+            70000 -95000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            138000 -80000
+            130731 -80000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            70000 -60000
+            68269 -60000
+            63269 -55000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            101000 -60000
+            70000 -60000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            56000 -55000
+            63269 -55000
+          )
+        )
+      )
+      (net HALL_RAW
+        (wire
+          (path F.Cu 2000
+            119000 -55000
+            111731 -55000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            79000 -69500
+            104500 -69500
+            111731 -62269
+            111731 -55000
+          )
+        )
+      )
+      (net SENS_3V3
+        (wire
+          (path F.Cu 2000
+            50000 -95000
+            50000 -85231
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            50000 -85231
+            47269 -82500
+            47269 -55000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            40000 -55000
+            47269 -55000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            79000 -50500
+            70981 -50500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            70981 -50500
+            67712 -47231
+            50495 -47231
+            47269 -50457
+            47269 -55000
+          )
+        )
+      )
+    )
+  )
+)

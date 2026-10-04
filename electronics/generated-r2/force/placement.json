@@ -1,0 +1,63 @@
+{
+  "board_mm": [
+    18,
+    12
+  ],
+  "mount_holes_mm": [
+    [
+      2,
+      2
+    ],
+    [
+      16,
+      10
+    ]
+  ],
+  "components": [
+    {
+      "ref": "U1",
+      "xy_mm": [
+        9,
+        6
+      ],
+      "footprint": "SOT23",
+      "value": "DRV5055A3DBZR"
+    },
+    {
+      "ref": "J1",
+      "xy_mm": [
+        5,
+        9.5
+      ],
+      "footprint": "H3",
+      "value": "HALL_3V3_GND_OUT"
+    },
+    {
+      "ref": "C1",
+      "xy_mm": [
+        4.8,
+        5.5
+      ],
+      "footprint": "C0603",
+      "value": "100n X7R"
+    },
+    {
+      "ref": "R1",
+      "xy_mm": [
+        12.7,
+        5.5
+      ],
+      "footprint": "R0603",
+      "value": "3k3 1%"
+    },
+    {
+      "ref": "C2",
+      "xy_mm": [
+        13,
+        8
+      ],
+      "footprint": "C0603",
+      "value": "1u X7R 6.3V"
+    }
+  ]
+}

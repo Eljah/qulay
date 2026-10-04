@@ -1,0 +1,13 @@
+reference,pin,net,pin_type
+U1,1,SENS_3V3,power_in
+U1,2,HALL_RAW,output
+U1,3,GND,power_in
+J1,1,SENS_3V3,power_out
+J1,2,GND,power_out
+J1,3,FORCE_OUT,input
+C1,1,SENS_3V3,passive
+C1,2,GND,passive
+R1,1,HALL_RAW,passive
+R1,2,FORCE_OUT,passive
+C2,1,FORCE_OUT,passive
+C2,2,GND,passive
