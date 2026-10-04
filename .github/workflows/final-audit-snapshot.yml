@@ -1,0 +1,27 @@
+name: Final engineering audit snapshot
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['.github/workflows/final-audit-snapshot.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Save baseline and concise verification inventory
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p audit
+          git archive HEAD -o audit/source.zip
+          git rev-parse HEAD > audit/source-commit.txt
+          gh api 'repos/Eljah/qulay/actions/runs?per_page=20' --jq '[.workflow_runs[]|{id,name,head_sha,status,conclusion,html_url}]' > audit/runs.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qulay-final-audit-baseline
+          path: audit
+          retention-days: 30
