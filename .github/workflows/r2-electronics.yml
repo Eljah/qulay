@@ -1,0 +1,57 @@
+name: R2 electronics verification
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['electronics/r2/**', '.github/workflows/r2-electronics.yml']
+permissions:
+  contents: write
+concurrency:
+  group: qulay-r2-electronics
+  cancel-in-progress: false
+jobs:
+  electronics:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install KiCad9 and fixed autorouter
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-9.0-releases
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends kicad xvfb
+          curl -fL --retry 3 https://github.com/freerouting/freerouting/releases/download/v1.9.0/freerouting-1.9.0.jar -o /tmp/freerouting.jar
+          kicad-cli version
+      - name: Generate connected schematics, footprint libraries and boards
+        run: /usr/bin/python3 electronics/r2/build.py
+      - name: Route serialized boards
+        run: |
+          for board in force adc carrier_r2; do
+            base="electronics/generated-r2/$board/$board"
+            timeout 180 xvfb-run -a java -jar /tmp/freerouting.jar -de "$base.dsn" -do "$base.ses" -mp 20 -mt 1 -oit 1 -dct 1 -da > "$base-router.log" 2>&1 || echo 'Router stopped; verification must detect unfinished nets.'
+          done
+      - name: Run ERC, DRC, netlist parity and fabrication exports
+        run: /usr/bin/python3 electronics/r2/verify.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qulay-r2-electronics
+          retention-days: 90
+          path: electronics/generated-r2
+      - name: Preserve verified boards in existing feature branch
+        run: |
+          test "$GITHUB_REF_NAME" = 'feature/qulay-prototype-20261002'
+          git config user.name 'qulay-r2-build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          find electronics/generated-r2 -name '*.kicad_prl' -delete
+          git add electronics/generated-r2
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'build(r2): publish routed electronics and unsuppressed checks [skip ci]'
+          git stash push -u -m 'transient build state'
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
