@@ -27,15 +27,15 @@ jobs:
           sudo apt-get install -y --no-install-recommends kicad xvfb
           curl -fL --retry 3 https://github.com/freerouting/freerouting/releases/download/v1.9.0/freerouting-1.9.0.jar -o /tmp/freerouting.jar
           kicad-cli version
-      - name: Generate final connected boards without weakening DRC
+      - name: Generate final connected boards
         run: /usr/bin/python3 electronics/r2/finish_design.py
-      - name: Route serialized boards
+      - name: Route four serialized boards
         run: |
-          for board in force adc carrier_r2; do
+          for board in force adc carrier_r2 power_good; do
             base="electronics/generated-r2/$board/$board"
-            timeout 210 xvfb-run -a java -jar /tmp/freerouting.jar -de "$base.dsn" -do "$base.ses" -mp 80 -mt 1 -oit 0.2 -dct 1 -da > "$base-router.log" 2>&1 || echo 'Router stopped; verification must detect unfinished nets.'
+            timeout 210 xvfb-run -a java -jar /tmp/freerouting.jar -de "$base.dsn" -do "$base.ses" -mp 80 -mt 1 -oit 0.2 -dct 1 -da > "$base-router.log" 2>&1 || echo 'Routing interrupted; verification will report unconnected nets.'
           done
-      - name: Run ERC, DRC, netlist parity and fabrication exports
+      - name: ERC DRC netlist and fabrication exports
         run: /usr/bin/python3 electronics/r2/verify.py
       - uses: actions/upload-artifact@v4
         if: always()
@@ -51,7 +51,7 @@ jobs:
           find electronics/generated-r2 -name '*.kicad_prl' -delete
           git add electronics/generated-r2
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'build(r2): publish final routed electronics and checks [skip ci]'
+          git commit -m 'build(r2): publish four routed boards and checks [skip ci]'
           git stash push -u -m 'transient build state'
           git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:$GITHUB_REF_NAME"
