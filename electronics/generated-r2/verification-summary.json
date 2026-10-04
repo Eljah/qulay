@@ -2,7 +2,7 @@
   {
     "board": "force",
     "router_session_imported": true,
-    "tracks_and_vias": 29,
+    "tracks_and_vias": 28,
     "drc_errors": 0,
     "drc_warnings": 0,
     "unconnected": 0,
@@ -32,7 +32,7 @@
   {
     "board": "adc",
     "router_session_imported": true,
-    "tracks_and_vias": 282,
+    "tracks_and_vias": 272,
     "drc_errors": 0,
     "drc_warnings": 0,
     "unconnected": 0,
@@ -62,7 +62,7 @@
   {
     "board": "carrier_r2",
     "router_session_imported": true,
-    "tracks_and_vias": 644,
+    "tracks_and_vias": 628,
     "drc_errors": 0,
     "drc_warnings": 0,
     "unconnected": 0,

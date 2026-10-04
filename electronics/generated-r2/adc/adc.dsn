@@ -31,56 +31,89 @@
     )
   )
   (placement
-    (component QL:C0603
-      (place C3 55000.000000 -38000.000000 front 0.000000 (PN "100n X7R"))
-      (place R6 43000.000000 -25000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
+    (component QL:R0603
+      (place R9 67000.000000 -18000.000000 front 0.000000 (PN "10k 1%"))
+      (place R1 14000.000000 -20000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
       (place R4 14000.000000 -35000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
       (place R8 43000.000000 -35000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
-      (place R5 43000.000000 -20000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
-      (place R2 14000.000000 -25000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
-      (place R3 14000.000000 -30000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
       (place R7 43000.000000 -30000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
-      (place R1 14000.000000 -20000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
+      (place R2 14000.000000 -25000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
       (place R10 67000.000000 -22000.000000 front 0.000000 (PN "10k 1%"))
-      (place C1 34000.000000 -23000.000000 front 0.000000 (PN "100n X7R"))
+      (place R6 43000.000000 -25000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
+      (place R5 43000.000000 -20000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
       (place C2 34000.000000 -27000.000000 front 0.000000 (PN "10u X7R 6.3V"))
-      (place R9 67000.000000 -18000.000000 front 0.000000 (PN "10k 1%"))
-    )
-    (component QL:MountingHole_2.2mm
-      (place MH3 4000.000000 -46000.000000 front 0.000000)
-      (place MH4 76000.000000 -46000.000000 front 0.000000)
-      (place MH2 76000.000000 -4000.000000 front 0.000000)
-      (place MH1 4000.000000 -4000.000000 front 0.000000)
-    )
-    (component QL:H3
-      (place JP1 57000.000000 -18000.000000 front 0.000000 (PN "CH7_1-2_SENSOR_2-3_TEST"))
-    )
-    (component QL:H24
-      (place J2 12000.000000 -10000.000000 front 0.000000 (PN 8X_HALL_3V3_GND_SIGNAL))
+      (place R3 14000.000000 -30000.000000 front 0.000000 (PN "100k 1% cable-open pull-down"))
+      (place C3 55000.000000 -38000.000000 front 0.000000 (PN "100n X7R"))
+      (place C1 34000.000000 -23000.000000 front 0.000000 (PN "100n X7R"))
     )
     (component QL:H6
       (place J1 57000.000000 -29000.000000 front 0.000000 (PN SPI_POWER))
     )
-    (component QL:SOT23_5
-      (place U2 60000.000000 -38000.000000 front 0.000000 (PN SN74LVC1G125DBVR_IOFF))
+    (component QL:MountingHole_2.2mm
+      (place MH1 4000.000000 -4000.000000 front 0.000000)
+      (place MH3 4000.000000 -46000.000000 front 0.000000)
+      (place MH2 76000.000000 -4000.000000 front 0.000000)
+      (place MH4 76000.000000 -46000.000000 front 0.000000)
     )
     (component QL:SOIC16
       (place U1 28000.000000 -27000.000000 front 0.000000 (PN "MCP3208-BI/SL"))
     )
+    (component QL:H3
+      (place JP1 57000.000000 -18000.000000 front 0.000000 (PN "CH7_1-2_SENSOR_2-3_TEST"))
+    )
+    (component QL:SOT23_5
+      (place U2 60000.000000 -38000.000000 front 0.000000 (PN SN74LVC1G125DBVR_IOFF))
+    )
+    (component QL:H24
+      (place J2 12000.000000 -10000.000000 front 0.000000 (PN 8X_HALL_3V3_GND_SIGNAL))
+    )
   )
   (library
-    (image QL:C0603
+    (image QL:R0603
       (pin Rect[T]Pad_850.000000x950.000000_um 1 -800 0)
       (pin Rect[T]Pad_850.000000x950.000000_um 2 800 0)
+    )
+    (image QL:H6
+      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
+      (pin Round[A]Pad_1350.000000_um 2 2000 0)
+      (pin Round[A]Pad_1350.000000_um 3 4000 0)
+      (pin Round[A]Pad_1350.000000_um 4 6000 0)
+      (pin Round[A]Pad_1350.000000_um 5 8000 0)
+      (pin Round[A]Pad_1350.000000_um 6 10000 0)
     )
     (image QL:MountingHole_2.2mm
       (keepout "" (circle F.Cu 2700))
       (keepout "" (circle B.Cu 2700))
     )
+    (image QL:SOIC16
+      (pin Rect[T]Pad_1500.000000x600.000000_um 1 -2700 4445)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 2 -2700 3175)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 3 -2700 1905)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 4 -2700 635)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 5 -2700 -634.999)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 6 -2700 -1905)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 7 -2700 -3175)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 8 -2700 -4445)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 9 2700 -4445)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 10 2700 -3175)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 11 2700 -1905)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 12 2700 -635)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 13 2700 634.999)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 14 2700 1905)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 15 2700 3175)
+      (pin Rect[T]Pad_1500.000000x600.000000_um 16 2700 4445)
+    )
     (image QL:H3
       (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
       (pin Round[A]Pad_1350.000000_um 2 2000 0)
       (pin Round[A]Pad_1350.000000_um 3 4000 0)
+    )
+    (image QL:SOT23_5
+      (pin Rect[T]Pad_1000.000000x600.000000_um 1 -1100 950)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 2 -1100 0)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 3 -1100 -950)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 4 1100 -950)
+      (pin Rect[T]Pad_1000.000000x600.000000_um 5 1100 950)
     )
     (image QL:H24
       (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
@@ -107,39 +140,6 @@
       (pin Round[A]Pad_1350.000000_um 22 42000 0)
       (pin Round[A]Pad_1350.000000_um 23 44000 0)
       (pin Round[A]Pad_1350.000000_um 24 46000 0)
-    )
-    (image QL:H6
-      (pin Rect[A]Pad_1350.000000x1350.000000_um 1 0 0)
-      (pin Round[A]Pad_1350.000000_um 2 2000 0)
-      (pin Round[A]Pad_1350.000000_um 3 4000 0)
-      (pin Round[A]Pad_1350.000000_um 4 6000 0)
-      (pin Round[A]Pad_1350.000000_um 5 8000 0)
-      (pin Round[A]Pad_1350.000000_um 6 10000 0)
-    )
-    (image QL:SOT23_5
-      (pin Rect[T]Pad_1000.000000x600.000000_um 1 -1100 950)
-      (pin Rect[T]Pad_1000.000000x600.000000_um 2 -1100 0)
-      (pin Rect[T]Pad_1000.000000x600.000000_um 3 -1100 -950)
-      (pin Rect[T]Pad_1000.000000x600.000000_um 4 1100 -950)
-      (pin Rect[T]Pad_1000.000000x600.000000_um 5 1100 950)
-    )
-    (image QL:SOIC16
-      (pin Rect[T]Pad_1500.000000x600.000000_um 1 -2700 4445)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 2 -2700 3175)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 3 -2700 1905)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 4 -2700 635)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 5 -2700 -634.999)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 6 -2700 -1905)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 7 -2700 -3175)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 8 -2700 -4445)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 9 2700 -4445)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 10 2700 -3175)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 11 2700 -1905)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 12 2700 -635)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 13 2700 634.999)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 14 2700 1905)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 15 2700 3175)
-      (pin Rect[T]Pad_1500.000000x600.000000_um 16 2700 4445)
     )
     (padstack Round[A]Pad_1350.000000_um
       (shape (circle F.Cu 1350))
@@ -171,31 +171,31 @@
   )
   (network
     (net A0
-      (pins J2-3 R1-1 U1-1)
+      (pins R1-1 U1-1 J2-3)
     )
     (net A1
-      (pins R2-1 J2-6 U1-2)
+      (pins R2-1 U1-2 J2-6)
     )
     (net A2
-      (pins R3-1 J2-9 U1-3)
+      (pins U1-3 R3-1 J2-9)
     )
     (net A3
-      (pins R4-1 J2-12 U1-4)
+      (pins R4-1 U1-4 J2-12)
     )
     (net A4
-      (pins R5-1 J2-15 U1-5)
+      (pins R5-1 U1-5 J2-15)
     )
     (net A5
-      (pins R6-1 J2-18 U1-6)
+      (pins R6-1 U1-6 J2-18)
     )
     (net A6
-      (pins J2-21 R7-1 U1-7)
+      (pins R7-1 U1-7 J2-21)
     )
     (net A7
-      (pins R8-1 JP1-2 U1-8)
+      (pins R8-1 U1-8 JP1-2)
     )
     (net ADC_CS
-      (pins J1-6 U2-1 U1-10)
+      (pins J1-6 U1-10 U2-1)
     )
     (net ADC_MISO
       (pins J1-5 U2-4)
@@ -204,24 +204,24 @@
       (pins J1-4 U1-11)
     )
     (net ADC_OUT_RAW
-      (pins U2-2 U1-12)
+      (pins U1-12 U2-2)
     )
     (net ADC_SCK
       (pins J1-3 U1-13)
     )
     (net GND
-      (pins C3-2 R6-2 R4-2 R8-2 R5-2 R2-2 R3-2 J2-2 J2-5 J2-8 J2-11 J2-14 J2-17 J2-20
-        J2-23 R7-2 J1-2 R1-2 R10-2 U2-3 C1-2 U1-9 U1-14 C2-2)
+      (pins R1-2 J1-2 R4-2 R8-2 R7-2 R2-2 R10-2 R6-2 R5-2 U1-9 U1-14 U2-3 C2-2 R3-2
+        J2-2 J2-5 J2-8 J2-11 J2-14 J2-17 J2-20 J2-23 C3-2 C1-2)
     )
     (net IN7
       (pins JP1-1 J2-24)
     )
     (net MID
-      (pins JP1-3 R10-1 R9-2)
+      (pins R9-2 R10-1 JP1-3)
     )
     (net SENS_3V3
-      (pins C3-1 J2-1 J2-4 J2-7 J2-10 J2-13 J2-16 J2-19 J2-22 J1-1 U2-5 C1-1 U1-15
-        U1-16 C2-1 R9-1)
+      (pins R9-1 J1-1 U1-15 U1-16 U2-5 C2-1 J2-1 J2-4 J2-7 J2-10 J2-13 J2-16 J2-19
+        J2-22 C3-1 C1-1)
     )
     (class kicad_default A0 A1 A2 A3 A4 A5 A6 A7 ADC_CS ADC_MISO ADC_MOSI
       ADC_OUT_RAW ADC_SCK GND IN7 MID SENS_3V3

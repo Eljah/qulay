@@ -1,7 +1,7 @@
 [
   {
-    "reference": "J1",
-    "distinct_pads": 4
+    "reference": "R1",
+    "distinct_pads": 2
   },
   {
     "reference": "U1",
@@ -12,7 +12,7 @@
     "distinct_pads": 2
   },
   {
-    "reference": "R1",
-    "distinct_pads": 2
+    "reference": "J1",
+    "distinct_pads": 4
   }
 ]

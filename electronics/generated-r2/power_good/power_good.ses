@@ -1,0 +1,199 @@
+(session power_good
+  (base_design power_good)
+  (placement
+    (resolution um 10)
+    (component QL:R0603
+      (place R1 100000 -45000 front 0)
+      (place C1 140000 -70000 front 0)
+    )
+    (component QL:SOT23_6
+      (place U1 100000 -90000 front 0)
+    )
+    (component QL:H4
+      (place J1 70000 -150000 front 0)
+    )
+    (component QL:MountingHole_2.2mm
+      (place MH1 25000 -25000 front 0)
+      (place MH2 175000 -175000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "9.0.9-9.0.9~ubuntu24.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2000
+            148000 -70000
+            148000 -77769
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            105869 -106934
+            97019 -98084
+            97019 -90000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            148000 -77769
+            118835 -106934
+            105869 -106934
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            105869 -106934
+            105869 -134131
+            90000 -150000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            89000 -90000
+            97019 -90000
+          )
+        )
+      )
+      (net PICO_3V3
+        (wire
+          (path F.Cu 2000
+            120804 -75152
+            124731 -71225
+            124731 -70000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            119019 -80500
+            119019 -76937
+            120804 -75152
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            132000 -70000
+            124731 -70000
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            70000 -150000
+            70000 -125956
+            120804 -75152
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            111000 -80500
+            119019 -80500
+          )
+        )
+        (via "Via[0-1]_600:300_um" 120804 -75152
+        )
+        (wire
+          (path F.Cu 2000
+            89000 -99500
+            80981 -99500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            70000 -150000
+            70000 -110481
+            80981 -99500
+          )
+        )
+      )
+      (net POWER_GOOD
+        (wire
+          (path F.Cu 2000
+            130000 -150000
+            159837 -120163
+            159837 -62662
+            142175 -45000
+            108000 -45000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            108000 -45000
+            100731 -45000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            100731 -45000
+            100731 -40457
+            97346 -37072
+            86531 -37072
+            80981 -42622
+            80981 -80500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            89000 -80500
+            80981 -80500
+          )
+        )
+      )
+      (net SENS_3V3
+        (wire
+          (path F.Cu 2000
+            102981 -61990
+            153381 -61990
+            155269 -63878
+            155269 -104731
+            110000 -150000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            102981 -61990
+            102981 -55981
+            92000 -45000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            102981 -90000
+            102981 -61990
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            111000 -90000
+            102981 -90000
+          )
+        )
+      )
+    )
+  )
+)
