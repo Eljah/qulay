@@ -1,0 +1,1 @@
+CRC, 16384 command parities, response errors, signed 20-bit acceleration and diagnostic checks passed
