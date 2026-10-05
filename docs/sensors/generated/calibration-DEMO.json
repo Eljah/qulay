@@ -1,0 +1,358 @@
+{
+  "id": "SENSOR-GUIDE-DEMO-NOT-FOR-HARDWARE",
+  "traceable": false,
+  "odometerMmPerTick": 0.1,
+  "expandedHeightUncertaintyMm": 2.0,
+  "expandedGradeUncertainty": 0.005,
+  "channels": [
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -375,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -350,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -325,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -300,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -275,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -250,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -225,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -200,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -175,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": -1.5707963267948966,
+      "measuredRad": [
+        -1.0473253829289215,
+        -0.7853981633974483,
+        -0.523470943865975
+      ],
+      "correctedRad": [
+        -1.0471975511965976,
+        -0.7853981633974483,
+        -0.5235987755982988
+      ],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -150,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -125,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -100,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -75,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -50,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": -25,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 0,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 25,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 50,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 75,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 100,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 125,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 150,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 175,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 200,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 225,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 250,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 275,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 300,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 325,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 350,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    },
+    {
+      "pivotXmm": 0,
+      "pivotYmm": 375,
+      "pivotZmm": 0,
+      "lengthMm": 240,
+      "radiusMm": 20,
+      "zeroRad": 0,
+      "measuredRad": [],
+      "correctedRad": [],
+      "contact": null
+    }
+  ]
+}

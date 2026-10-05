@@ -1,0 +1,131 @@
+{
+  "baseline": "097e60be99069dc5490a207dd999f34820637a1a",
+  "files": {
+    "encoder_pcb": {
+      "path": "electronics/generated/encoder/encoder.kicad_pcb",
+      "sha256": "f02c393ed43171da2e822ad990e45cff5a6963fca849757eec9b7bd4225f24b2",
+      "git_blob": "39dc3c2ed90206efa71ab1de52dee2a87c9ea7b6"
+    },
+    "encoder_nets": {
+      "path": "electronics/generated/encoder/connections.csv",
+      "sha256": "5a368729952f356f71051f53539050e00301b72bbdee9c74042a927526d9a6e7",
+      "git_blob": "15f4d1de3b242a435ea1fddb9f9d03c2cea86bfe"
+    },
+    "r1_pcb": {
+      "path": "electronics/generated/carrier/carrier.kicad_pcb",
+      "sha256": "f733ac3b9275954a60ed7bd6b9f3630dcb7f172940cead2eb3aa78c94d33075d",
+      "git_blob": "c70b7ea358704af5fb5b4cf8374069f3d7106927"
+    },
+    "r1_nets": {
+      "path": "electronics/generated/carrier/connections.csv",
+      "sha256": "3affd94af831e429e9f796f84a70c262ea7ca562c6a02c3cf0a68e5451e3a1ee",
+      "git_blob": "c107930f3daac11d414ae52a50d6cc3ee90e630b"
+    },
+    "r2_pcb": {
+      "path": "electronics/generated-r2/carrier_r2/carrier_r2.kicad_pcb",
+      "sha256": "3e3597592c905bf18657b6ec7c8f590035524908a8c417ade1d3333c58b56fb4",
+      "git_blob": "4bef8207b0bf1dcba869c86f09523c2f3a14cf53"
+    },
+    "r2_nets": {
+      "path": "electronics/generated-r2/carrier_r2/connections.csv",
+      "sha256": "ba9433580692fceac6ab8b76b253ce73250936e4ad7b31fba81e84de7886628f",
+      "git_blob": "5787a38e32f12e4a94d317a8c1e73b8d243c0b34"
+    },
+    "force_nets": {
+      "path": "electronics/generated-r2/force/connections.csv",
+      "sha256": "e1912cc215b8efc783f621e4cc231511a0564e6fa90d09979ae7508ce3a042f8",
+      "git_blob": "a380d4e840ec4663758e72ef58e5c316f1fe187d"
+    },
+    "adc_nets": {
+      "path": "electronics/generated-r2/adc/connections.csv",
+      "sha256": "44fbf3fd3bb2cbcf81563413b7a387b7982a2c75ec829696294f3331d7dceb6a",
+      "git_blob": "bd9a27573119455f9ee91ba51b8c4db8730e5326"
+    },
+    "harness": {
+      "path": "electronics/generated/harness.csv",
+      "sha256": "1b8777ddfa1e8bc49d9e95f4e2e180f23c92f840e54ef83648ae1cbcc5231420",
+      "git_blob": "92a489a4213b204993250c7763b44ffc6b088cc7"
+    },
+    "cad": {
+      "path": "mechanical/revision_b.py",
+      "sha256": "01661808afe863f44418ba603bcfea2c47fba2c395cfd7142382bb9f6870296b",
+      "git_blob": "705923994b3541f131f0e7f0482d91eb62ebda3b"
+    },
+    "coupling": {
+      "path": "mechanical/coupling_c1/build.py",
+      "sha256": "f24ed4082acbea794ab25905756f7bc0dcd4194db7c55acf801a7af71419751b",
+      "git_blob": "87a64815200f2c315255a8ffa4db9e890797daef"
+    },
+    "coupling_note": {
+      "path": "mechanical/coupling_c1/README.md",
+      "sha256": "b0b26c4d9c479e67abed1750da9a4b18ef43002e150680cbd47c2d9b0cdeed43",
+      "git_blob": "b96008856e7db46dfcecdae1e8c3178b2e220f29"
+    },
+    "image": {
+      "path": "mechanical/coupling_c1/generated/exploded.png",
+      "sha256": "98c2ca04efbe5ad479373fb1e5826d05034102d45d93e3a55f06fa824cc5c632",
+      "git_blob": "6ac75a086e02ff04741dd72a54155e6f7665072f"
+    },
+    "channel_image": {
+      "path": "docs/channel/assets/single-channel.png",
+      "sha256": "91b74fe0e9c3a4682c2a04b28d90e00b094956a89bbc34947bdc71f6274f96e1",
+      "git_blob": "e2459ef72eafe201e68aff1120be22dc292f55a7"
+    },
+    "q1": {
+      "path": "firmware/src/main.c",
+      "sha256": "ae03c511238119de4de1eabc0a469d12d40d0a62634edefd6dc7d9f1b53846fe",
+      "git_blob": "cfcaebb0d4ce9789d4cb43167ad0f924da7a095d"
+    },
+    "q2": {
+      "path": "firmware/r2/main.c",
+      "sha256": "6aba19d4f14ae679a31848f5fc2b23be2feb37012af3f4e9528e4ea9688ddd84",
+      "git_blob": "3aa1c9364e89a5e0f573c2eb8fcbbda480e5cf3c"
+    },
+    "protocol": {
+      "path": "firmware/include/protocol.h",
+      "sha256": "b52c055cbf59ffb0103813f7ad76aa939e57e725ef5ba59035ea3a144c4797c5",
+      "git_blob": "f8539990233fca06f29b6a39832cc787936c76a0"
+    },
+    "model": {
+      "path": "software/core/src/main/java/org/qulay/core/Model.java",
+      "sha256": "1a2d5ceb7aace8e5a726e993847ad550c5333cde8ca08524985f7c7c5402ba8b",
+      "git_blob": "0465d8132f66453ef2c648e30c276dacab56e93f"
+    },
+    "geometry": {
+      "path": "software/core/src/main/java/org/qulay/core/Geometry.java",
+      "sha256": "0581803ed740d08025f95b12447a865beb893104b6a72412d61ad9e64aae9462",
+      "git_blob": "fcbabd27efd541e499c3602293a0c90392b891a3"
+    },
+    "contact": {
+      "path": "software/core/src/main/java/org/qulay/core/ContactModel.java",
+      "sha256": "b9c4ca1ace2e94213264b5d317f4f2ccf6f5c4593d4e725d39a624c4b79f42f9",
+      "git_blob": "b16ca31dbc700d3cb4897dd3e5b1ce54a9444bb4"
+    },
+    "wire": {
+      "path": "software/agent/src/main/java/org/qulay/agent/Wire.java",
+      "sha256": "39371b84d6f41843503d21740a0177235fcb3e01468f258aa2928edf24c8b3ef",
+      "git_blob": "a04ba689bc635fb44f95406844f94eb53c613cef"
+    },
+    "wire2": {
+      "path": "software/agent/src/main/java/org/qulay/agent/WireV2.java",
+      "sha256": "c8ab4d29204c86bd31a0cbfb6b0b71c4318dc9b705576f3c9f0b9825ea3c3f76",
+      "git_blob": "01089377031efc93fe9bbbfc1237925e2a89354c"
+    },
+    "agent": {
+      "path": "software/agent/src/main/java/org/qulay/agent/Agent.java",
+      "sha256": "22e823ccc8bdb2d5f1c53fd9dc98ca9b375e0a52ccdf91de5a00472f5bb17238",
+      "git_blob": "ae82513d88c011a475f2e448e52bc2eb840842bb"
+    },
+    "json": {
+      "path": "software/core/src/main/java/org/qulay/core/Json.java",
+      "sha256": "7d6f47c3aa5b09c153e21827b315d52b2699c2729dcf91df5031d4e88ee961a8",
+      "git_blob": "85106fa83bb4af9194aee8651a03bcdcda9e9b96"
+    },
+    "desktop": {
+      "path": "software/desktop/src/main/java/org/qulay/desktop/DesktopApp.java",
+      "sha256": "26e513d48475112cc88c3e2d97ecb595845a3d8c283f88e02436bdd3e97dcc65",
+      "git_blob": "e44cb5d1d920df03a7060f5a335d47a18d015ea5"
+    }
+  },
+  "physical_tests": false
+}

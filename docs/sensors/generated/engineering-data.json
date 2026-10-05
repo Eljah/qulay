@@ -1,0 +1,3624 @@
+{
+  "engineering_baseline": "097e60be99069dc5490a207dd999f34820637a1a",
+  "paths": {
+    "encoder_pcb": "electronics/generated/encoder/encoder.kicad_pcb",
+    "encoder_nets": "electronics/generated/encoder/connections.csv",
+    "r1_pcb": "electronics/generated/carrier/carrier.kicad_pcb",
+    "r1_nets": "electronics/generated/carrier/connections.csv",
+    "r2_pcb": "electronics/generated-r2/carrier_r2/carrier_r2.kicad_pcb",
+    "r2_nets": "electronics/generated-r2/carrier_r2/connections.csv",
+    "force_nets": "electronics/generated-r2/force/connections.csv",
+    "adc_nets": "electronics/generated-r2/adc/connections.csv",
+    "harness": "electronics/generated/harness.csv",
+    "cad": "mechanical/revision_b.py",
+    "coupling": "mechanical/coupling_c1/build.py",
+    "coupling_note": "mechanical/coupling_c1/README.md",
+    "image": "mechanical/coupling_c1/generated/exploded.png",
+    "channel_image": "docs/channel/assets/single-channel.png",
+    "q1": "firmware/src/main.c",
+    "q2": "firmware/r2/main.c",
+    "protocol": "firmware/include/protocol.h",
+    "model": "software/core/src/main/java/org/qulay/core/Model.java",
+    "geometry": "software/core/src/main/java/org/qulay/core/Geometry.java",
+    "contact": "software/core/src/main/java/org/qulay/core/ContactModel.java",
+    "wire": "software/agent/src/main/java/org/qulay/agent/Wire.java",
+    "wire2": "software/agent/src/main/java/org/qulay/agent/WireV2.java",
+    "agent": "software/agent/src/main/java/org/qulay/agent/Agent.java",
+    "json": "software/core/src/main/java/org/qulay/core/Json.java",
+    "desktop": "software/desktop/src/main/java/org/qulay/desktop/DesktopApp.java"
+  },
+  "manifest": {
+    "encoder_pcb": {
+      "path": "electronics/generated/encoder/encoder.kicad_pcb",
+      "sha256": "f02c393ed43171da2e822ad990e45cff5a6963fca849757eec9b7bd4225f24b2",
+      "git_blob": "39dc3c2ed90206efa71ab1de52dee2a87c9ea7b6"
+    },
+    "encoder_nets": {
+      "path": "electronics/generated/encoder/connections.csv",
+      "sha256": "5a368729952f356f71051f53539050e00301b72bbdee9c74042a927526d9a6e7",
+      "git_blob": "15f4d1de3b242a435ea1fddb9f9d03c2cea86bfe"
+    },
+    "r1_pcb": {
+      "path": "electronics/generated/carrier/carrier.kicad_pcb",
+      "sha256": "f733ac3b9275954a60ed7bd6b9f3630dcb7f172940cead2eb3aa78c94d33075d",
+      "git_blob": "c70b7ea358704af5fb5b4cf8374069f3d7106927"
+    },
+    "r1_nets": {
+      "path": "electronics/generated/carrier/connections.csv",
+      "sha256": "3affd94af831e429e9f796f84a70c262ea7ca562c6a02c3cf0a68e5451e3a1ee",
+      "git_blob": "c107930f3daac11d414ae52a50d6cc3ee90e630b"
+    },
+    "r2_pcb": {
+      "path": "electronics/generated-r2/carrier_r2/carrier_r2.kicad_pcb",
+      "sha256": "3e3597592c905bf18657b6ec7c8f590035524908a8c417ade1d3333c58b56fb4",
+      "git_blob": "4bef8207b0bf1dcba869c86f09523c2f3a14cf53"
+    },
+    "r2_nets": {
+      "path": "electronics/generated-r2/carrier_r2/connections.csv",
+      "sha256": "ba9433580692fceac6ab8b76b253ce73250936e4ad7b31fba81e84de7886628f",
+      "git_blob": "5787a38e32f12e4a94d317a8c1e73b8d243c0b34"
+    },
+    "force_nets": {
+      "path": "electronics/generated-r2/force/connections.csv",
+      "sha256": "e1912cc215b8efc783f621e4cc231511a0564e6fa90d09979ae7508ce3a042f8",
+      "git_blob": "a380d4e840ec4663758e72ef58e5c316f1fe187d"
+    },
+    "adc_nets": {
+      "path": "electronics/generated-r2/adc/connections.csv",
+      "sha256": "44fbf3fd3bb2cbcf81563413b7a387b7982a2c75ec829696294f3331d7dceb6a",
+      "git_blob": "bd9a27573119455f9ee91ba51b8c4db8730e5326"
+    },
+    "harness": {
+      "path": "electronics/generated/harness.csv",
+      "sha256": "1b8777ddfa1e8bc49d9e95f4e2e180f23c92f840e54ef83648ae1cbcc5231420",
+      "git_blob": "92a489a4213b204993250c7763b44ffc6b088cc7"
+    },
+    "cad": {
+      "path": "mechanical/revision_b.py",
+      "sha256": "01661808afe863f44418ba603bcfea2c47fba2c395cfd7142382bb9f6870296b",
+      "git_blob": "705923994b3541f131f0e7f0482d91eb62ebda3b"
+    },
+    "coupling": {
+      "path": "mechanical/coupling_c1/build.py",
+      "sha256": "f24ed4082acbea794ab25905756f7bc0dcd4194db7c55acf801a7af71419751b",
+      "git_blob": "87a64815200f2c315255a8ffa4db9e890797daef"
+    },
+    "coupling_note": {
+      "path": "mechanical/coupling_c1/README.md",
+      "sha256": "b0b26c4d9c479e67abed1750da9a4b18ef43002e150680cbd47c2d9b0cdeed43",
+      "git_blob": "b96008856e7db46dfcecdae1e8c3178b2e220f29"
+    },
+    "image": {
+      "path": "mechanical/coupling_c1/generated/exploded.png",
+      "sha256": "98c2ca04efbe5ad479373fb1e5826d05034102d45d93e3a55f06fa824cc5c632",
+      "git_blob": "6ac75a086e02ff04741dd72a54155e6f7665072f"
+    },
+    "channel_image": {
+      "path": "docs/channel/assets/single-channel.png",
+      "sha256": "91b74fe0e9c3a4682c2a04b28d90e00b094956a89bbc34947bdc71f6274f96e1",
+      "git_blob": "e2459ef72eafe201e68aff1120be22dc292f55a7"
+    },
+    "q1": {
+      "path": "firmware/src/main.c",
+      "sha256": "ae03c511238119de4de1eabc0a469d12d40d0a62634edefd6dc7d9f1b53846fe",
+      "git_blob": "cfcaebb0d4ce9789d4cb43167ad0f924da7a095d"
+    },
+    "q2": {
+      "path": "firmware/r2/main.c",
+      "sha256": "6aba19d4f14ae679a31848f5fc2b23be2feb37012af3f4e9528e4ea9688ddd84",
+      "git_blob": "3aa1c9364e89a5e0f573c2eb8fcbbda480e5cf3c"
+    },
+    "protocol": {
+      "path": "firmware/include/protocol.h",
+      "sha256": "b52c055cbf59ffb0103813f7ad76aa939e57e725ef5ba59035ea3a144c4797c5",
+      "git_blob": "f8539990233fca06f29b6a39832cc787936c76a0"
+    },
+    "model": {
+      "path": "software/core/src/main/java/org/qulay/core/Model.java",
+      "sha256": "1a2d5ceb7aace8e5a726e993847ad550c5333cde8ca08524985f7c7c5402ba8b",
+      "git_blob": "0465d8132f66453ef2c648e30c276dacab56e93f"
+    },
+    "geometry": {
+      "path": "software/core/src/main/java/org/qulay/core/Geometry.java",
+      "sha256": "0581803ed740d08025f95b12447a865beb893104b6a72412d61ad9e64aae9462",
+      "git_blob": "fcbabd27efd541e499c3602293a0c90392b891a3"
+    },
+    "contact": {
+      "path": "software/core/src/main/java/org/qulay/core/ContactModel.java",
+      "sha256": "b9c4ca1ace2e94213264b5d317f4f2ccf6f5c4593d4e725d39a624c4b79f42f9",
+      "git_blob": "b16ca31dbc700d3cb4897dd3e5b1ce54a9444bb4"
+    },
+    "wire": {
+      "path": "software/agent/src/main/java/org/qulay/agent/Wire.java",
+      "sha256": "39371b84d6f41843503d21740a0177235fcb3e01468f258aa2928edf24c8b3ef",
+      "git_blob": "a04ba689bc635fb44f95406844f94eb53c613cef"
+    },
+    "wire2": {
+      "path": "software/agent/src/main/java/org/qulay/agent/WireV2.java",
+      "sha256": "c8ab4d29204c86bd31a0cbfb6b0b71c4318dc9b705576f3c9f0b9825ea3c3f76",
+      "git_blob": "01089377031efc93fe9bbbfc1237925e2a89354c"
+    },
+    "agent": {
+      "path": "software/agent/src/main/java/org/qulay/agent/Agent.java",
+      "sha256": "22e823ccc8bdb2d5f1c53fd9dc98ca9b375e0a52ccdf91de5a00472f5bb17238",
+      "git_blob": "ae82513d88c011a475f2e448e52bc2eb840842bb"
+    },
+    "json": {
+      "path": "software/core/src/main/java/org/qulay/core/Json.java",
+      "sha256": "7d6f47c3aa5b09c153e21827b315d52b2699c2729dcf91df5031d4e88ee961a8",
+      "git_blob": "85106fa83bb4af9194aee8651a03bcdcda9e9b96"
+    },
+    "desktop": {
+      "path": "software/desktop/src/main/java/org/qulay/desktop/DesktopApp.java",
+      "sha256": "26e513d48475112cc88c3e2d97ecb595845a3d8c283f88e02436bdd3e97dcc65",
+      "git_blob": "e44cb5d1d920df03a7060f5a335d47a18d015ea5"
+    }
+  },
+  "boards": {
+    "encoder": {
+      "J1": {
+        "u": 4.0,
+        "v": 3.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 4.0,
+            "v": 3.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 6.0,
+            "v": 3.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 8.0,
+            "v": 3.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS"
+          },
+          {
+            "pin": "4",
+            "u": 10.0,
+            "v": 3.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK"
+          },
+          {
+            "pin": "5",
+            "u": 12.0,
+            "v": 3.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "DIN"
+          },
+          {
+            "pin": "6",
+            "u": 14.0,
+            "v": 3.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "DOUT"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "U1": {
+        "u": 9.0,
+        "v": 12.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 6.15,
+            "v": 10.05,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "CS"
+          },
+          {
+            "pin": "2",
+            "u": 6.15,
+            "v": 10.700001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "SCK"
+          },
+          {
+            "pin": "3",
+            "u": 6.15,
+            "v": 11.350001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "DOUT"
+          },
+          {
+            "pin": "4",
+            "u": 6.15,
+            "v": 12.0,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "DIN"
+          },
+          {
+            "pin": "5",
+            "u": 6.15,
+            "v": 12.65,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "6",
+            "u": 6.15,
+            "v": 13.3,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "7",
+            "u": 6.15,
+            "v": 13.95,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "8",
+            "u": 11.85,
+            "v": 13.95,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "9",
+            "u": 11.85,
+            "v": 13.299999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "10",
+            "u": 11.85,
+            "v": 12.649999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "11",
+            "u": 11.85,
+            "v": 12.0,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "12",
+            "u": 11.85,
+            "v": 11.35,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "13",
+            "u": 11.85,
+            "v": 10.7,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "14",
+            "u": 11.85,
+            "v": 10.05,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          }
+        ],
+        "library": "QL:TSSOP14"
+      },
+      "C1": {
+        "u": 14.0,
+        "v": 15.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 13.2,
+            "v": 15.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 14.8,
+            "v": 15.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      },
+      "MH1": {
+        "u": 2.5,
+        "v": 21.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 2.5,
+            "v": 21.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "MH2": {
+        "u": 15.5,
+        "v": 21.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 15.5,
+            "v": 21.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "C2": {
+        "u": 14.0,
+        "v": 18.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 13.2,
+            "v": 18.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 14.8,
+            "v": 18.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      }
+    },
+    "r1": {
+      "J5": {
+        "u": 54.0,
+        "v": 63.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 54.0,
+            "v": 63.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 56.0,
+            "v": 63.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 58.0,
+            "v": 63.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS3"
+          },
+          {
+            "pin": "4",
+            "u": 60.0,
+            "v": 63.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 62.0,
+            "v": 63.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 64.0,
+            "v": 63.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "MH2": {
+        "u": 76.0,
+        "v": 4.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 76.0,
+            "v": 4.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "J4": {
+        "u": 54.0,
+        "v": 52.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 54.0,
+            "v": 52.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 56.0,
+            "v": 52.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 58.0,
+            "v": 52.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS2"
+          },
+          {
+            "pin": "4",
+            "u": 60.0,
+            "v": 52.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 62.0,
+            "v": 52.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 64.0,
+            "v": 52.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "J2": {
+        "u": 54.0,
+        "v": 30.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 54.0,
+            "v": 30.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 56.0,
+            "v": 30.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 58.0,
+            "v": 30.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS0"
+          },
+          {
+            "pin": "4",
+            "u": 60.0,
+            "v": 30.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 62.0,
+            "v": 30.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 64.0,
+            "v": 30.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "MH3": {
+        "u": 4.0,
+        "v": 96.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 4.0,
+            "v": 96.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "J3": {
+        "u": 54.0,
+        "v": 41.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 54.0,
+            "v": 41.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 56.0,
+            "v": 41.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 58.0,
+            "v": 41.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS1"
+          },
+          {
+            "pin": "4",
+            "u": 60.0,
+            "v": 41.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 62.0,
+            "v": 41.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 64.0,
+            "v": 41.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "MH4": {
+        "u": 76.0,
+        "v": 96.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 76.0,
+            "v": 96.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "MH1": {
+        "u": 4.0,
+        "v": 4.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 4.0,
+            "v": 4.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "J7": {
+        "u": 14.0,
+        "v": 85.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 14.0,
+            "v": 85.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 16.0,
+            "v": 85.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 18.0,
+            "v": 85.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ODO_A"
+          },
+          {
+            "pin": "4",
+            "u": 20.0,
+            "v": 85.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ODO_B"
+          }
+        ],
+        "library": "QL:H4"
+      },
+      "U1": {
+        "u": 25.0,
+        "v": 47.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 16.11,
+            "v": 22.87,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "ODO_A"
+          },
+          {
+            "pin": "2",
+            "u": 16.11,
+            "v": 25.41,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "ODO_B"
+          },
+          {
+            "pin": "3",
+            "u": 16.11,
+            "v": 27.950001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "4",
+            "u": 16.11,
+            "v": 30.490001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 16.11,
+            "v": 33.030001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 16.11,
+            "v": 35.57,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "MISO0"
+          },
+          {
+            "pin": "7",
+            "u": 16.11,
+            "v": 38.110001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "CS0"
+          },
+          {
+            "pin": "8",
+            "u": 16.11,
+            "v": 40.650001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "9",
+            "u": 16.11,
+            "v": 43.190001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "CS1"
+          },
+          {
+            "pin": "10",
+            "u": 16.11,
+            "v": 45.730001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "CS2"
+          },
+          {
+            "pin": "11",
+            "u": 16.11,
+            "v": 48.269999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "CS3"
+          },
+          {
+            "pin": "12",
+            "u": 16.11,
+            "v": 50.81,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "13",
+            "u": 16.11,
+            "v": 53.35,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "14",
+            "u": 16.11,
+            "v": 55.89,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "SCK1"
+          },
+          {
+            "pin": "15",
+            "u": 16.11,
+            "v": 58.43,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "MOSI1"
+          },
+          {
+            "pin": "16",
+            "u": 16.11,
+            "v": 60.97,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "MISO1"
+          },
+          {
+            "pin": "17",
+            "u": 16.11,
+            "v": 63.510000000000005,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "CS_ADXL"
+          },
+          {
+            "pin": "18",
+            "u": 16.11,
+            "v": 66.05,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "19",
+            "u": 16.11,
+            "v": 68.59,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "DRDY_ADXL"
+          },
+          {
+            "pin": "20",
+            "u": 16.11,
+            "v": 71.13,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "21",
+            "u": 33.89,
+            "v": 71.13,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "22",
+            "u": 33.89,
+            "v": 68.59,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "23",
+            "u": 33.89,
+            "v": 66.049999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "24",
+            "u": 33.89,
+            "v": 63.509999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "25",
+            "u": 33.89,
+            "v": 60.969999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "26",
+            "u": 33.89,
+            "v": 58.43,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "27",
+            "u": 33.89,
+            "v": 55.889999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "28",
+            "u": 33.89,
+            "v": 53.349999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "29",
+            "u": 33.89,
+            "v": 50.809999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "30",
+            "u": 33.89,
+            "v": 48.269999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "31",
+            "u": 33.89,
+            "v": 45.730001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "32",
+            "u": 33.89,
+            "v": 43.19,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "33",
+            "u": 33.89,
+            "v": 40.65,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "34",
+            "u": 33.89,
+            "v": 38.11,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "35",
+            "u": 33.89,
+            "v": 35.57,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "36",
+            "u": 33.89,
+            "v": 33.03,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "37",
+            "u": 33.89,
+            "v": 30.49,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "38",
+            "u": 33.89,
+            "v": 27.95,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "39",
+            "u": 33.89,
+            "v": 25.41,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "40",
+            "u": 33.89,
+            "v": 22.87,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          }
+        ],
+        "library": "QL:PICO40"
+      },
+      "J1": {
+        "u": 57.0,
+        "v": 12.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 57.0,
+            "v": 12.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "EXT_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 59.0,
+            "v": 12.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:H2"
+      },
+      "J6": {
+        "u": 52.0,
+        "v": 80.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 52.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 54.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 56.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK1"
+          },
+          {
+            "pin": "4",
+            "u": 58.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI1"
+          },
+          {
+            "pin": "5",
+            "u": 60.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO1"
+          },
+          {
+            "pin": "6",
+            "u": 62.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS_ADXL"
+          },
+          {
+            "pin": "7",
+            "u": 64.0,
+            "v": 80.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "DRDY_ADXL"
+          }
+        ],
+        "library": "QL:H7"
+      },
+      "C2": {
+        "u": 67.0,
+        "v": 22.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 66.2,
+            "v": 22.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 67.8,
+            "v": 22.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      },
+      "F1": {
+        "u": 60.0,
+        "v": 18.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 58.4,
+            "v": 18.0,
+            "width": 1.2,
+            "height": 1.8,
+            "net": "EXT_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 61.6,
+            "v": 18.0,
+            "width": 1.2,
+            "height": 1.8,
+            "net": "SENS_3V3"
+          }
+        ],
+        "library": "QL:F1206"
+      },
+      "C1": {
+        "u": 67.0,
+        "v": 18.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 66.2,
+            "v": 18.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 67.8,
+            "v": 18.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      }
+    },
+    "r2": {
+      "R7": {
+        "u": 40.0,
+        "v": 70.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 70.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 70.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_CS2"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R9": {
+        "u": 18.0,
+        "v": 110.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 17.2,
+            "v": 110.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENSOR_ENABLE"
+          },
+          {
+            "pin": "2",
+            "u": 18.8,
+            "v": 110.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "Q_BASE"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R18": {
+        "u": 64.0,
+        "v": 49.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 63.2,
+            "v": 49.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_MOSI_BUF"
+          },
+          {
+            "pin": "2",
+            "u": 64.8,
+            "v": 49.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_MOSI"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R11": {
+        "u": 32.0,
+        "v": 114.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 31.2,
+            "v": 114.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 32.8,
+            "v": 114.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "OE_SENS_N"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R16": {
+        "u": 64.0,
+        "v": 33.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 63.2,
+            "v": 33.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "MOSI0_BUF"
+          },
+          {
+            "pin": "2",
+            "u": 64.8,
+            "v": 33.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "MOSI0"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R14": {
+        "u": 53.0,
+        "v": 120.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 52.2,
+            "v": 120.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "MISO1_RAW"
+          },
+          {
+            "pin": "2",
+            "u": 53.8,
+            "v": 120.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R10": {
+        "u": 18.0,
+        "v": 116.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 17.2,
+            "v": 116.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "Q_BASE"
+          },
+          {
+            "pin": "2",
+            "u": 18.8,
+            "v": 116.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "MH1": {
+        "u": 4.0,
+        "v": 4.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 4.0,
+            "v": 4.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "U1": {
+        "u": 24.0,
+        "v": 44.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 15.11,
+            "v": 19.87,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "ODO_A"
+          },
+          {
+            "pin": "2",
+            "u": 15.11,
+            "v": 22.41,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "ODO_B"
+          },
+          {
+            "pin": "3",
+            "u": 15.11,
+            "v": 24.950001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "4",
+            "u": 15.11,
+            "v": 27.490001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 15.11,
+            "v": 30.030001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 15.11,
+            "v": 32.57,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "MISO0"
+          },
+          {
+            "pin": "7",
+            "u": 15.11,
+            "v": 35.110001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_CS0"
+          },
+          {
+            "pin": "8",
+            "u": 15.11,
+            "v": 37.650001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "9",
+            "u": 15.11,
+            "v": 40.190001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_CS1"
+          },
+          {
+            "pin": "10",
+            "u": 15.11,
+            "v": 42.730001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_CS2"
+          },
+          {
+            "pin": "11",
+            "u": 15.11,
+            "v": 45.269999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_CS3"
+          },
+          {
+            "pin": "12",
+            "u": 15.11,
+            "v": 47.81,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "13",
+            "u": 15.11,
+            "v": 50.35,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "14",
+            "u": 15.11,
+            "v": 52.89,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_SCK1"
+          },
+          {
+            "pin": "15",
+            "u": 15.11,
+            "v": 55.43,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_MOSI1"
+          },
+          {
+            "pin": "16",
+            "u": 15.11,
+            "v": 57.97,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "MISO1"
+          },
+          {
+            "pin": "17",
+            "u": 15.11,
+            "v": 60.510000000000005,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "CS_ADXL"
+          },
+          {
+            "pin": "18",
+            "u": 15.11,
+            "v": 63.05,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "19",
+            "u": 15.11,
+            "v": 65.59,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "DRDY_ADXL"
+          },
+          {
+            "pin": "20",
+            "u": 15.11,
+            "v": 68.13,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "21",
+            "u": 32.89,
+            "v": 68.13,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_ADC_CS0"
+          },
+          {
+            "pin": "22",
+            "u": 32.89,
+            "v": 65.59,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_ADC_CS1"
+          },
+          {
+            "pin": "23",
+            "u": 32.89,
+            "v": 63.049999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "24",
+            "u": 32.89,
+            "v": 60.509999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_ADC_CS2"
+          },
+          {
+            "pin": "25",
+            "u": 32.89,
+            "v": 57.969999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "P_ADC_CS3"
+          },
+          {
+            "pin": "26",
+            "u": 32.89,
+            "v": 55.43,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "LIFT_STOWED_N"
+          },
+          {
+            "pin": "27",
+            "u": 32.89,
+            "v": 52.889999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "POWER_GOOD"
+          },
+          {
+            "pin": "28",
+            "u": 32.89,
+            "v": 50.349999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "29",
+            "u": 32.89,
+            "v": 47.809999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "SENSOR_ENABLE"
+          },
+          {
+            "pin": "30",
+            "u": 32.89,
+            "v": 45.269999,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "31",
+            "u": 32.89,
+            "v": 42.730001,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "32",
+            "u": 32.89,
+            "v": 40.19,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "33",
+            "u": 32.89,
+            "v": 37.65,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "34",
+            "u": 32.89,
+            "v": 35.11,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "35",
+            "u": 32.89,
+            "v": 32.57,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "36",
+            "u": 32.89,
+            "v": 30.03,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "37",
+            "u": 32.89,
+            "v": 27.49,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "38",
+            "u": 32.89,
+            "v": 24.95,
+            "width": 1.7,
+            "height": 1.7,
+            "net": "GND"
+          },
+          {
+            "pin": "39",
+            "u": 32.89,
+            "v": 22.41,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          },
+          {
+            "pin": "40",
+            "u": 32.89,
+            "v": 19.87,
+            "width": 1.7,
+            "height": 1.7,
+            "net": ""
+          }
+        ],
+        "library": "QL:PICO40"
+      },
+      "R13": {
+        "u": 53.0,
+        "v": 115.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 52.2,
+            "v": 115.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "MISO0_RAW"
+          },
+          {
+            "pin": "2",
+            "u": 53.8,
+            "v": 115.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "C2": {
+        "u": 61.0,
+        "v": 68.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 60.2,
+            "v": 68.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 61.8,
+            "v": 68.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      },
+      "J7": {
+        "u": 15.0,
+        "v": 83.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 15.0,
+            "v": 83.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 17.0,
+            "v": 83.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 19.0,
+            "v": 83.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ODO_A"
+          },
+          {
+            "pin": "4",
+            "u": 21.0,
+            "v": 83.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ODO_B"
+          }
+        ],
+        "library": "QL:H4"
+      },
+      "C4": {
+        "u": 88.0,
+        "v": 17.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 87.2,
+            "v": 17.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 88.8,
+            "v": 17.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      },
+      "J2": {
+        "u": 76.0,
+        "v": 29.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 76.0,
+            "v": 29.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 78.0,
+            "v": 29.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 80.0,
+            "v": 29.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS0"
+          },
+          {
+            "pin": "4",
+            "u": 82.0,
+            "v": 29.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 84.0,
+            "v": 29.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 86.0,
+            "v": 29.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0_RAW"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "Q1": {
+        "u": 25.0,
+        "v": 114.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 23.9,
+            "v": 113.05,
+            "width": 1.0,
+            "height": 0.6,
+            "net": "Q_BASE"
+          },
+          {
+            "pin": "2",
+            "u": 23.9,
+            "v": 114.95,
+            "width": 1.0,
+            "height": 0.6,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 26.1,
+            "v": 114.0,
+            "width": 1.0,
+            "height": 0.6,
+            "net": "OE_SENS_N"
+          }
+        ],
+        "library": "QL:SOT23"
+      },
+      "J4": {
+        "u": 76.0,
+        "v": 51.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 76.0,
+            "v": 51.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 78.0,
+            "v": 51.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 80.0,
+            "v": 51.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS2"
+          },
+          {
+            "pin": "4",
+            "u": 82.0,
+            "v": 51.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 84.0,
+            "v": 51.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 86.0,
+            "v": 51.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0_RAW"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "U3": {
+        "u": 53.0,
+        "v": 68.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 50.15,
+            "v": 65.075,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "OE_SENS_N"
+          },
+          {
+            "pin": "2",
+            "u": 50.15,
+            "v": 65.725,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_ADC_CS0"
+          },
+          {
+            "pin": "3",
+            "u": 50.15,
+            "v": 66.375001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "4",
+            "u": 50.15,
+            "v": 67.025001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_ADC_CS1"
+          },
+          {
+            "pin": "5",
+            "u": 50.15,
+            "v": 67.675001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "6",
+            "u": 50.15,
+            "v": 68.325,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_ADC_CS2"
+          },
+          {
+            "pin": "7",
+            "u": 50.15,
+            "v": 68.975,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "8",
+            "u": 50.15,
+            "v": 69.625,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_ADC_CS3"
+          },
+          {
+            "pin": "9",
+            "u": 50.15,
+            "v": 70.275,
+            "width": 1.5,
+            "height": 0.45,
+            "net": ""
+          },
+          {
+            "pin": "10",
+            "u": 50.15,
+            "v": 70.925,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "11",
+            "u": 55.85,
+            "v": 70.925,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "12",
+            "u": 55.85,
+            "v": 70.275,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "ADC_CS3"
+          },
+          {
+            "pin": "13",
+            "u": 55.85,
+            "v": 69.624999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "14",
+            "u": 55.85,
+            "v": 68.974999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "ADC_CS2"
+          },
+          {
+            "pin": "15",
+            "u": 55.85,
+            "v": 68.324999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "16",
+            "u": 55.85,
+            "v": 67.675,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "ADC_CS1"
+          },
+          {
+            "pin": "17",
+            "u": 55.85,
+            "v": 67.025,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "18",
+            "u": 55.85,
+            "v": 66.375,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "ADC_CS0"
+          },
+          {
+            "pin": "19",
+            "u": 55.85,
+            "v": 65.725,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "OE_SENS_N"
+          },
+          {
+            "pin": "20",
+            "u": 55.85,
+            "v": 65.075,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "SENS_3V3"
+          }
+        ],
+        "library": "QL:TSSOP20"
+      },
+      "C3": {
+        "u": 61.0,
+        "v": 104.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 60.2,
+            "v": 104.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 61.8,
+            "v": 104.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      },
+      "MH4": {
+        "u": 96.0,
+        "v": 136.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 96.0,
+            "v": 136.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "J6": {
+        "u": 76.0,
+        "v": 81.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 76.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 78.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 80.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "P_SCK1"
+          },
+          {
+            "pin": "4",
+            "u": 82.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "P_MOSI1"
+          },
+          {
+            "pin": "5",
+            "u": 84.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO1_RAW"
+          },
+          {
+            "pin": "6",
+            "u": 86.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS_ADXL"
+          },
+          {
+            "pin": "7",
+            "u": 88.0,
+            "v": 81.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "DRDY_ADXL"
+          }
+        ],
+        "library": "QL:H7"
+      },
+      "J8": {
+        "u": 72.0,
+        "v": 96.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 72.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 74.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 76.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ADC_SCK"
+          },
+          {
+            "pin": "4",
+            "u": 78.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ADC_MOSI"
+          },
+          {
+            "pin": "5",
+            "u": 80.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO1_RAW"
+          },
+          {
+            "pin": "6",
+            "u": 82.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ADC_CS0"
+          },
+          {
+            "pin": "7",
+            "u": 84.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ADC_CS1"
+          },
+          {
+            "pin": "8",
+            "u": 86.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ADC_CS2"
+          },
+          {
+            "pin": "9",
+            "u": 88.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "ADC_CS3"
+          },
+          {
+            "pin": "10",
+            "u": 90.0,
+            "v": 96.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:H10"
+      },
+      "J3": {
+        "u": 76.0,
+        "v": 40.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 76.0,
+            "v": 40.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 78.0,
+            "v": 40.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 80.0,
+            "v": 40.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS1"
+          },
+          {
+            "pin": "4",
+            "u": 82.0,
+            "v": 40.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 84.0,
+            "v": 40.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 86.0,
+            "v": 40.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0_RAW"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "R5": {
+        "u": 40.0,
+        "v": 52.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 52.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 52.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_CS0"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R17": {
+        "u": 64.0,
+        "v": 45.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 63.2,
+            "v": 45.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_SCK_BUF"
+          },
+          {
+            "pin": "2",
+            "u": 64.8,
+            "v": 45.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_SCK"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "J9": {
+        "u": 74.0,
+        "v": 124.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 74.0,
+            "v": 124.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "2",
+            "u": 76.0,
+            "v": 124.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "LIFT_STOWED_N"
+          },
+          {
+            "pin": "3",
+            "u": 78.0,
+            "v": 124.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "POWER_GOOD"
+          },
+          {
+            "pin": "4",
+            "u": 80.0,
+            "v": 124.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "PICO_3V3"
+          }
+        ],
+        "library": "QL:H4"
+      },
+      "R12": {
+        "u": 64.0,
+        "v": 125.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 63.2,
+            "v": 125.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "POWER_GOOD"
+          },
+          {
+            "pin": "2",
+            "u": 64.8,
+            "v": 125.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R8": {
+        "u": 40.0,
+        "v": 79.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 79.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 79.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_CS3"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R3": {
+        "u": 40.0,
+        "v": 34.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 34.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 34.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "CS2"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R4": {
+        "u": 40.0,
+        "v": 43.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 43.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 43.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "CS3"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "R15": {
+        "u": 64.0,
+        "v": 29.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 63.2,
+            "v": 29.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SCK0_BUF"
+          },
+          {
+            "pin": "2",
+            "u": 64.8,
+            "v": 29.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SCK0"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "MH3": {
+        "u": 4.0,
+        "v": 136.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 4.0,
+            "v": 136.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "U4": {
+        "u": 53.0,
+        "v": 104.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 50.3,
+            "v": 100.19,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "GND"
+          },
+          {
+            "pin": "2",
+            "u": 50.3,
+            "v": 101.46,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "MISO0_RAW"
+          },
+          {
+            "pin": "3",
+            "u": 50.3,
+            "v": 102.73,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "MISO0"
+          },
+          {
+            "pin": "4",
+            "u": 50.3,
+            "v": 104.0,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "GND"
+          },
+          {
+            "pin": "5",
+            "u": 50.3,
+            "v": 105.27,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "MISO1_RAW"
+          },
+          {
+            "pin": "6",
+            "u": 50.3,
+            "v": 106.539999,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "MISO1"
+          },
+          {
+            "pin": "7",
+            "u": 50.3,
+            "v": 107.81,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "GND"
+          },
+          {
+            "pin": "8",
+            "u": 55.7,
+            "v": 107.81,
+            "width": 1.5,
+            "height": 0.6,
+            "net": ""
+          },
+          {
+            "pin": "9",
+            "u": 55.7,
+            "v": 106.54,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "GND"
+          },
+          {
+            "pin": "10",
+            "u": 55.7,
+            "v": 105.27,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "11",
+            "u": 55.7,
+            "v": 104.0,
+            "width": 1.5,
+            "height": 0.6,
+            "net": ""
+          },
+          {
+            "pin": "12",
+            "u": 55.7,
+            "v": 102.73,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "GND"
+          },
+          {
+            "pin": "13",
+            "u": 55.7,
+            "v": 101.460001,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "PICO_3V3"
+          },
+          {
+            "pin": "14",
+            "u": 55.7,
+            "v": 100.19,
+            "width": 1.5,
+            "height": 0.6,
+            "net": "PICO_3V3"
+          }
+        ],
+        "library": "QL:SOIC14"
+      },
+      "J5": {
+        "u": 76.0,
+        "v": 62.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 76.0,
+            "v": 62.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 78.0,
+            "v": 62.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          },
+          {
+            "pin": "3",
+            "u": 80.0,
+            "v": 62.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "CS3"
+          },
+          {
+            "pin": "4",
+            "u": 82.0,
+            "v": 62.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SCK0"
+          },
+          {
+            "pin": "5",
+            "u": 84.0,
+            "v": 62.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MOSI0"
+          },
+          {
+            "pin": "6",
+            "u": 86.0,
+            "v": 62.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "MISO0_RAW"
+          }
+        ],
+        "library": "QL:H6"
+      },
+      "MH2": {
+        "u": 96.0,
+        "v": 4.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "",
+            "u": 96.0,
+            "v": 4.0,
+            "width": 2.2,
+            "height": 2.2,
+            "net": ""
+          }
+        ],
+        "library": "QL:MountingHole_2.2mm"
+      },
+      "R2": {
+        "u": 40.0,
+        "v": 25.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 25.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 25.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "CS1"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "U2": {
+        "u": 53.0,
+        "v": 37.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 50.15,
+            "v": 34.075,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "OE_SENS_N"
+          },
+          {
+            "pin": "2",
+            "u": 50.15,
+            "v": 34.725,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_SCK0"
+          },
+          {
+            "pin": "3",
+            "u": 50.15,
+            "v": 35.375001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "ADC_MOSI_BUF"
+          },
+          {
+            "pin": "4",
+            "u": 50.15,
+            "v": 36.025001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_MOSI0"
+          },
+          {
+            "pin": "5",
+            "u": 50.15,
+            "v": 36.675001,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "ADC_SCK_BUF"
+          },
+          {
+            "pin": "6",
+            "u": 50.15,
+            "v": 37.325,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_CS0"
+          },
+          {
+            "pin": "7",
+            "u": 50.15,
+            "v": 37.975,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "CS3"
+          },
+          {
+            "pin": "8",
+            "u": 50.15,
+            "v": 38.625,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_CS1"
+          },
+          {
+            "pin": "9",
+            "u": 50.15,
+            "v": 39.275,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "CS2"
+          },
+          {
+            "pin": "10",
+            "u": 50.15,
+            "v": 39.925,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "GND"
+          },
+          {
+            "pin": "11",
+            "u": 55.85,
+            "v": 39.925,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_CS2"
+          },
+          {
+            "pin": "12",
+            "u": 55.85,
+            "v": 39.275,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "CS1"
+          },
+          {
+            "pin": "13",
+            "u": 55.85,
+            "v": 38.624999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_CS3"
+          },
+          {
+            "pin": "14",
+            "u": 55.85,
+            "v": 37.974999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "CS0"
+          },
+          {
+            "pin": "15",
+            "u": 55.85,
+            "v": 37.324999,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_SCK1"
+          },
+          {
+            "pin": "16",
+            "u": 55.85,
+            "v": 36.675,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "MOSI0_BUF"
+          },
+          {
+            "pin": "17",
+            "u": 55.85,
+            "v": 36.025,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "P_MOSI1"
+          },
+          {
+            "pin": "18",
+            "u": 55.85,
+            "v": 35.375,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "SCK0_BUF"
+          },
+          {
+            "pin": "19",
+            "u": 55.85,
+            "v": 34.725,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "OE_SENS_N"
+          },
+          {
+            "pin": "20",
+            "u": 55.85,
+            "v": 34.075,
+            "width": 1.5,
+            "height": 0.45,
+            "net": "SENS_3V3"
+          }
+        ],
+        "library": "QL:TSSOP20"
+      },
+      "J1": {
+        "u": 79.0,
+        "v": 12.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 79.0,
+            "v": 12.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 81.0,
+            "v": 12.0,
+            "width": 1.35,
+            "height": 1.35,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:H2"
+      },
+      "R1": {
+        "u": 40.0,
+        "v": 16.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 16.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 16.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "CS0"
+          }
+        ],
+        "library": "QL:R0603"
+      },
+      "C1": {
+        "u": 61.0,
+        "v": 37.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 60.2,
+            "v": 37.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 61.8,
+            "v": 37.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "GND"
+          }
+        ],
+        "library": "QL:C0603"
+      },
+      "R6": {
+        "u": 40.0,
+        "v": 61.0,
+        "rotation_deg": 0,
+        "pads": [
+          {
+            "pin": "1",
+            "u": 39.2,
+            "v": 61.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "SENS_3V3"
+          },
+          {
+            "pin": "2",
+            "u": 40.8,
+            "v": 61.0,
+            "width": 0.85,
+            "height": 0.95,
+            "net": "ADC_CS1"
+          }
+        ],
+        "library": "QL:R0603"
+      }
+    }
+  },
+  "channels": [
+    {
+      "java_index": 0,
+      "cad_suffix": "01",
+      "encoder_label": "encoder00",
+      "Y_mm": -375,
+      "bank": 0,
+      "slot": 0,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 0,
+      "r2_adc_J2_OUT_pin": 3
+    },
+    {
+      "java_index": 1,
+      "cad_suffix": "02",
+      "encoder_label": "encoder01",
+      "Y_mm": -350,
+      "bank": 0,
+      "slot": 1,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 1,
+      "r2_adc_J2_OUT_pin": 6
+    },
+    {
+      "java_index": 2,
+      "cad_suffix": "03",
+      "encoder_label": "encoder02",
+      "Y_mm": -325,
+      "bank": 0,
+      "slot": 2,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 2,
+      "r2_adc_J2_OUT_pin": 9
+    },
+    {
+      "java_index": 3,
+      "cad_suffix": "04",
+      "encoder_label": "encoder03",
+      "Y_mm": -300,
+      "bank": 0,
+      "slot": 3,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 3,
+      "r2_adc_J2_OUT_pin": 12
+    },
+    {
+      "java_index": 4,
+      "cad_suffix": "05",
+      "encoder_label": "encoder04",
+      "Y_mm": -275,
+      "bank": 0,
+      "slot": 4,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 4,
+      "r2_adc_J2_OUT_pin": 15
+    },
+    {
+      "java_index": 5,
+      "cad_suffix": "06",
+      "encoder_label": "encoder05",
+      "Y_mm": -250,
+      "bank": 0,
+      "slot": 5,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 5,
+      "r2_adc_J2_OUT_pin": 18
+    },
+    {
+      "java_index": 6,
+      "cad_suffix": "07",
+      "encoder_label": "encoder06",
+      "Y_mm": -225,
+      "bank": 0,
+      "slot": 6,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 6,
+      "r2_adc_J2_OUT_pin": 21
+    },
+    {
+      "java_index": 7,
+      "cad_suffix": "08",
+      "encoder_label": "encoder07",
+      "Y_mm": -200,
+      "bank": 0,
+      "slot": 7,
+      "bank_size": 8,
+      "carrier_connector": "J2",
+      "CS_gpio": 5,
+      "CS_physical_pin": 7,
+      "r2_adc_bank": 0,
+      "r2_adc_channel": 7,
+      "r2_adc_J2_OUT_pin": 24
+    },
+    {
+      "java_index": 8,
+      "cad_suffix": "09",
+      "encoder_label": "encoder08",
+      "Y_mm": -175,
+      "bank": 1,
+      "slot": 0,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 0,
+      "r2_adc_J2_OUT_pin": 3
+    },
+    {
+      "java_index": 9,
+      "cad_suffix": "10",
+      "encoder_label": "encoder09",
+      "Y_mm": -150,
+      "bank": 1,
+      "slot": 1,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 1,
+      "r2_adc_J2_OUT_pin": 6
+    },
+    {
+      "java_index": 10,
+      "cad_suffix": "11",
+      "encoder_label": "encoder10",
+      "Y_mm": -125,
+      "bank": 1,
+      "slot": 2,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 2,
+      "r2_adc_J2_OUT_pin": 9
+    },
+    {
+      "java_index": 11,
+      "cad_suffix": "12",
+      "encoder_label": "encoder11",
+      "Y_mm": -100,
+      "bank": 1,
+      "slot": 3,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 3,
+      "r2_adc_J2_OUT_pin": 12
+    },
+    {
+      "java_index": 12,
+      "cad_suffix": "13",
+      "encoder_label": "encoder12",
+      "Y_mm": -75,
+      "bank": 1,
+      "slot": 4,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 4,
+      "r2_adc_J2_OUT_pin": 15
+    },
+    {
+      "java_index": 13,
+      "cad_suffix": "14",
+      "encoder_label": "encoder13",
+      "Y_mm": -50,
+      "bank": 1,
+      "slot": 5,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 5,
+      "r2_adc_J2_OUT_pin": 18
+    },
+    {
+      "java_index": 14,
+      "cad_suffix": "15",
+      "encoder_label": "encoder14",
+      "Y_mm": -25,
+      "bank": 1,
+      "slot": 6,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 6,
+      "r2_adc_J2_OUT_pin": 21
+    },
+    {
+      "java_index": 15,
+      "cad_suffix": "16",
+      "encoder_label": "encoder15",
+      "Y_mm": 0,
+      "bank": 1,
+      "slot": 7,
+      "bank_size": 8,
+      "carrier_connector": "J3",
+      "CS_gpio": 6,
+      "CS_physical_pin": 9,
+      "r2_adc_bank": 1,
+      "r2_adc_channel": 7,
+      "r2_adc_J2_OUT_pin": 24
+    },
+    {
+      "java_index": 16,
+      "cad_suffix": "17",
+      "encoder_label": "encoder16",
+      "Y_mm": 25,
+      "bank": 2,
+      "slot": 0,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 0,
+      "r2_adc_J2_OUT_pin": 3
+    },
+    {
+      "java_index": 17,
+      "cad_suffix": "18",
+      "encoder_label": "encoder17",
+      "Y_mm": 50,
+      "bank": 2,
+      "slot": 1,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 1,
+      "r2_adc_J2_OUT_pin": 6
+    },
+    {
+      "java_index": 18,
+      "cad_suffix": "19",
+      "encoder_label": "encoder18",
+      "Y_mm": 75,
+      "bank": 2,
+      "slot": 2,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 2,
+      "r2_adc_J2_OUT_pin": 9
+    },
+    {
+      "java_index": 19,
+      "cad_suffix": "20",
+      "encoder_label": "encoder19",
+      "Y_mm": 100,
+      "bank": 2,
+      "slot": 3,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 3,
+      "r2_adc_J2_OUT_pin": 12
+    },
+    {
+      "java_index": 20,
+      "cad_suffix": "21",
+      "encoder_label": "encoder20",
+      "Y_mm": 125,
+      "bank": 2,
+      "slot": 4,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 4,
+      "r2_adc_J2_OUT_pin": 15
+    },
+    {
+      "java_index": 21,
+      "cad_suffix": "22",
+      "encoder_label": "encoder21",
+      "Y_mm": 150,
+      "bank": 2,
+      "slot": 5,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 5,
+      "r2_adc_J2_OUT_pin": 18
+    },
+    {
+      "java_index": 22,
+      "cad_suffix": "23",
+      "encoder_label": "encoder22",
+      "Y_mm": 175,
+      "bank": 2,
+      "slot": 6,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 6,
+      "r2_adc_J2_OUT_pin": 21
+    },
+    {
+      "java_index": 23,
+      "cad_suffix": "24",
+      "encoder_label": "encoder23",
+      "Y_mm": 200,
+      "bank": 2,
+      "slot": 7,
+      "bank_size": 8,
+      "carrier_connector": "J4",
+      "CS_gpio": 7,
+      "CS_physical_pin": 10,
+      "r2_adc_bank": 2,
+      "r2_adc_channel": 7,
+      "r2_adc_J2_OUT_pin": 24
+    },
+    {
+      "java_index": 24,
+      "cad_suffix": "25",
+      "encoder_label": "encoder24",
+      "Y_mm": 225,
+      "bank": 3,
+      "slot": 0,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 0,
+      "r2_adc_J2_OUT_pin": 3
+    },
+    {
+      "java_index": 25,
+      "cad_suffix": "26",
+      "encoder_label": "encoder25",
+      "Y_mm": 250,
+      "bank": 3,
+      "slot": 1,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 1,
+      "r2_adc_J2_OUT_pin": 6
+    },
+    {
+      "java_index": 26,
+      "cad_suffix": "27",
+      "encoder_label": "encoder26",
+      "Y_mm": 275,
+      "bank": 3,
+      "slot": 2,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 2,
+      "r2_adc_J2_OUT_pin": 9
+    },
+    {
+      "java_index": 27,
+      "cad_suffix": "28",
+      "encoder_label": "encoder27",
+      "Y_mm": 300,
+      "bank": 3,
+      "slot": 3,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 3,
+      "r2_adc_J2_OUT_pin": 12
+    },
+    {
+      "java_index": 28,
+      "cad_suffix": "29",
+      "encoder_label": "encoder28",
+      "Y_mm": 325,
+      "bank": 3,
+      "slot": 4,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 4,
+      "r2_adc_J2_OUT_pin": 15
+    },
+    {
+      "java_index": 29,
+      "cad_suffix": "30",
+      "encoder_label": "encoder29",
+      "Y_mm": 350,
+      "bank": 3,
+      "slot": 5,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 5,
+      "r2_adc_J2_OUT_pin": 18
+    },
+    {
+      "java_index": 30,
+      "cad_suffix": "31",
+      "encoder_label": "encoder30",
+      "Y_mm": 375,
+      "bank": 3,
+      "slot": 6,
+      "bank_size": 7,
+      "carrier_connector": "J5",
+      "CS_gpio": 8,
+      "CS_physical_pin": 11,
+      "r2_adc_bank": 3,
+      "r2_adc_channel": 6,
+      "r2_adc_J2_OUT_pin": 21
+    }
+  ],
+  "orientation": {
+    "standard_top_U1_pin1_uv_mm": [
+      6.15,
+      10.05
+    ],
+    "front_transform": "X=9-u; Z-H=v-12; F.Cu faces -Y",
+    "mounted_front_J1_left_to_right": [
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "mounted_back_J1_left_to_right": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "scope": "Derived coordinate placement; actual connector body and lead dress require mechanical clearance check."
+  },
+  "checks": {
+    "AS5048_pin_to_net": true,
+    "encoder_pad_positions": true,
+    "31_channels": true,
+    "186_harness_endpoints_match_repository": true,
+    "r1_r2_connector_pin_functions": true,
+    "physical_test": false
+  }
+}
