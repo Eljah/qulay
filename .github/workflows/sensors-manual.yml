@@ -1,0 +1,58 @@
+name: Sensors mounting and wiring manual
+on:
+  push:
+    branches: ['feature/qulay-prototype-20261002']
+    paths: ['docs/sensors/**', '.github/workflows/sensors-manual.yml']
+permissions:
+  contents: write
+concurrency:
+  group: qulay-sensors-manual
+  cancel-in-progress: false
+jobs:
+  manual:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Check unchanged engineering snapshot
+        run: |
+          git diff --exit-code 097e60be99069dc5490a207dd999f34820637a1a -- firmware software electronics mechanical config docs/channel/assets
+      - name: Document toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-dejavu-core poppler-utils
+          python -m pip install -r docs/sensors/requirements.txt
+      - name: Generate guide and run existing code on synthetic input
+        run: |
+          python docs/sensors/content.py
+          python docs/sensors/tools/prepare.py
+          sh docs/sensors/tools/test.sh
+          python docs/sensors/build.py
+          mkdir -p /tmp/qulay-sensors-render
+          pdftoppm -f 4 -l 4 -r 100 -png docs/sensors/generated/Qulay_Tilt_Sensors_Mounting_Wiring_Channels.pdf /tmp/qulay-sensors-render/page
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qulay-sensors-mounting-wiring
+          retention-days: 90
+          path: docs/sensors/generated
+      - name: Publish generated PDF and tables to feature branch
+        run: |
+          test "$GITHUB_REF_NAME" = 'feature/qulay-prototype-20261002'
+          git config user.name 'qulay-docs'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/sensors/content.json docs/sensors/generated
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'docs(sensors): publish checked pinout, wiring and channel manual [skip ci]'
+          git fetch origin "$GITHUB_REF_NAME"
+          git diff --exit-code "$GITHUB_SHA" "origin/$GITHUB_REF_NAME" -- docs/sensors firmware software electronics mechanical config docs/channel/assets
+          git rebase "origin/$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
